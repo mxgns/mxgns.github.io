@@ -15,11 +15,11 @@
         <link rel="icon" href="resources/icon.png">
         <link
             rel="stylesheet"
-            href="resources/style.css?v=1784362930"
+            href="resources/style.css?v=1784443501"
         >
         <link
             rel="stylesheet"
-            href="resources/assorted.css?v=1784362930"
+            href="resources/assorted.css?v=1784443501"
         >
         <link
             rel="alternate"
@@ -179,13 +179,13 @@ ai_assisted: true
 <pre><code>{{ post_count }}
 </code></pre>
 <p>Renders as:</p>
-<p><span class="post-count">48</span></p>
+<p><span class="post-count">49</span></p>
 <p>Six values are available: <code>post_count</code>, <code>word_count</code>, <code>image_count</code>, <code>days_since_last_post</code>, <code>today</code> and <code>ai_post_list</code>. Whitespace inside the braces doesn&rsquo;t matter — <code>{{post_count}}</code>, <code>{{ post_count }}</code> and <code>{{  post_count  }}</code> all mean the same thing, and the syntax is inert inside <code>inline code</code> or an indented code block (which is how it&rsquo;s shown safely above).</p>
 <p>Source:</p>
 <pre><code>This site has {{ post_count }} posts, totalling {{ word_count }} words and {{ image_count }} images. The most recent post landed {{ days_since_last_post }} day(s) ago. Today is {{ today }}.
 </code></pre>
 <p>Renders as:</p>
-<p>This site has <span class="post-count">48</span> posts, totalling <span class="word-count">4,103</span> words and <span class="image-count">49</span> images. The most recent post landed <span class="days-since-last-post">2</span> day(s) ago. Today is <span class="today">18/7/26</span>.</p>
+<p>This site has <span class="post-count">49</span> posts, totalling <span class="word-count">4,176</span> words and <span class="image-count">51</span> images. The most recent post landed <span class="days-since-last-post">0</span> day(s) ago. Today is <span class="today">19/7/26</span>.</p>
 <p><code>{{ ai_post_list }}</code> is different — it renders a whole <code>&lt;ul&gt;</code> of posts (and special pages — this page is itself <code>ai_assisted: true</code>, so it&rsquo;s in the list below) with <code>ai_assisted: true</code> set, newest first, so it needs to sit alone on its own line with blank lines before and after, rather than inline with other text:</p>
 <p>Source:</p>
 <pre><code>{{ ai_post_list }}
