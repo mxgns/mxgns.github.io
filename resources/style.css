@@ -283,6 +283,17 @@ article.single-post .post-images img {
     margin-bottom: 0;
 }
 
+.post-body hr {
+    border: none;
+    margin: 0 0 1rem;
+    text-align: center;
+}
+
+.post-body hr::before {
+    content: "* * *";
+    color: var(--grey-400);
+}
+
 .post-body figure {
     margin: 0 0 1rem;
 }

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>How (A)I built this blog - MXGNS</title>
+<link rel="canonical" href="https://mxgns.uk/4.html">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap"
+            rel="stylesheet"
+        >
+        <link rel="icon" href="resources/icon.png">
+        <link
+            rel="stylesheet"
+            href="resources/style.css?v=1784451671"
+        >
+        <link
+            rel="stylesheet"
+            href="resources/assorted.css?v=1784451671"
+        >
+        <link
+            rel="alternate"
+            type="application/atom+xml"
+            title="MXGNS"
+            href="/feed.xml"
+        >
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="masthead-logo">MXGNS</a>
+            <nav class="masthead-nav">
+                <ul><li><a href="index.html" class="nav-index">Home</a></li><li><a href="about.html" class="nav-about">About</a></li><li><a href="now.html" class="nav-now">Now</a></li><li><a href="archive.html" class="nav-archive">Archive</a></li><li><a href="feed.xml" class="nav-feed">Atom feed</a></li></ul>
+            </nav>
+        </header>
+        <main>
+<article id="post-4" class="single-post">
+<h1>How (A)I built this blog</h1>
+<div class="post-body"><p>AI is definitely a big help for me as an infrequent coder. For a while now, I’ve been pasting code and errors into Claude or ChatGPT to get some help, like “What does this error mean?” or “What is the correct way of doing this in React?”</p>
+<p>The blog you’re reading right now is the first time I’ve let the AI actually <em>build</em> an application. Admittedly, it’s very basic: a static site generator in Python, using templates and publishing to the web, but looking back, I haven’t actually written a single line of code or barely even looked at one.</p>
+<p>Here’s what I did...</p>
+<ol>
+<li>First, I wrote a specification as a Markdown document. This is definitely where I spent the most time. I took some help from Claude (”What do I need to include?”, ”Will this give the AI everything it needs?”), but I wrote most of it manually, to make sure it was 100% like I want it. I described everything in quite a bit of detail.</li>
+<li>Next, I asked Claude Code to read the specification and write automated tests for the first part of the application.</li>
+<li>Then, I asked Claude Code to come up with a plan for how to implement the first part application, but it not only did that, it rushed straight ahead and wrote the code and made it pass the tests. Within a couple of minutes, including downloading and installing everything it needed to run, the first part of the application was done.</li>
+<li>Next, I asked Claude Code to come up with a plan for writing the rest of the application in an incremental way. Just like before, it went ahead and built the first part, but then politely asked me to give it the go ahead to continue with the next part and so on. And then my static site generator was complete.</li>
+<li>Next, I shifted to my actual blog and asked Claude Code to design it and create the template. It quickly generated something that looked good enough, and then made some tweaks based on my feedback.</li>
+<li>To not keep the same Claude thread going forever (expensive in terms of credits), I asked Claude Code to write a doc to include all information needed when starting a new thread. I noticed it described some quirks and workarounds, including some caused by inconsistencies in my specification, so I told it to fix the issues instead of just documenting them.</li>
+<li>Lastly, I’ve been making some tweaks and additions by tweaking the specification, and Claude has diligently implemented them. </li>
+</ol>
+<p>Done!</p>
+<p>But how do I feel about it? Well, I can’t say the journey has given me the sense of joy and achievement as building things did before. But does that matter? It’s been an incredibly quick way to get exactly what I want. I just wanted my blog up and running.</p>
+<p>I code infrequently enough to forget most of how to do it in between, so the AI definitely beats any code that I would write.</p>
+<p>If I can focus my energy on the blog content instead, that is surely a good thing.</p></div>
+<footer><time datetime="2026-05-30">30 May 2026</time><a href="web-and-tech.html" class="category">Web &amp; Tech</a></footer>
+</article>
+</main>
+<nav><ul><li class="newer"><a href="5.html">Newer post</a></li><li class="older"><a href="3.html">Older post</a></li></ul></nav>
+<nav><a href="index-4.html#post-4">Back to homepage</a></nav>
+        <footer>
+            <a href="cookies.html">Cookies</a>
+        </footer>
+    </body>
+</html>
