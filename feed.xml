@@ -163,7 +163,7 @@
 <p>It made me think of a quote at the top of one of my favourite pages on the early Internet, <a href="https://web.archive.org/web/20250121093936/www.apparent-wind.com/sailing-page.html">Mark Rosenstein’s Sailing Page</a>:</p>
 <blockquote>
 <p>&ldquo;For the truth is that I already know as much about my fate as I need to know. The day will come when I will die. So the only matter of consequence before me is what I will do with my allotted time. I can remain on shore, paralyzed with fear, or I can raise my sails and dip and soar in the breeze.&rdquo;</p>
-<p>-- Richard Bode, <em>First you have to row a little boat</em></p>
+<p>&ndash; Richard Bode, <em>First you have to row a little boat</em></p>
 </blockquote>
 <p>I wish I could say that&rsquo;s how I&rsquo;ve been living since I read it (I even read the book), but convenience and routine came inbetween.</p>
 <p>I wouldn&rsquo;t say I&rsquo;ve <em>wasted</em> time, per se. I realised during Covid that it&rsquo;s the little things you do every day that add up to a life, and I&rsquo;m definitely living those. Nevertheless, in the spirit of appreciating those moments even more, and maybe adding in a few more bits, I have now created a life tracker. </p>
@@ -863,7 +863,7 @@ Total: 37 items + socks &amp; underwear
     <updated>2026-05-30T00:00:04Z</updated>
     <content type="html"><![CDATA[<p>AI is definitely a big help for me as an infrequent coder. For a while now, I’ve been pasting code and errors into Claude or ChatGPT to get some help, like “What does this error mean?” or “What is the correct way of doing this in React?”</p>
 <p>The blog you’re reading right now is the first time I’ve let the AI actually <em>build</em> an application. Admittedly, it’s very basic: a static site generator in Python, using templates and publishing to the web, but looking back, I haven’t actually written a single line of code or barely even looked at one.</p>
-<p>Here’s what I did...</p>
+<p>Here’s what I did&hellip;</p>
 <ol>
 <li>First, I wrote a specification as a Markdown document. This is definitely where I spent the most time. I took some help from Claude (”What do I need to include?”, ”Will this give the AI everything it needs?”), but I wrote most of it manually, to make sure it was 100% like I want it. I described everything in quite a bit of detail.</li>
 <li>Next, I asked Claude Code to read the specification and write automated tests for the first part of the application.</li>

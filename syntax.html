@@ -15,11 +15,11 @@
         <link rel="icon" href="resources/icon.png">
         <link
             rel="stylesheet"
-            href="resources/style.css?v=1784454202"
+            href="resources/style.css?v=1784455207"
         >
         <link
             rel="stylesheet"
-            href="resources/assorted.css?v=1784454202"
+            href="resources/assorted.css?v=1784455207"
         >
         <link
             rel="alternate"
@@ -106,16 +106,16 @@
 <p>Source:</p>
 <pre><code>---
 </code></pre>
-<p>Renders as a centered &ldquo;<em> * </em>&rdquo;:</p>
+<p>Renders as:</p>
 <hr />
 <h3>Smart typography</h3>
-<p>Straight quotes and apostrophes are automatically converted to their curly (&ldquo;smart&rdquo;) equivalents. Dashes (<code>--</code>) and ellipses (<code>...</code>) are left exactly as typed — they are <strong>not</strong> converted.</p>
+<p>Straight quotes and apostrophes are automatically converted to their curly (&ldquo;smart&rdquo;) equivalents. <code>--</code> becomes an en dash, <code>---</code> becomes an em dash, and <code>...</code> becomes an ellipsis.</p>
 <p>Source:</p>
-<pre><code>She said "it's fine" -- really...
+<pre><code>She said "it's fine" -- really... it's --- true.
 </code></pre>
 <p>Renders as:</p>
-<p>She said &ldquo;it&rsquo;s fine&rdquo; -- really...</p>
-<p>Quotes inside inline code or an indented code block are left untouched, e.g. <code>"like this"</code>.</p>
+<p>She said &ldquo;it&rsquo;s fine&rdquo; &ndash; really&hellip; it&rsquo;s &mdash; true.</p>
+<p>Quotes, dashes and ellipses inside inline code or an indented code block are left untouched, e.g. <code>"like this" -- and this...</code>.</p>
 <h3>Images</h3>
 <p>Photos for a post or page aren&rsquo;t inserted with Markdown&rsquo;s <code>![alt](src)</code> syntax. Instead they&rsquo;re placed alongside the <code>.md</code> file in <code>content/</code> as <code>{post-id}-image-{NN}.{ext}</code> (e.g. <code>12-image-01.jpg</code>, <code>12-image-02.png</code>), and alt text is supplied in the frontmatter, in file order:</p>
 <pre><code>---
