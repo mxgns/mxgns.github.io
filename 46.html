@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Memento mori - MXGNS</title>
+        
+        <link rel="canonical" href="https://mxgns.uk/46.html">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap"
+            rel="stylesheet"
+        >
+        <link rel="icon" href="resources/icon.png">
+        <link
+            rel="stylesheet"
+            href="resources/style.css?v=1784352155"
+        >
+        <link
+            rel="stylesheet"
+            href="resources/assorted.css?v=1784352155"
+        >
+        <link
+            rel="alternate"
+            type="application/atom+xml"
+            title="MXGNS"
+            href="/feed.xml"
+        >
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="masthead-logo">MXGNS</a>
+            <nav class="masthead-nav">
+                <ul><li><a href="index.html" class="nav-index">Home</a></li><li><a href="about.html" class="nav-about">About</a></li><li><a href="now.html" class="nav-now">Now</a></li><li><a href="archive.html" class="nav-archive">Archive</a></li><li><a href="feed.xml" class="nav-feed">Atom feed</a></li></ul>
+            </nav>
+        </header>
+        <main>
+<article id="post-46" class="single-post">
+<h1>Memento mori</h1>
+<div class="post-body"><style>
+    .tracker {
+        line-height: 0.56rem;
+    }
+    .tracker p {
+        line-height: 1.5rem;
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+    }
+    .gone, .remaining {
+        width: 0.4rem;
+        height: 0.4rem;
+        border: 1.2px solid currentColor;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0.08rem;
+    }
+    .gone {
+        background-color: currentColor;
+    }
+    remaining {
+        background-color: transparent;
+    }
+</style>
+
+<div class="container container-yellow">
+<h3>Life tracker</h3>
+<div id="tracker" class="tracker" aria-label="Progress tracker"></div>
+</div>
+<script>
+  const START_DATE = new Date('2025-07-26T00:00:00Z');
+  const MS_PER_WEEK = 7 * 24 * 60 * 60 * 1000;
+  const TOTAL = 4384;
+  const NOW = 2500 + Math.floor((Date.now() - START_DATE) / MS_PER_WEEK); 
+
+  const tracker = document.getElementById('tracker');
+  var result = document.createDocumentFragment();
+  for (let w = 0; w < TOTAL; w++) {
+    const div = document.createElement('div');
+    div.className = w < NOW ? "gone" : "remaining";
+    result.appendChild(div)
+  }
+  tracker.appendChild(result);
+
+  const summary = document.createElement("p");
+  const date = new Date();
+  const output = `${NOW}/${TOTAL}`;
+  summary.textContent = output;
+  tracker.appendChild(summary);
+</script>
+
+<p>Something happened a few months ago that forced me to reflect on my own mortality. All is good now (I hope!), but it was a reminder that it will not always be the case. </p>
+<p>It made me think of a quote at the top of one of my favourite pages on the early Internet, <a href="https://web.archive.org/web/20250121093936/www.apparent-wind.com/sailing-page.html">Mark Rosenstein’s Sailing Page</a>:</p>
+<blockquote>
+<p>&ldquo;For the truth is that I already know as much about my fate as I need to know. The day will come when I will die. So the only matter of consequence before me is what I will do with my allotted time. I can remain on shore, paralyzed with fear, or I can raise my sails and dip and soar in the breeze.&rdquo;</p>
+<p>-- Richard Bode, <em>First you have to row a little boat</em></p>
+</blockquote>
+<p>I wish I could say that&rsquo;s how I&rsquo;ve been living since I read it (I even read the book), but convenience and routine came inbetween.</p>
+<p>I wouldn&rsquo;t say I&rsquo;ve <em>wasted</em> time, per se. I realised during Covid that it&rsquo;s the little things you do every day that add up to a life, and I&rsquo;m definitely living those. Nevertheless, in the spirit of appreciating those moments even more, and maybe adding in a few more bits, I have now created a life tracker. </p>
+<p>This is inspired by a post I saw on Pinterest in terms of the format, and shows how many weeks I&rsquo;ve used up and how many I may have left, assuming I live as long as the average man of my age in the UK.</p>
+<p>The tracker is updated automatically, based on today’s date, so the clock is ticking.</p>
+<p>Food for thought, when you see it like this.</p></div>
+<footer><time datetime="2026-07-14">14 July 2026</time><a href="personal-growth.html" class="category">Personal Growth</a></footer>
+</article>
+</main>
+<nav><ul><li class="newer"><a href="47.html">Newer post</a></li><li class="older"><a href="45.html">Older post</a></li></ul></nav>
+<nav><a href="index.html#post-46">Back to homepage</a></nav>
+        <footer>
+            <a href="cookies.html">Cookies</a>
+        </footer>
+    </body>
+</html>
