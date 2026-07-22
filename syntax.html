@@ -15,11 +15,11 @@
         <link rel="icon" href="resources/icon.png">
         <link
             rel="stylesheet"
-            href="resources/style.css?v=1784609487"
+            href="resources/style.css?v=1784748612"
         >
         <link
             rel="stylesheet"
-            href="resources/assorted.css?v=1784609487"
+            href="resources/assorted.css?v=1784748612"
         >
         <link
             rel="alternate"
@@ -36,7 +36,7 @@
             </nav>
         </header>
         <main>
-<article id="post-syntax" class="single-post">
+<article id="post-syntax" class="single-post full-post">
 <h1>Test Page / Syntax Guide</h1>
 <div class="post-body"><div class="container container-brown ai-disclosure"><p>The contents of this post have been entirely or partially created using AI. It’s a rare exception on this blog. <a href="48.html">Read more about how I use or don’t use AI.</a></p></div><p>This page documents the Markdown syntax and special styles available when writing posts and pages for this blog. It doubles as a live test of the renderer — everything shown below is actually rendered by Magnetizer, not typed out as a picture.</p>
 <p>Since a post&rsquo;s title already occupies the top-level heading, headings inside the body should start at <code>###</code> — anything more prominent (<code>#</code> or <code>##</code>) triggers a build warning.</p>
@@ -185,7 +185,7 @@ ai_assisted: true
 <pre><code>This site has {{ post_count }} posts, totalling {{ word_count }} words and {{ image_count }} images. Today is {{ today }}.
 </code></pre>
 <p>Renders as:</p>
-<p>This site has <span class="post-count">50</span> posts, totalling <span class="word-count">4,258</span> words and <span class="image-count">53</span> images. Today is <span class="today">21/7/26</span>.</p>
+<p>This site has <span class="post-count">50</span> posts, totalling <span class="word-count">4,261</span> words and <span class="image-count">53</span> images. Today is <span class="today">22/7/26</span>.</p>
 <p><code>{{ ai_post_list }}</code> is different — it renders a whole <code>&lt;ul&gt;</code> of posts (and special pages — this page is itself <code>ai_assisted: true</code>, so it&rsquo;s in the list below) with <code>ai_assisted: true</code> set, newest first, so it needs to sit alone on its own line with blank lines before and after, rather than inline with other text:</p>
 <p>Source:</p>
 <pre><code>{{ ai_post_list }}

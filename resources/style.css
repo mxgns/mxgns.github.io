@@ -593,11 +593,36 @@ a.download-link:hover::before {
     background-color: var(--blue-800);
 }
 
-/* === Micro-post === */
+/* === Note === */
 
-article.micro-post .post-body {
+article.note .post-body {
     font-size: 1.15rem;
     font-weight: 400;
+}
+
+/* === Post heading without a visible title (Image posts, Notes) ===
+   Magnetizer always renders an <h1>/<h2> for every post, even ones with no
+   title, falling back to text like "Photo posted 22 July 2026". That heading
+   still needs to exist for the document outline and screen readers — the mix
+   of titled and untitled posts on index/category pages is exactly why — it
+   just shouldn't be seen. Standard visually-hidden technique: taken out of
+   visual flow and clipped to nothing, but never display:none/visibility:hidden,
+   which would also remove it from the accessibility tree. */
+
+.visually-hidden,
+article.image-post h1,
+article.image-post h2,
+article.note h1,
+article.note h2 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 /* === Date === */
@@ -623,24 +648,24 @@ time a:hover {
     color: var(--blue-800);
 }
 
-/* === Category & microblog tags === */
+/* === Category & notes tags === */
 
 .category,
-.microblog {
+.notes {
     font-size: 0.9rem;
     color: var(--blue-600);
     text-decoration: none;
 }
 
 article footer .category,
-article footer .microblog {
+article footer .notes {
     border-left: 1px solid var(--grey-400);
     padding-left: 0.5rem;
     margin-left: 0.5rem;
 }
 
 .category:hover,
-.microblog:hover {
+.notes:hover {
     color: var(--blue-800);
 }
 
