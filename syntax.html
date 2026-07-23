@@ -15,11 +15,11 @@
         <link rel="icon" href="resources/icon.png">
         <link
             rel="stylesheet"
-            href="resources/style.css?v=1784748957"
+            href="resources/style.css?v=1784825421"
         >
         <link
             rel="stylesheet"
-            href="resources/assorted.css?v=1784748957"
+            href="resources/assorted.css?v=1784825421"
         >
         <link
             rel="alternate"
@@ -151,14 +151,12 @@ The rest of the story, only shown on the post's own page.
 date: 2026-05-21
 category: travel
 favourite: true
-draft: false
 ai_assisted: true
 ---
 </code></pre>
 <ul>
 <li><code>category</code> — must match a slug configured in <code>config.yaml</code>; adds a category link to the post&rsquo;s footer and includes the post on that category&rsquo;s page.</li>
 <li><code>favourite: true</code> — adds a small star after the post&rsquo;s entry in the archive listing.</li>
-<li><code>draft: true</code> — keeps the post out of index/category/archive/feed listings; it&rsquo;s still reachable at its own URL.</li>
 <li><code>ai_assisted: true</code> — adds a disclosure banner (see below) to the top of the post&rsquo;s content, everywhere it&rsquo;s shown.</li>
 </ul>
 <h3>AI-assisted disclosure</h3>
@@ -185,7 +183,7 @@ ai_assisted: true
 <pre><code>This site has {{ post_count }} posts, totalling {{ word_count }} words and {{ image_count }} images. Today is {{ today }}.
 </code></pre>
 <p>Renders as:</p>
-<p>This site has <span class="post-count">50</span> posts, totalling <span class="word-count">4,261</span> words and <span class="image-count">53</span> images. Today is <span class="today">22/7/26</span>.</p>
+<p>This site has <span class="post-count">50</span> posts, totalling <span class="word-count">4,261</span> words and <span class="image-count">53</span> images. Today is <span class="today">23/7/26</span>.</p>
 <p><code>{{ ai_post_list }}</code> is different — it renders a whole <code>&lt;ul&gt;</code> of posts (and special pages — this page is itself <code>ai_assisted: true</code>, so it&rsquo;s in the list below) with <code>ai_assisted: true</code> set, newest first, so it needs to sit alone on its own line with blank lines before and after, rather than inline with other text:</p>
 <p>Source:</p>
 <pre><code>{{ ai_post_list }}
