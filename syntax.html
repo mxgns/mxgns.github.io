@@ -15,11 +15,11 @@
         <link rel="icon" href="resources/icon.png">
         <link
             rel="stylesheet"
-            href="resources/style.css?v=1785014316"
+            href="resources/style.css?v=1785044515"
         >
         <link
             rel="stylesheet"
-            href="resources/assorted.css?v=1785014316"
+            href="resources/assorted.css?v=1785044515"
         >
         <link
             rel="alternate"
@@ -56,10 +56,11 @@
 <h4>A level-4 heading</h4>
 <h3>Links</h3>
 <p>Regular links, and bare URLs/email addresses wrapped in <code>&lt;&gt;</code> for automatic linking:</p>
-<pre><code>[My values](1.html), or just &lt;https://mxgns.uk&gt; and &lt;hello@mxgns.uk&gt;.
+<pre><code>[First post](1.html), [External link](https://bbc.co.uk), or just &lt;https://mxgns.uk&gt; and &lt;hello@mxgns.uk&gt;.
 </code></pre>
 <p>Renders as:</p>
-<p><a href="1.html">My values</a>, or just <a href="https://mxgns.uk">https://mxgns.uk</a> and <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#108;&#111;&#64;&#109;&#120;&#103;&#110;&#115;&#46;&#117;&#107;">&#104;&#101;&#108;&#108;&#111;&#64;&#109;&#120;&#103;&#110;&#115;&#46;&#117;&#107;</a>.</p>
+<p><a href="1.html">First post</a>, <a href="https://bbc.co.uk" class="external-link" target="_blank" rel="noopener">External link</a>, or just <a href="https://mxgns.uk">https://mxgns.uk</a> and <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#108;&#111;&#64;&#109;&#120;&#103;&#110;&#115;&#46;&#117;&#107;">&#104;&#101;&#108;&#108;&#111;&#64;&#109;&#120;&#103;&#110;&#115;&#46;&#117;&#107;</a>.</p>
+<p>Any link that isn&rsquo;t relative and doesn&rsquo;t point at mxgns.uk is treated as external — it automatically opens in a new tab and gets a small icon, no extra markup needed.</p>
 <h3>Lists</h3>
 <p>An unordered list:</p>
 <pre><code>- Optimisation &amp; curation
@@ -183,7 +184,7 @@ ai_assisted: true
 <pre><code>This site has {{ post_count }} posts, totalling {{ word_count }} words and {{ image_count }} images. Today is {{ today }}.
 </code></pre>
 <p>Renders as:</p>
-<p>This site has <span class="post-count">52</span> posts, totalling <span class="word-count">4,508</span> words and <span class="image-count">56</span> images. Today is <span class="today">25/7/26</span>.</p>
+<p>This site has <span class="post-count">52</span> posts, totalling <span class="word-count">4,511</span> words and <span class="image-count">56</span> images. Today is <span class="today">26/7/26</span>.</p>
 <p><code>{{ ai_post_list }}</code> is different — it renders a whole <code>&lt;ul&gt;</code> of posts (and special pages — this page is itself <code>ai_assisted: true</code>, so it&rsquo;s in the list below) with <code>ai_assisted: true</code> set, newest first, so it needs to sit alone on its own line with blank lines before and after, rather than inline with other text:</p>
 <p>Source:</p>
 <pre><code>{{ ai_post_list }}
