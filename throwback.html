@@ -14,11 +14,11 @@
         <link rel="icon" href="resources/icon.png">
         <link
             rel="stylesheet"
-            href="resources/style.css?v=1785299241"
+            href="resources/style.css?v=1785348350"
         >
         <link
             rel="stylesheet"
-            href="resources/assorted.css?v=1785299241"
+            href="resources/assorted.css?v=1785348350"
         >
         <link
             rel="alternate"
@@ -58,5 +58,15 @@
         <footer>
             <a href="cookies.html">Cookies</a>
         </footer>
+        <img id="_b" alt="" width="1" height="1"
+             style="position:absolute;left:-9999px"
+             data-src="/api/track/throwback.svg">
+        <script>
+          (function () {
+            if (localStorage.getItem('_notrack')) return;
+            var img = document.getElementById('_b');
+            img.src = img.dataset.src;
+          })();
+        </script>
     </body>
 </html>
