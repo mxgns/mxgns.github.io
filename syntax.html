@@ -15,11 +15,11 @@
         <link rel="icon" href="resources/icon.png">
         <link
             rel="stylesheet"
-            href="resources/style.css?v=1785558073"
+            href="resources/style.css?v=1785572916"
         >
         <link
             rel="stylesheet"
-            href="resources/assorted.css?v=1785558073"
+            href="resources/assorted.css?v=1785572916"
         >
         <link
             rel="alternate"
@@ -35,6 +35,7 @@
                 <ul><li><a href="index.html" class="nav-index">Home</a></li><li><a href="about.html" class="nav-about">About</a></li><li><a href="now.html" class="nav-now">Now</a></li><li><a href="archive.html" class="nav-archive">Archive</a></li><li><a href="feed.xml" class="nav-feed">Atom feed</a></li></ul>
             </nav>
         </header>
+        <div id="_ab" class="analytics-banner" hidden></div>
         <main>
 <article id="post-syntax" class="single-post full-post">
 <h1>Test Page / Syntax Guide</h1>
@@ -184,13 +185,13 @@ ai_assisted: true
 <pre><code>This site has {{ post_count }} posts, totalling {{ word_count }} words and {{ image_count }} images. Today is {{ today }}.
 </code></pre>
 <p>Renders as:</p>
-<p>This site has <span class="post-count">56</span> posts, totalling <span class="word-count">5,573</span> words and <span class="image-count">59</span> images. Today is <span class="today">1/8/26</span>.</p>
+<p>This site has <span class="post-count">56</span> posts, totalling <span class="word-count">5,575</span> words and <span class="image-count">59</span> images. Today is <span class="today">1/8/26</span>.</p>
 <p><code>{{ ai_post_list }}</code> is different — it renders a whole <code>&lt;ul&gt;</code> of posts (and special pages — this page is itself <code>ai_assisted: true</code>, so it&rsquo;s in the list below) with <code>ai_assisted: true</code> set, newest first, so it needs to sit alone on its own line with blank lines before and after, rather than inline with other text:</p>
 <p>Source:</p>
 <pre><code>{{ ai_post_list }}
 </code></pre>
 <p>Renders as:</p>
-<ul class="ai-post-list"><li><a href="syntax.html">Test Page / Syntax Guide</a></li></ul>
+<ul class="ai-post-list"><li><a href="syntax.html">Test Page / Syntax Guide</a></li><li><a href="privacy.html">MXGNS Privacy Policy</a></li></ul>
 <p>An unrecognised name is left exactly as written and logs a build warning — handy for catching typos. Numbers of 1,000 or more get a comma thousands-separator (e.g. <code>12,345</code>). A page using any of these values is automatically rebuilt whenever the underlying numbers change elsewhere on the site (e.g. a new post shifts <code>post_count</code>), not just when the page&rsquo;s own file changes.</p>
 <h3>Container blocks</h3>
 <p>Wrap a section of Markdown in a <code>:::</code> fence to render it inside a <code>&lt;div class="container"&gt;</code>. Content between the fences is itself parsed as Markdown, and an opening <code>:::</code> without a matching closing <code>:::</code> is left as plain text. Containers don&rsquo;t nest.</p>
@@ -265,11 +266,15 @@ Worth calling out separately from the main text.
 </main>
 <nav><a href="index.html">Blog home</a></nav>
         <footer>
-            <a href="cookies.html">Cookies</a>
+            <div class="footer-links">
+                <a href="cookies.html">Cookies</a>
+                <a href="privacy.html">Privacy</a>
+            </div>
+            <span id="_nt" class="footer-notrack" hidden>Tracking is disabled</span>
         </footer>
         <img id="_b" alt="" width="1" height="1"
              style="position:absolute;left:-9999px"
              data-src="/api/track/syntax.svg">
-        <script src="resources/blog.js?v=1785558073"></script>
+        <script src="resources/blog.js?v=1785572916"></script>
     </body>
 </html>

@@ -936,21 +936,48 @@ li.favourite a::after {
     margin-left: 0.3em;
 }
 
+/* === Analytics banner === */
+
+body > .analytics-banner {
+    max-width: 680px;
+    margin: 1.5rem auto 0;
+    padding: 1rem 1.5rem;
+    background: var(--blue-100);
+    color: var(--blue-900);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
 /* === Footer === */
 
 body > footer {
     padding: 2rem;
-    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+body > footer .footer-links {
+    display: flex;
+    gap: 1rem;
 }
 
 body > footer a {
     font-size: 0.85rem;
-    color: var(--grey-600);
+    color: var(--blue-600);
     text-decoration: none;
 }
 
 body > footer a:hover {
-    color: var(--blue-600);
+    color: var(--blue-800);
+}
+
+body > footer .footer-notrack {
+    font-size: 0.85rem;
+    color: var(--grey-600);
 }
 
 /* === Nav: shared base === */
