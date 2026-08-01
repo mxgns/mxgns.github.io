@@ -14,10 +14,29 @@
     return new RegExp('(?:^|; )' + NOTRACK_COOKIE + '=').test(document.cookie);
   }
 
-  function showBanner(text) {
+  function urlWithAnalytics(value) {
+    var params = new URLSearchParams(location.search);
+    params.set('analytics', value);
+    return location.pathname + '?' + params.toString() + location.hash;
+  }
+
+  function showBanner(text, stateClass, undoHref) {
     var banner = document.getElementById('_ab');
     if (!banner) return;
-    banner.textContent = text;
+    banner.textContent = '';
+    banner.classList.remove('enabled', 'disabled');
+    banner.classList.add(stateClass);
+
+    var message = document.createElement('span');
+    message.textContent = text;
+    banner.appendChild(message);
+
+    var undo = document.createElement('a');
+    undo.className = 'analytics-banner-undo';
+    undo.href = undoHref;
+    undo.textContent = 'Undo';
+    banner.appendChild(undo);
+
     banner.hidden = false;
   }
 
@@ -27,10 +46,10 @@
   var analytics = params.get('analytics');
   if (analytics === 'false') {
     setNotrackCookie();
-    showBanner('Analytics have been disabled.');
+    showBanner('Analytics have been disabled.', 'disabled', urlWithAnalytics('true'));
   } else if (analytics === 'true') {
     removeNotrackCookie();
-    showBanner('Analytics have been enabled.');
+    showBanner('Analytics have been enabled.', 'enabled', urlWithAnalytics('false'));
   }
 
   var notrack = hasNotrackCookie();
