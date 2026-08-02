@@ -20,6 +20,13 @@
     return location.pathname + '?' + params.toString() + location.hash;
   }
 
+  function urlWithoutSrc() {
+    var params = new URLSearchParams(location.search);
+    params.delete('src');
+    var qs = params.toString();
+    return location.pathname + (qs ? '?' + qs : '') + location.hash;
+  }
+
   function showBanner(text, stateClass, undoHref) {
     var banner = document.getElementById('_ab');
     if (!banner) return;
@@ -52,6 +59,12 @@
     showBanner('Analytics have been enabled.', 'enabled', urlWithAnalytics('false'));
   }
 
+  // Removed from the address bar unconditionally (even if tracking is
+  // disabled below) so a ?src= link never ends up bookmarked with the
+  // parameter attached.
+  var src = params.get('src');
+  if (src) history.replaceState(null, '', urlWithoutSrc());
+
   var notrack = hasNotrackCookie();
 
   var notice = document.getElementById('_nt');
@@ -60,5 +73,13 @@
   if (notrack) return;
 
   var img = document.getElementById('_b');
-  if (img) img.src = img.dataset.src;
+  if (img) {
+    var pixelSrc = img.dataset.src;
+    if (src) {
+      var pixelParams = new URLSearchParams();
+      pixelParams.set('src', src);
+      pixelSrc += '?' + pixelParams.toString();
+    }
+    img.src = pixelSrc;
+  }
 })();
