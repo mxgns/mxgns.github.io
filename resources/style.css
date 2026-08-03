@@ -102,7 +102,7 @@ header {
 
 header .masthead-logo {
     font-family: "Oswald", sans-serif;
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     font-weight: 600;
     line-height: 1;
     letter-spacing: 0.02em;
@@ -134,7 +134,7 @@ header .masthead-nav li {
 header .masthead-nav a:not(.nav-feed) {
     display: inline-block;
     line-height: 1;
-    font-size: 1rem;
+    font-size: 1.07rem;
     color: var(--black);
     text-decoration: none;
     padding-bottom: 0.5rem;
@@ -211,17 +211,17 @@ article + article {
 /* === Post title === */
 
 article > h1 {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
     font-weight: 500;
     line-height: 1.3;
-    margin: 0 0 0.9rem;
+    margin: 0 0 1rem;
 }
 
 article > h2 {
-    font-size: 1.9rem;
+    font-size: 2.1rem;
     font-weight: 500;
     line-height: 1.3;
-    margin: 0 0 0.9rem;
+    margin: 0 0 1rem;
 }
 
 #post-error-404 h1 {
@@ -233,7 +233,7 @@ article > h2 {
 }
 
 #post-error-404 h3 {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
     font-weight: 500;
     line-height: 1.3;
     margin: 0 0 0.9rem;
@@ -333,12 +333,13 @@ article.single-post .post-images img {
 }
 
 .post-body {
-    font-size: 1rem;
+    font-size: 1.07rem;
+    line-height: 1.8rem;
     color: var(--black);
 }
 
 .post-body p {
-    margin: 0 0 1rem;
+    margin: 0 0 1.1rem;
 }
 
 .post-body p:last-child {
@@ -347,7 +348,7 @@ article.single-post .post-images img {
 
 .post-body hr {
     border: none;
-    margin: 0 0 1rem;
+    margin: 0 0 1.1rem;
     text-align: center;
 }
 
@@ -357,7 +358,7 @@ article.single-post .post-images img {
 }
 
 .post-body figure {
-    margin: 2rem 0;
+    margin: 2.15rem 0;
 }
 
 .post-body figure img {
@@ -367,15 +368,15 @@ article.single-post .post-images img {
 }
 
 .post-body li {
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.65rem;
 }
 
 .post-body blockquote {
-    margin: 1.25rem 0;
-    font-size: 1rem;
+    margin: 1.35rem 0;
+    font-size: 1.07rem;
     background: var(--grey-150);
     border-left: 5px solid var(--grey-400);
-    padding: 1.5rem;
+    padding: 1.6rem;
     line-height: 1.55;
 }
 
@@ -443,7 +444,7 @@ article > .ai-disclosure::before {
 
 article > .ai-disclosure p {
     margin: 0;
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 
 .post-body .info {
@@ -563,7 +564,7 @@ article > .ai-disclosure p {
 }
 
 .post-body h4 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     margin: 1.2rem 0 0.3rem;
     color: var(--black);
@@ -620,7 +621,7 @@ code {
     background: none;
     padding: 0;
     border-radius: 0;
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 1.7;
 }
 
@@ -666,7 +667,8 @@ a.download-link::before {
 /* === Note === */
 
 article.note .post-body {
-    font-size: 1.15rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
     font-weight: 400;
 }
 
@@ -705,7 +707,7 @@ article footer {
 }
 
 time {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: var(--grey-600);
 }
 
@@ -730,7 +732,7 @@ time a:visited:hover {
 
 .category,
 .notes {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: var(--blue-600);
     text-decoration: none;
 }
@@ -763,7 +765,7 @@ article footer .notes {
 .read-more {
     display: block;
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: 1.07rem;
     color: var(--blue-600);
     text-decoration: none;
 }
@@ -849,7 +851,7 @@ main > ul {
 }
 
 main > ul li {
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 1.4;
 }
 
@@ -859,7 +861,7 @@ main > ul li::marker {
 }
 
 main > ul a {
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: var(--blue-600);
     text-decoration: none;
 }
@@ -911,7 +913,7 @@ main section .day {
 }
 
 main section a {
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: var(--blue-600);
     text-decoration: none;
 }
@@ -955,7 +957,7 @@ body > .analytics-banner {
     background: var(--green-100);
     color: var(--green-900);
     border-radius: 8px;
-    font-size: 0.95rem;
+    font-size: 1rem;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -1091,7 +1093,7 @@ nav + nav:last-of-type {
 
 main + nav > a,
 nav + nav > a {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: var(--blue-600);
     text-decoration: none;
 }
@@ -1125,7 +1127,7 @@ main + nav > ul li.older {
 }
 
 main + nav > ul a {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: var(--blue-600);
     text-decoration: none;
 }
