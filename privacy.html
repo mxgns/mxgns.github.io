@@ -14,11 +14,11 @@
         <link rel="icon" href="resources/icon.png">
         <link
             rel="stylesheet"
-            href="resources/style.css?v=1785777549"
+            href="resources/style.css?v=1785779698"
         >
         <link
             rel="stylesheet"
-            href="resources/assorted.css?v=1785777549"
+            href="resources/assorted.css?v=1785779698"
         >
         <link
             rel="alternate"
@@ -56,11 +56,18 @@
 <p>If you opt out, this website sets a cookie named <code>_notrack</code> solely to remember your choice and prevent future analytics events from being sent. The cookie expires after 2 years.</p>
 <p>This cookie is not used for analytics, advertising or tracking. If you delete the cookie, use another browser or use another device, you need to opt out again.</p>
 <h3>Opting out</h3>
-<p>You can object to this analytics processing at any time:</p>
-<p><a href="index.html?analytics=false">Click here to opt out of analytics</a></p>
-<p>After you opt out, the website will stop sending analytics events from that browser while the opt-out cookie remains present.</p>
-<p>If you have already opted out, you can reverse your choice here:</p>
-<p><a href="index.html?analytics=true">Click here to allow analytics</a></p>
+<p>You can object to this analytics processing at any time.</p>
+<p>After you opt out, the website stops sending analytics events from your browser while the opt-out cookie remains present, and any analytics already recorded for you that day are deleted immediately.</p>
+<p><strong>Current analytics status:</strong></p>
+<p id="privacy-status-enabled" class="privacy-status enabled" hidden><span class="privacy-status-icon"></span><span class="privacy-status-label">Analytics are enabled.</span> You may <a href="index.html?analytics=false">opt out</a>.</p>
+<p id="privacy-status-disabled" class="privacy-status disabled" hidden><span class="privacy-status-icon"></span><span class="privacy-status-label">Analytics are disabled.</span> You may <a href="index.html?analytics=true">opt back in</a>.</p>
+<script>
+(function () {
+  var notrack = /(?:^|; )_notrack=/.test(document.cookie);
+  document.getElementById(notrack ? 'privacy-status-disabled' : 'privacy-status-enabled').hidden = false;
+})();
+</script>
+
 <h3>Sharing and service providers</h3>
 <p>I use Cloudflare to host this information on my behalf. The provider may process the information only for providing the relevant service to me and may not use it for its own advertising or profiling purposes.</p>
 <p>I do not share the information with anyone else or for any other purposes.</p>
@@ -83,6 +90,6 @@
         <img id="_b" alt="" width="1" height="1"
              style="position:absolute;left:-9999px"
              data-src="/api/track/privacy.svg">
-        <script src="resources/blog.js?v=1785777549"></script>
+        <script src="resources/blog.js?v=1785779698"></script>
     </body>
 </html>
