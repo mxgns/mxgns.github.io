@@ -4,6 +4,11 @@
 
   function setNotrackCookie() {
     document.cookie = NOTRACK_COOKIE + '=1; max-age=' + NOTRACK_MAX_AGE + '; path=/; SameSite=Lax';
+    // Right to object: delete whatever's already been recorded for this
+    // visitor today. No opt-out state is kept server-side — the cookie
+    // above is what stops the beacon firing again — so this is a one-time
+    // cleanup, not something to call again when un-opting-out below.
+    fetch('/api/track/object', { keepalive: true }).catch(function () {});
   }
 
   function removeNotrackCookie() {
