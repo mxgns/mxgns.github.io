@@ -1075,6 +1075,32 @@ body > footer .footer-notrack {
     color: var(--grey-600);
 }
 
+body > footer .footer-notrack-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 0.6rem;
+    vertical-align: middle;
+}
+
+body > footer .footer-notrack-link::before {
+    content: "";
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: currentColor;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48cGF0aCBkPSJNMTI4IDEyOEMxMjggMTEwLjMgMTEzLjcgOTYgOTYgOTZDNzguMyA5NiA2NCAxMTAuMyA2NCAxMjhMNjQgNDY0QzY0IDUwOC4yIDk5LjggNTQ0IDE0NCA1NDRMNTQ0IDU0NEM1NjEuNyA1NDQgNTc2IDUyOS43IDU3NiA1MTJDNTc2IDQ5NC4zIDU2MS43IDQ4MCA1NDQgNDgwTDE0NCA0ODBDMTM1LjIgNDgwIDEyOCA0NzIuOCAxMjggNDY0TDEyOCAxMjh6TTUzNC42IDIxNC42QzU0Ny4xIDIwMi4xIDU0Ny4xIDE4MS44IDUzNC42IDE2OS4zQzUyMi4xIDE1Ni44IDUwMS44IDE1Ni44IDQ4OS4zIDE2OS4zTDM4NCAyNzQuN0wzMjYuNiAyMTcuNEMzMTQuMSAyMDQuOSAyOTMuOCAyMDQuOSAyODEuMyAyMTcuNEwxODUuMyAzMTMuNEMxNzIuOCAzMjUuOSAxNzIuOCAzNDYuMiAxODUuMyAzNTguN0MxOTcuOCAzNzEuMiAyMTguMSAzNzEuMiAyMzAuNiAzNTguN0wzMDQgMjg1LjNMMzYxLjQgMzQyLjdDMzczLjkgMzU1LjIgMzk0LjIgMzU1LjIgNDA2LjcgMzQyLjdMNTM0LjcgMjE0Ljd6Ii8+PC9zdmc+");
+    mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48cGF0aCBkPSJNMTI4IDEyOEMxMjggMTEwLjMgMTEzLjcgOTYgOTYgOTZDNzguMyA5NiA2NCAxMTAuMyA2NCAxMjhMNjQgNDY0QzY0IDUwOC4yIDk5LjggNTQ0IDE0NCA1NDRMNTQ0IDU0NEM1NjEuNyA1NDQgNTc2IDUyOS43IDU3NiA1MTJDNTc2IDQ5NC4zIDU2MS43IDQ4MCA1NDQgNDgwTDE0NCA0ODBDMTM1LjIgNDgwIDEyOCA0NzIuOCAxMjggNDY0TDEyOCAxMjh6TTUzNC42IDIxNC42QzU0Ny4xIDIwMi4xIDU0Ny4xIDE4MS44IDUzNC42IDE2OS4zQzUyMi4xIDE1Ni44IDUwMS44IDE1Ni44IDQ4OS4zIDE2OS4zTDM4NCAyNzQuN0wzMjYuNiAyMTcuNEMzMTQuMSAyMDQuOSAyOTMuOCAyMDQuOSAyODEuMyAyMTcuNEwxODUuMyAzMTMuNEMxNzIuOCAzMjUuOSAxNzIuOCAzNDYuMiAxODUuMyAzNTguN0MxOTcuOCAzNzEuMiAyMTguMSAzNzEuMiAyMzAuNiAzNTguN0wzMDQgMjg1LjNMMzYxLjQgMzQyLjdDMzczLjkgMzU1LjIgMzk0LjIgMzU1LjIgNDA2LjcgMzQyLjdMNTM0LjcgMjE0Ljd6Ii8+PC9zdmc+");
+}
+
 /* === Nav: shared base === */
 
 main + nav,
