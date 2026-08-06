@@ -728,34 +728,39 @@ time a:visited:hover {
     color: var(--purple-800);
 }
 
-/* === Category & notes tags === */
+/* === Category, notes & comment-count tags === */
 
 .category,
-.notes {
+.notes,
+a.comments {
     font-size: 1rem;
     color: var(--blue-600);
     text-decoration: none;
 }
 
 .category:visited,
-.notes:visited {
+.notes:visited,
+a.comments:visited {
     color: var(--purple-600);
 }
 
 article footer .category,
-article footer .notes {
+article footer .notes,
+article footer a.comments {
     border-left: 1px solid var(--grey-400);
     padding-left: 0.5rem;
     margin-left: 0.5rem;
 }
 
 .category:hover,
-.notes:hover {
+.notes:hover,
+a.comments:hover {
     color: var(--blue-800);
 }
 
 .category:visited:hover,
-.notes:visited:hover {
+.notes:visited:hover,
+a.comments:visited:hover {
     color: var(--purple-800);
 }
 
@@ -820,6 +825,126 @@ article footer .notes {
     margin-left: 0.35em;
     -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48cGF0aCBkPSJNNTY2LjYgMzQyLjZDNTc5LjEgMzMwLjEgNTc5LjEgMzA5LjggNTY2LjYgMjk3LjNMNDA2LjYgMTM3LjNDMzk0LjEgMTI0LjggMzczLjggMTI0LjggMzYxLjMgMTM3LjNDMzQ4LjggMTQ5LjggMzQ4LjggMTcwLjEgMzYxLjMgMTgyLjZMNDY2LjcgMjg4TDk2IDI4OEM3OC4zIDI4OCA2NCAzMDIuMyA2NCAzMjBDNjQgMzM3LjcgNzguMyAzNTIgOTYgMzUyTDQ2Ni43IDM1MkwzNjEuMyA0NTcuNEMzNDguOCA0NjkuOSAzNDguOCA0OTAuMiAzNjEuMyA1MDIuN0MzNzMuOCA1MTUuMiAzOTQuMSA1MTUuMiA0MDYuNiA1MDIuN0w1NjYuNiAzNDIuN3oiLz48L3N2Zz4=");
     mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48cGF0aCBkPSJNNTY2LjYgMzQyLjZDNTc5LjEgMzMwLjEgNTc5LjEgMzA5LjggNTY2LjYgMjk3LjNMNDA2LjYgMTM3LjNDMzk0LjEgMTI0LjggMzczLjggMTI0LjggMzYxLjMgMTM3LjNDMzQ4LjggMTQ5LjggMzQ4LjggMTcwLjEgMzYxLjMgMTgyLjZMNDY2LjcgMjg4TDk2IDI4OEM3OC4zIDI4OCA2NCAzMDIuMyA2NCAzMjBDNjQgMzM3LjcgNzguMyAzNTIgOTYgMzUyTDQ2Ni43IDM1MkwzNjEuMyA0NTcuNEMzNDguOCA0NjkuOSAzNDguOCA0OTAuMiAzNjEuMyA1MDIuN0MzNzMuOCA1MTUuMiAzOTQuMSA1MTUuMiA0MDYuNiA1MDIuN0w1NjYuNiAzNDIuN3oiLz48L3N2Zz4=");
+}
+
+/* === Comments === */
+/* Rendered by Magnetizer as <section class="comments" id="comments"> at the
+   bottom of an <article>, each comment as its own <article class="comment">
+   containing, in order: <div class="avatar author-{slug}" data-initial="M">,
+   <h4 class="author author-{slug}">, <time>, and one or more <p>. Compact
+   layout: the avatar sits to the left, spanning the author/date rows, with
+   the comment body spanning the full width beneath.
+
+   Default avatar: a dark-blue disc with the data-initial letter shown in
+   light blue via ::before (content: attr(data-initial)) — no image request.
+   A specific commenter (e.g. author-magnus) can later get a real photo
+   avatar purely in CSS, with no Magnetizer/markup changes needed:
+
+     .avatar.author-magnus {
+         background-image: url("magnus.jpg");
+         background-size: cover;
+         background-position: center;
+     }
+     .avatar.author-magnus::before {
+         content: none;
+     }
+
+   (the border-radius/overflow already on .avatar crops the photo to the
+   same circle as the default letter avatar) */
+
+section.comments {
+    margin-top: 2rem;
+}
+
+section.comments h2 {
+    /* Resets font-family/text-transform/letter-spacing — otherwise inherited
+       from the broader "main section h2" rule meant for Archive month
+       headings, since this h2 also happens to sit inside a <section>. */
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+    text-transform: none;
+    letter-spacing: normal;
+    font-size: 1.35rem;
+    font-weight: 500;
+    margin: 0 0 1rem;
+    color: var(--black);
+}
+
+.comment {
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    column-gap: 0.65rem;
+    row-gap: 0;
+    align-items: start;
+    margin: 0;
+    border: none;
+    padding: 1.5rem;
+    background: var(--yellow-100);
+    border-radius: 1rem;
+}
+
+.comment + .comment {
+    margin-top: 1.5rem;
+    border-top: none;
+}
+
+.avatar {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--blue-900);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar::before {
+    content: attr(data-initial);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--blue-100);
+}
+
+h4.author {
+    grid-column: 2;
+    font-size: 1.07rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--black);
+}
+
+.comment time {
+    grid-column: 2;
+    font-size: 0.90rem;
+    color: var(--grey-600);
+}
+
+.comment p {
+    grid-column: 1 / -1;
+    margin: 0.6rem 0 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--black);
+}
+
+.comment a {
+    color: var(--blue-600);
+    text-decoration: underline;
+}
+
+.comment a:visited {
+    color: var(--purple-600);
+}
+
+.comment a:hover {
+    color: var(--blue-800);
+}
+
+.comment a:visited:hover {
+    color: var(--purple-800);
 }
 
 /* === Archive === */
