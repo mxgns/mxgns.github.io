@@ -84,7 +84,8 @@ article > h2,
 main > h1,
 main > h2,
 main section h3,
-.contribution-calendar h2 {
+.contribution-calendar h2,
+.archive-columns h2 {
     font-family: "Oswald", sans-serif;
 }
 
@@ -961,44 +962,52 @@ main > h1 {
 }
 
 main > h2,
-.contribution-calendar h2 {
-    font-size: 1.3rem;
+.contribution-calendar h2,
+.archive-columns h2 {
+    font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.3;
-    margin: 1.8rem 0 0.6rem;
+    margin: 1.8rem 0 1.5rem;
 }
 
-main > ul {
+main > ul,
+.archive-columns ul {
     list-style: disc;
     padding-left: 1.6rem;
     margin: 0 0 1.5rem;
 }
 
-main > ul li {
+main > ul li,
+.archive-columns li {
     font-size: 1rem;
     line-height: 1.4;
 }
 
-main > ul li::marker {
+main > ul li::marker,
+.archive-columns li::marker {
     color: var(--black);
     font-size: 0.7em;
 }
 
-main > ul a {
+main > ul a,
+.archive-columns a {
     font-size: 1rem;
     color: var(--blue-600);
     text-decoration: none;
 }
 
-main > ul a:visited {
+main > ul a:visited,
+.archive-columns a:visited {
     color: var(--purple-600);
 }
 
-main > ul a:hover {
+main > ul a:hover,
+.archive-columns a:hover {
     color: var(--blue-800);
 }
 
-main > ul a:visited:hover {
+main > ul a:visited:hover,
+.archive-columns a:visited:hover {
     color: var(--purple-800);
 }
 
@@ -1072,6 +1081,32 @@ li.favourite a::after {
     margin-left: 0.3em;
 }
 
+@media (min-width: 601px) {
+    .archive-columns {
+        display: flex;
+        gap: 3rem;
+    }
+
+    .archive-categories,
+    .archive-notes {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .archive-months {
+        columns: 2;
+        column-gap: 3rem;
+    }
+
+    .archive-months h3 {
+        break-after: avoid;
+    }
+
+    .archive-months li {
+        break-inside: avoid;
+    }
+}
+
 /* === Contribution calendar === */
 
 :root {
@@ -1090,7 +1125,13 @@ li.favourite a::after {
     margin: 0 0 2.5rem;
 }
 
-.calendar-count {
+.calendar-summary {
+    font-size: 1rem;
+    margin: 0 0 1.5rem;
+}
+
+.calendar-post-count,
+.calendar-note-count {
     font-variant-numeric: tabular-nums;
 }
 
@@ -1099,11 +1140,10 @@ li.favourite a::after {
     flex-direction: column;
     min-width: 0;
     gap: 0.25rem;
-    margin-top: 0.9rem;
 }
 
 .calendar-months,
-.calendar-weeks {
+.calendar-columns {
     display: flex;
     min-width: 0;
     gap: 2px;
@@ -1119,7 +1159,7 @@ li.favourite a::after {
     overflow: visible;
 }
 
-.calendar-week {
+.calendar-column {
     flex: 1 1 0;
     min-width: 0;
     display: flex;
@@ -1127,13 +1167,9 @@ li.favourite a::after {
     gap: 2px;
 }
 
-.calendar-day,
-.calendar-day-empty {
+.calendar-day {
     display: block;
     aspect-ratio: 1;
-}
-
-.calendar-day {
     border-radius: 2px;
     background: var(--calendar-0);
 }
@@ -1189,6 +1225,22 @@ a.calendar-day:hover {
 .calendar-day[data-tooltip]:focus::before {
     opacity: 1;
     visibility: visible;
+}
+
+/* The first/last few columns' tooltip boxes are anchored to the cell's
+   edge instead of centered, so a wide tooltip near the edge of the grid
+   can't be pushed past the viewport edge and cause horizontal scrolling —
+   the arrow (::before) stays centered on the cell either way, since it
+   should always point at what's being hovered. */
+.calendar-columns > .calendar-column:nth-child(-n+6) .calendar-day[data-tooltip]::after {
+    left: 0;
+    transform: none;
+}
+
+.calendar-columns > .calendar-column:nth-last-child(-n+6) .calendar-day[data-tooltip]::after {
+    left: auto;
+    right: 0;
+    transform: none;
 }
 
 .calendar-day.level-1 { background: var(--calendar-1); }
