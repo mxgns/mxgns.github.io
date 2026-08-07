@@ -15,11 +15,11 @@
         <link rel="icon" href="resources/icon.png">
         <link
             rel="stylesheet"
-            href="resources/style.css?v=1786042164"
+            href="resources/style.css?v=1786078109"
         >
         <link
             rel="stylesheet"
-            href="resources/assorted.css?v=1786042164"
+            href="resources/assorted.css?v=1786078109"
         >
         <link
             rel="alternate"
@@ -186,7 +186,7 @@ ai_assisted: true
 <pre><code>This site has {{ post_count }} posts, totalling {{ word_count }} words and {{ image_count }} images. Today is {{ today }}.
 </code></pre>
 <p>Renders as:</p>
-<p>This site has <span class="post-count">59</span> posts, totalling <span class="word-count">5,966</span> words and <span class="image-count">60</span> images. Today is <span class="today">6/8/26</span>.</p>
+<p>This site has <span class="post-count">59</span> posts, totalling <span class="word-count">5,966</span> words and <span class="image-count">60</span> images. Today is <span class="today">7/8/26</span>.</p>
 <p><code>{{ ai_post_list }}</code> is different — it renders a whole <code>&lt;ul&gt;</code> of posts (and special pages — this page is itself <code>ai_assisted: true</code>, so it&rsquo;s in the list below) with <code>ai_assisted: true</code> set, newest first, so it needs to sit alone on its own line with blank lines before and after, rather than inline with other text:</p>
 <p>Source:</p>
 <pre><code>{{ ai_post_list }}
@@ -270,7 +270,7 @@ Worth calling out separately from the main text.
 <h4 class="author author-magnus">Magnus</h4>
 <time datetime="2026-08-02">2 August 2026</time>
 <p>This is the first comment for this post. Comments can include styles like <em>italics</em>, <strong>bold</strong> etc, as well as <a href="/">links</a>.</p>
-<p>They can also include multiple paragraphs.</p>
+<p>They can also include multiple paragraphs!</p>
 </article>
 <article class="comment">
 <div class="avatar author-magnus" data-initial="M" aria-hidden="true"></div>
@@ -292,6 +292,6 @@ Worth calling out separately from the main text.
         <img id="_b" alt="" width="1" height="1"
              style="position:absolute;left:-9999px"
              data-src="/api/track/syntax.svg">
-        <script src="resources/blog.js?v=1786042164"></script>
+        <script src="resources/blog.js?v=1786078109"></script>
     </body>
 </html>
