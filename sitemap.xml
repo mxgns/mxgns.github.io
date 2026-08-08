@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://mxgns.uk/63.html</loc>
+    <lastmod>2026-08-08</lastmod>
+  </url>
+  <url>
     <loc>https://mxgns.uk/62.html</loc>
     <lastmod>2026-08-07</lastmod>
   </url>
@@ -38,7 +42,7 @@
   </url>
   <url>
     <loc>https://mxgns.uk/53.html</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-08</lastmod>
   </url>
   <url>
     <loc>https://mxgns.uk/52.html</loc>
@@ -54,11 +58,11 @@
   </url>
   <url>
     <loc>https://mxgns.uk/49.html</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-08-08</lastmod>
   </url>
   <url>
     <loc>https://mxgns.uk/48.html</loc>
-    <lastmod>2026-07-18</lastmod>
+    <lastmod>2026-08-08</lastmod>
   </url>
   <url>
     <loc>https://mxgns.uk/47.html</loc>
@@ -226,7 +230,7 @@
   </url>
   <url>
     <loc>https://mxgns.uk/4.html</loc>
-    <lastmod>2026-06-15</lastmod>
+    <lastmod>2026-08-08</lastmod>
   </url>
   <url>
     <loc>https://mxgns.uk/3.html</loc>
@@ -238,27 +242,31 @@
   </url>
   <url>
     <loc>https://mxgns.uk/1.html</loc>
-    <lastmod>2026-06-15</lastmod>
+    <lastmod>2026-08-08</lastmod>
   </url>
   <url>
     <loc>https://mxgns.uk/index.html</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-08-08</lastmod>
   </url>
   <url>
     <loc>https://mxgns.uk/index-2.html</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-08-08</lastmod>
   </url>
   <url>
     <loc>https://mxgns.uk/index-3.html</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-08-08</lastmod>
   </url>
   <url>
     <loc>https://mxgns.uk/index-4.html</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-08-08</lastmod>
   </url>
   <url>
     <loc>https://mxgns.uk/index-5.html</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-08-08</lastmod>
+  </url>
+  <url>
+    <loc>https://mxgns.uk/index-6.html</loc>
+    <lastmod>2026-08-08</lastmod>
   </url>
   <url>
     <loc>https://mxgns.uk/out-and-about.html</loc>
@@ -305,8 +313,12 @@
     <lastmod>2026-07-26</lastmod>
   </url>
   <url>
+    <loc>https://mxgns.uk/blog-updates.html</loc>
+    <lastmod>2026-08-08</lastmod>
+  </url>
+  <url>
     <loc>https://mxgns.uk/notes.html</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-08-08</lastmod>
   </url>
   <url>
     <loc>https://mxgns.uk/about.html</loc>
@@ -317,15 +329,7 @@
     <lastmod>2026-08-02</lastmod>
   </url>
   <url>
-    <loc>https://mxgns.uk/cookies.html</loc>
-    <lastmod>2026-08-01</lastmod>
-  </url>
-  <url>
-    <loc>https://mxgns.uk/privacy.html</loc>
-    <lastmod>2026-08-03</lastmod>
-  </url>
-  <url>
     <loc>https://mxgns.uk/archive.html</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-08-08</lastmod>
   </url>
 </urlset>

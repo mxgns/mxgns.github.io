@@ -4,8 +4,20 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-08-07T00:01:02Z</updated>
+  <updated>2026-08-08T00:01:03Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Thoughts on the blog so far</title>
+    <link href="https://mxgns.uk/63.html?src=atom" />
+    <id>https://mxgns.uk/63.html</id>
+    <updated>2026-08-08T00:01:03Z</updated>
+    <content type="html"><![CDATA[<p>I’m happy to see how this blog project seems to be surviving so far, two and a half months in.</p>
+<p>The whole thing <a href="1.html">started</a> as an impulse and an AI prompt about me missing personal blogs and when the Internet was free from slop and ads.</p>
+<p>The <a href="4.html">AI helped me build the platform</a>, and I have semi-regularly been <a href="archive.html">filling it</a> with short journal posts, photos and random thoughts. This is the 44th post, excluding the very shortest notes.</p>
+<p>I haven’t actually shared the blog address with anyone and the traffic is <em>very</em> low. Tbh, that’s quite liberating! I can post whatever I feel like, without worrying about whether anyone will find it interesting or whether it is “on brand” or whatever.</p>
+<p>Because that’s the whole point of this blog. It’s <em>mine</em>. It’s a manually curated feed of my life and interests. By me, for me. There are no retweets and no like button for anyone to press and no sense of failure when they don’t.</p>
+<p>It’s just me putting my notes on my wall. If anyone happens to walk past and see them, that’s cool, but it’s not the main purpose.</p>]]></content>
+  </entry>
   <entry>
     <title>Back in the day</title>
     <link href="https://mxgns.uk/62.html?src=atom" />
@@ -231,7 +243,7 @@
 <h4>AI disclosure</h4>
 <p>The following pages have been marked as created with the help of AI:</p>
 <ul class="ai-post-list"><li><a href="syntax.html">Test Page / Syntax Guide</a></li><li><a href="privacy.html">Privacy Policy</a></li></ul>
-<p>This list updates automatically whenever the blog is updated, which last happened <span class="today">7/8/26</span>.</p>
+<p>This list updates automatically whenever the blog is updated, which last happened <span class="today">8/8/26</span>.</p>
 </div>]]></content>
   </entry>
   <entry>
