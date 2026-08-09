@@ -4,8 +4,15 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-08-08T00:01:04Z</updated>
+  <updated>2026-08-09T00:01:05Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Photo posted 9 August 2026</title>
+    <link href="https://mxgns.uk/65.html?src=atom" />
+    <id>https://mxgns.uk/65.html</id>
+    <updated>2026-08-09T00:01:05Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/65-image-01-resized.jpeg" alt="Canary Wharf view in the sunset"></figure><p>Last night in Canary Wharf</p>]]></content>
+  </entry>
   <entry>
     <title>How I budget</title>
     <link href="https://mxgns.uk/64.html?src=atom" />
@@ -271,7 +278,7 @@
 <h4>AI disclosure</h4>
 <p>The following pages have been marked as created with the help of AI:</p>
 <ul class="ai-post-list"><li><a href="syntax.html">Test Page / Syntax Guide</a></li><li><a href="privacy.html">Privacy Policy</a></li></ul>
-<p>This list updates automatically whenever the blog is updated, which last happened <span class="today">8/8/26</span>.</p>
+<p>This list updates automatically whenever the blog is updated, which last happened <span class="today">9/8/26</span>.</p>
 </div>]]></content>
   </entry>
   <entry>
@@ -360,7 +367,7 @@
 <p>Might this be Sweden&rsquo;s most important contribution to the world? 😋</p>]]></content>
   </entry>
   <entry>
-    <title>Throwback to my days in the navy</title>
+    <title>In the navy</title>
     <link href="https://mxgns.uk/44.html?src=atom" />
     <id>https://mxgns.uk/44.html</id>
     <updated>2026-07-08T00:00:44Z</updated>
