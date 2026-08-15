@@ -376,7 +376,7 @@ article.single-post .post-images img {
 .post-body blockquote {
     margin: 1.35rem 0;
     font-size: 1.07rem;
-    background: var(--grey-150);
+    background: rgba(0, 0, 0, 0.07);
     border-left: 5px solid var(--grey-400);
     padding: 1.6rem;
     line-height: 1.55;
@@ -684,10 +684,10 @@ article.note .post-body {
    which would also remove it from the accessibility tree. */
 
 .visually-hidden,
-article.image-post h1,
-article.image-post h2,
-article.note h1,
-article.note h2 {
+article.image-post > h1,
+article.image-post > h2,
+article.note > h1,
+article.note > h2 {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -927,6 +927,29 @@ h4.author {
     font-size: 1rem;
     line-height: 1.5;
     color: var(--black);
+}
+
+.comment blockquote,
+.comment ul,
+.comment ol {
+    grid-column: 1 / -1;
+}
+
+.comment blockquote {
+    margin: 0.6rem 0 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    background: rgba(0, 0, 0, 0.07);
+    border-left: 5px solid var(--grey-400);
+    padding: 1rem 1.2rem;
+}
+
+.comment blockquote p {
+    margin: 0 0 0.6rem;
+}
+
+.comment blockquote p:last-child {
+    margin-bottom: 0;
 }
 
 .comment a {
