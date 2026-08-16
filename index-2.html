@@ -15,11 +15,11 @@
         <link rel="icon" href="resources/icon.png">
         <link
             rel="stylesheet"
-            href="resources/style.css?v=1786878186"
+            href="resources/style.css?v=1786897846"
         >
         <link
             rel="stylesheet"
-            href="resources/assorted.css?v=1786878186"
+            href="resources/assorted.css?v=1786897846"
         >
         <link
             rel="alternate"
@@ -37,6 +37,15 @@
         </header>
         <div id="_ab" class="analytics-banner" hidden></div>
         <main>
+<article id="post-58" class="multiple-posts full-post">
+<div class="post-images">
+<figure><a href="58.html"><img src="58-image-01-resized.jpg" alt="Screenshots from my phone"></a></figure>
+</div>
+<h2><a href="58.html">My minimal-ish iPhone setup</a></h2>
+<div class="post-body"><p>Too often, I get my phone out to make a quick note, and then I get distracted by something on the screen and forget the thing I was going to write down in the first place. That’s why I try to reduce the distractions on my phone as much as I can. I allow notifications from only the bare minimum of applications, and have reduced the number of visible apps and widgets to remove the clutter.</p>
+<p>Here’s what my setup looks like.</p><a href="58.html" class="read-more">Read more</a></div>
+<footer><time datetime="2026-07-28"><a href="58.html">28 July 2026</a></time><a href="inventory.html" class="category">Inventory</a></footer>
+</article>
 <article id="post-57" class="multiple-posts note">
 <h2><a href="57.html">Note posted 28 July 2026</a></h2>
 <div class="post-body"><p>One sad thing about the state of the internet in 2026 is how SEO means that it’s genuinely rare to find anything useful on the first page of search results when googling a problem 🤬 </p>
@@ -166,72 +175,6 @@
 <p>I&rsquo;ve never actually bought anything, but we were saying that next year, if we have our longer-term home by then, we could try to go earlier and actually try to buy something. There would be a lot to choose from!</p></div>
 <footer><time datetime="2026-07-14"><a href="47.html">14 July 2026</a></time><a href="out-and-about.html" class="category">Out &amp; About</a></footer>
 </article>
-<article id="post-46" class="multiple-posts full-post">
-<h2><a href="46.html">Memento mori</a></h2>
-<div class="post-body"><style>
-    .tracker {
-        line-height: 0.56rem;
-    }
-    .tracker p {
-        line-height: 1.5rem;
-        margin-top: 0.5rem;
-        font-size: 0.8rem;
-    }
-    .gone, .remaining {
-        width: 0.4rem;
-        height: 0.4rem;
-        border: 1.2px solid currentColor;
-        border-radius: 50%;
-        display: inline-block;
-        margin: 0.08rem;
-    }
-    .gone {
-        background-color: currentColor;
-    }
-    remaining {
-        background-color: transparent;
-    }
-</style>
-
-<div class="container container-yellow">
-<h3>Life tracker</h3>
-<div id="tracker" class="tracker" aria-label="Progress tracker"></div>
-</div>
-<script>
-  const START_DATE = new Date('2025-07-26T00:00:00Z');
-  const MS_PER_WEEK = 7 * 24 * 60 * 60 * 1000;
-  const TOTAL = 4384;
-  const NOW = 2500 + Math.floor((Date.now() - START_DATE) / MS_PER_WEEK); 
-
-  const tracker = document.getElementById('tracker');
-  var result = document.createDocumentFragment();
-  for (let w = 0; w < TOTAL; w++) {
-    const div = document.createElement('div');
-    div.className = w < NOW ? "gone" : "remaining";
-    result.appendChild(div)
-  }
-  tracker.appendChild(result);
-
-  const summary = document.createElement("p");
-  const date = new Date();
-  const output = `${NOW}/${TOTAL}`;
-  summary.textContent = output;
-  tracker.appendChild(summary);
-</script>
-
-<p>Something happened a few months ago that forced me to reflect on my own mortality. All is good now (I hope!), but it was a reminder that it will not always be the case. </p>
-<p>It made me think of a quote at the top of one of my favourite pages on the early Internet, <a href="https://web.archive.org/web/20250121093936/www.apparent-wind.com/sailing-page.html" class="external-link" target="_blank" rel="noopener">Mark Rosenstein’s Sailing Page</a>:</p>
-<blockquote>
-<p>&ldquo;For the truth is that I already know as much about my fate as I need to know. The day will come when I will die. So the only matter of consequence before me is what I will do with my allotted time. I can remain on shore, paralyzed with fear, or I can raise my sails and dip and soar in the breeze.&rdquo;</p>
-<p>&ndash; Richard Bode, <em>First you have to row a little boat</em></p>
-</blockquote>
-<p>I wish I could say that&rsquo;s how I&rsquo;ve been living since I read it (I even read the book), but convenience and routine came between.</p>
-<p>I wouldn&rsquo;t say I&rsquo;ve <em>wasted</em> time, per se. I realised during Covid that it&rsquo;s the little things you do every day that add up to a life, and I&rsquo;m definitely living those. Nevertheless, in the spirit of appreciating those moments even more, and maybe adding in a few more bits, I have now created a life tracker. </p>
-<p>This is inspired by a post I saw on Pinterest in terms of the format, and shows how many weeks I&rsquo;ve used up and how many I may have left, assuming I live as long as the average man of my age in the UK.</p>
-<p>The tracker is updated automatically, based on today’s date, so the clock is ticking.</p>
-<p>Food for thought, when you see it like this.</p></div>
-<footer><time datetime="2026-07-14"><a href="46.html">14 July 2026</a></time><a href="life-stuff.html" class="category">Life Stuff</a></footer>
-</article>
 </main>
 <nav><ul><li class="newer"><a href="index.html">Newer posts</a></li><li class="older"><a href="index-3.html">Older posts</a></li></ul></nav>
         <footer>
@@ -244,6 +187,6 @@
         <img id="_b" alt="" width="1" height="1"
              style="position:absolute;left:-9999px"
              data-src="/api/track/index-2.svg">
-        <script src="resources/blog.js?v=1786878186"></script>
+        <script src="resources/blog.js?v=1786897846"></script>
     </body>
 </html>
