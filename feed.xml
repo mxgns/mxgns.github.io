@@ -4,8 +4,16 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-08-16T00:01:10Z</updated>
+  <updated>2026-08-19T00:01:11Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Photo posted 19 August 2026</title>
+    <link href="https://mxgns.uk/71.html?src=atom" />
+    <id>https://mxgns.uk/71.html</id>
+    <updated>2026-08-19T00:01:11Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/71-image-01-resized.jpeg" alt="Me taking a mirror selfie in a tube station"></figure><p>Sometimes I miss having a real camera.</p>
+<p>Random photo from 28 February 2009.</p>]]></content>
+  </entry>
   <entry>
     <title>Note posted 16 August 2026</title>
     <link href="https://mxgns.uk/70.html?src=atom" />
@@ -408,7 +416,7 @@
 <h4>AI disclosure</h4>
 <p>The following pages have been marked as created with the help of AI:</p>
 <ul class="ai-post-list"><li><a href="syntax.html">Test Page / Syntax Guide</a></li><li><a href="privacy.html">Privacy Policy</a></li></ul>
-<p>This list updates automatically whenever the blog is updated, which last happened <span class="today">18/8/26</span>.</p>
+<p>This list updates automatically whenever the blog is updated, which last happened <span class="today">19/8/26</span>.</p>
 </div>]]></content>
   </entry>
   <entry>
