@@ -4,8 +4,15 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-08-22T00:01:12Z</updated>
+  <updated>2026-08-22T00:01:13Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Photo posted 22 August 2026</title>
+    <link href="https://mxgns.uk/73.html?src=atom" />
+    <id>https://mxgns.uk/73.html</id>
+    <updated>2026-08-22T00:01:13Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/73-image-01-resized.jpg" alt="2 photos side-by-side of a Uttern 2600 hanging in a boathouse, with quite a few years in between."></figure><p>Then and now. My little boat is still hanging in there 🥰</p>]]></content>
+  </entry>
   <entry>
     <title>My 14-day uniform plan</title>
     <link href="https://mxgns.uk/72.html?src=atom" />
