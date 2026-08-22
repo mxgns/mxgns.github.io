@@ -1,0 +1,948 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1170 1360"
+    width="100%"
+    height="100%"
+    font-family="Arial, sans-serif"
+>
+  <rect width="100%" height="100%" fill="#f8f8f6" />
+
+  <text
+        x="40"
+        y="55"
+        font-size="32"
+        font-weight="bold"
+        fill="#1a1a1a"
+    >14-Day Uniform</text>
+
+  <!-- === T-SHIRTS === -->
+  <text
+        x="40"
+        y="105"
+        font-size="22"
+        font-weight="bold"
+    >T-shirts</text>
+
+  <!-- Black #1a1a1a #444-->
+  <g transform="translate(40,145)">
+  <path
+            d="M52,71 L52,176 L158,176 L158,71 L178,88 L205,64 L172,21 L127,6 L84,6 L39,21 L5,64 L33,88 Z"
+            fill="#1a1a1a"
+            stroke="#444"
+            stroke-width="1.8"
+        />
+    <path
+            d="M 84,6 Q 105,23 127,6"
+            fill="none"
+            stroke="#444"
+            stroke-width="1.8"
+        />
+        <text
+            x="105"
+            y="203"
+            text-anchor="middle"
+            font-size="16"
+            fill="#555"
+        >Black Tee ×6</text>
+  </g>
+
+  <!-- White -->
+  <g transform="translate(260,145)">
+  <path
+            d="M52,71 L52,176 L158,176 L158,71 L178,88 L205,64 L172,21 L127,6 L84,6 L39,21 L5,64 L33,88 Z"
+            fill="#fdfdfd"
+            stroke="#ccc"
+            stroke-width="1.8"
+        />
+    <path
+            d="M 84,6 Q 105,23 127,6"
+            fill="none"
+            stroke="#ccc"
+            stroke-width="1.8"
+        />
+        <text
+            x="105"
+            y="203"
+            text-anchor="middle"
+            font-size="16"
+            fill="#555"
+        >White Tee ×8</text>
+  </g>
+
+  <!-- === MID-LAYERS === -->
+  <text
+        x="40"
+        y="400"
+        font-size="22"
+        font-weight="bold"
+        fill="#333"
+    >Hoodies &amp; sweaters</text>
+
+  <!-- Hoodie Black 1a1a1a 444 -->
+  <g transform="translate(40,445)">
+  <path
+            d="M56,193 L159,193 L164,164 L164,139 L164,98 L164,139, L188,186 L210,178 L205,147 L173,52 L163,34 L127,15 L87,15 L52,34 L42,52 L11,147 L5,178 L27,186 L51,139 L51,98 L51,139 L51,164 Z"
+            fill="#1a1a1a"
+            stroke="#444"
+            stroke-width="1.8"
+        />
+  <path
+            d="M75,5 L140,5 L142,22 L108,33 L73,22 L75,5"
+            fill="#1a1a1a"
+            stroke="#444"
+            stroke-width="1.8"
+        />
+  <path d="M75,5 L108,33" stroke="#444" stroke-width="1.8" />
+  <path d="M140,5 L108,33" stroke="#444" stroke-width="1.8" />
+  <path
+            d="M75,123 L140,123 L149,169 L67,169 Z"
+            fill="none"
+            stroke="#444"
+            stroke-width="1.8"
+        />
+        <text
+            x="105"
+            y="220"
+            text-anchor="middle"
+            font-size="16"
+            fill="#555"
+        >Black Hoodie</text>
+
+  </g>
+
+  <!-- Hoodie Navy 1a2a5e 0a1a4e -->
+  <g transform="translate(275,445)">
+  <path
+            d="M56,193 L159,193 L164,164 L164,139 L164,98 L164,139, L188,186 L210,178 L205,147 L173,52 L163,34 L127,15 L87,15 L52,34 L42,52 L11,147 L5,178 L27,186 L51,139 L51,98 L51,139 L51,164 Z"
+            fill="#1a2a5e"
+            stroke="#0a1a4e"
+            stroke-width="1.8"
+        />
+  <path
+            d="M75,5 L140,5 L142,22 L108,33 L73,22 L75,5"
+            fill="#1a2a5e"
+            stroke="#0a1a4e"
+            stroke-width="1.8"
+        />
+  <path d="M75,5 L108,33" stroke="#0a1a4e" stroke-width="1.8" />
+  <path d="M140,5 L108,33" stroke="#0a1a4e" stroke-width="1.8" />
+  <path
+            d="M75,123 L140,123 L149,169 L67,169 Z"
+            fill="none"
+            stroke="#0a1a4e"
+            stroke-width="1.8"
+        />
+        <text
+            x="105"
+            y="220"
+            text-anchor="middle"
+            font-size="16"
+            fill="#555"
+        >Navy Hoodie</text>
+  </g>
+
+  <!-- Hoodie Grey 9a9a9a 777 -->
+  <g transform="translate(510,445)">
+        <path
+            d="M56,193 L159,193 L164,164 L164,139 L164,98 L164,139, L188,186 L210,178 L205,147 L173,52 L163,34 L127,15 L87,15 L52,34 L42,52 L11,147 L5,178 L27,186 L51,139 L51,98 L51,139 L51,164 Z"
+            fill="#9a9a9a"
+            stroke="#777"
+            stroke-width="1.8"
+        />
+        <path
+            d="M75,5 L140,5 L142,22 L108,33 L73,22 L75,5"
+            fill="#9a9a9a"
+            stroke="#777"
+            stroke-width="1.8"
+        />
+        <path d="M75,5 L108,33" stroke="#777" stroke-width="1.8" />
+        <path d="M140,5 L108,33" stroke="#777" stroke-width="1.8" />
+        <path
+            d="M75,123 L140,123 L149,169 L67,169 Z"
+            fill="none"
+            stroke="#777"
+            stroke-width="1.8"
+        />
+        <text
+            x="105"
+            y="220"
+            text-anchor="middle"
+            font-size="16"
+            fill="#555"
+        >Grey Hoodie</text>
+  </g>
+
+  <!-- Sweatshirt Black -->
+  <g transform="translate(40,720)">
+    <path
+            d="M56,183 L159,183 L164,154 L164,129 L164,88 L164,129, L188,176 L210,168 L205,137 L173,42 L163,24 L127,5 L87,5 L52,24 L 42,42 L11,137 L5,168 L27,176 L51,129 L51,88 L51,129 L51,154 Z"
+            fill="#1a1a1a"
+            stroke="#444"
+            stroke-width="1.6"
+        />
+        <path
+            d="M87,5 Q107,26 127,5"
+            fill="none"
+            stroke="#444"
+            stroke-width="1.8"
+        />
+        <text
+            x="105"
+            y="205"
+            text-anchor="middle"
+            font-size="16"
+        >Black Sweatshirt</text>
+  </g>
+
+  <!-- Sweatshirt Charcoal 3a3a3a 222-->
+  <g transform="translate(275,720)">
+    <path
+            d="M56,183 L159,183 L164,154 L164,129 L164,88 L164,129, L188,176 L210,168 L205,137 L173,42 L163,24 L127,5 L87,5 L52,24 L 42,42 L11,137 L5,168 L27,176 L51,129 L51,88 L51,129 L51,154 Z"
+            fill="#3a3a3a"
+            stroke="#222"
+            stroke-width="1.8"
+        />
+        <path
+            d="M87,5 Q107,26 127,5"
+            fill="none"
+            stroke="#222"
+            stroke-width="1.8"
+        />
+        <text
+            x="105"
+            y="205"
+            text-anchor="middle"
+            font-size="16"
+            fill="#555"
+        >Charcoal Sweatshirt</text>
+  </g>
+
+  <!-- Sweatshirt Dusty Olive 7d7960 0a2a1a -->
+  <g transform="translate(510,720)">
+    <path
+            d="M56,183 L159,183 L164,154 L164,129 L164,88 L164,129, L188,176 L210,168 L205,137 L173,42 L163,24 L127,5 L87,5 L52,24 L 42,42 L11,137 L5,168 L27,176 L51,129 L51,88 L51,129 L51,154 Z"
+            fill="#7d7960"
+            stroke="#635d4a"
+            stroke-width="1.8"
+        />
+      <path
+            d="M87,5 Q107,26 127,5"
+            fill="none"
+            stroke="#635d4a"
+            stroke-width="1.8"
+        />
+        <text
+            x="105"
+            y="205"
+            text-anchor="middle"
+            font-size="16"
+            fill="#555"
+        >Olive Sweatshirt</text>
+    </g>
+
+  <!-- === BOTTOMS === -->
+  <text
+        x="40"
+        y="990"
+        font-size="22"
+        font-weight="bold"
+        fill="#333"
+    >Bottoms</text>
+
+  <!-- Jeans Black 1a1a1a 444-->
+  <g transform="translate(40,1035)">
+        <path
+            d="M65,92 L74,264 L126,263 L126,75 L118,32 L115,5 L14,5 L5,75 L5,263 L57,264 Z"
+            fill="#1a1a1a"
+            stroke="#444"
+            stroke-width="1.6"
+        />
+      <path
+            d="M13,32 Q32,33 41,23"
+            fill="none"
+            stroke="#444"
+            stroke-width="1.8"
+        />
+      <path
+            d="M118,32 Q98,33 90,23"
+            fill="none"
+            stroke="#444"
+            stroke-width="1.8"
+        />
+      <path
+            d="M61,12 61,64"
+            fill="none"
+            stroke="#444"
+            stroke-width="1.8"
+        />
+      <path
+            d="M14,5 C43,13 88,13 115,5"
+            fill="none"
+            stroke="#444"
+            stroke-width="1.8"
+        />
+      <path
+            d="M14,17 C43,25 88,25 115,17"
+            fill="none"
+            stroke="#444"
+            stroke-width="1.8"
+        />
+      <circle cx="66" cy="17" r="2.5" stroke="none" fill="#9a9a9a" />
+      <text
+            x="65"
+            y="290"
+            text-anchor="middle"
+            font-size="16"
+            fill="#555"
+        >Black Jeans</text>
+  </g>
+
+  <!-- Jeans Mid-wash -->
+  <g transform="translate(460,1035)">
+    <path
+            d="M65,92 L74,264 L126,263 L126,75 L118,32 L115,5 L14,5 L5,75 L5,263 L57,264 Z"
+            fill="#405A7C"
+            stroke="#3a5a8a"
+            stroke-width="1.6"
+        />
+        <path
+            d="M13,32 Q32,33 41,23"
+            fill="none"
+            stroke="#2a4a7a"
+            stroke-width="1.8"
+        />
+        <path
+            d="M118,32 Q98,33 90,23"
+            fill="none"
+            stroke="#2a4a7a"
+            stroke-width="1.8"
+        />
+        <path
+            d="M61,12 61,64"
+            fill="none"
+            stroke="#2a4a7a"
+            stroke-width="1.8"
+        />
+        <path
+            d="M14,5 C43,13 88,13 115,5"
+            fill="none"
+            stroke="#2a4a7a"
+            stroke-width="1.8"
+        />
+        <path
+            d="M14,17 C43,25 88,25 115,17"
+            fill="none"
+            stroke="#2a4a7a"
+            stroke-width="1.8"
+        />
+        <circle cx="66" cy="17" r="2.5" stroke="none" fill="#9a9a9a" />
+        <text
+            x="65"
+            y="290"
+            text-anchor="middle"
+            font-size="16"
+            fill="#555"
+        >Mid-Wash Jeans</text>
+  </g>
+
+  <!-- Jeans Dark Wash 1e2f5e 0e1f4e -->
+  <g transform="translate(250,1035)">
+  <path
+            d="M65,92 L74,264 L126,263 L126,75 L118,32 L115,5 L14,5 L5,75 L5,263 L57,264 Z"
+            fill="#0E2034"
+            stroke="#1e2f5e"
+            stroke-width="1.6"
+        />
+      <path
+            d="M13,32 Q32,33 41,23"
+            fill="none"
+            stroke="#1e2f5e"
+            stroke-width="1.8"
+        />
+      <path
+            d="M118,32 Q98,33 90,23"
+            fill="none"
+            stroke="#1e2f5e"
+            stroke-width="1.8"
+        />
+      <path
+            d="M61,12 61,64"
+            fill="none"
+            stroke="#1e2f5e"
+            stroke-width="1.8"
+        />
+      <path
+            d="M14,5 C43,13 88,13 115,5"
+            fill="none"
+            stroke="#1e2f5e"
+            stroke-width="1.8"
+        />
+      <path
+            d="M14,17 C43,25 88,25 115,17"
+            fill="none"
+            stroke="#1e2f5e"
+            stroke-width="1.8"
+        />
+      <circle cx="66" cy="17" r="2.5" stroke="none" fill="#9a9a9a" />
+      <text
+            x="65"
+            y="290"
+            text-anchor="middle"
+            font-size="16"
+            fill="#555"
+        >Dark-Wash Jeans</text>
+  </g>
+
+  <!-- Cargo Black -->
+  <g transform="translate(690,1035)">
+    <path
+            d="M65,115 L71,191 L76,264 L122,264 L124,79 L121,41 L116,16 L112,5 L18,5 L14,16 L9,41 L6,71 L8,264 L54,264 L59,191 Z"
+            fill="#1a1a1a"
+            stroke="#444"
+            stroke-width="1.6"        />
+        <path
+            d="M5,94 L5,143 L29,143 L31,140 L31,94 Z"
+            fill="#1a1a1a"
+            stroke="#444"
+            stroke-width="1.6"        />
+        <path
+            d="M5,94 L5,106 L27,106 L31,102 L31,94 Z"
+            fill="#1a1a1a"
+            stroke="#444"
+            stroke-width="1.6"        />
+        <path
+            d="M99,94 L99,140 L101,143 L125,143 L125,94 Z"
+            fill="#1a1a1a"
+            stroke="#444"
+            stroke-width="1.6"        />
+        <path
+            d="M99,94 L99,102 L103,106 L125,106 L125,94 Z"
+            fill="#1a1a1a"
+            stroke="#444"
+            stroke-width="1.6"        />
+        <path
+            d="M14,16 L116,16"
+            fill="none"
+            stroke="#4b4b0a"
+            stroke-width="1.8"
+        />
+        <text
+            x="63"
+            y="290"
+            text-anchor="middle"
+            font-size="16"
+            fill="#555"
+        >Black Cargos</text>
+
+      </g>
+
+
+  <!-- Dungarees Black -->
+  <g transform="translate(885,888)">
+        <path
+            d="M90,69 L116,7 L105,5 L75,69 Z"
+            fill="#1a1a1a"
+            stroke="#444"
+            stroke-width="1.8"
+        />
+        <path
+            d="M106,64 L116,7 L105,5 L95,63 Z"
+            fill="#1a1a1a"
+            stroke="#444"
+            stroke-width="1.8"
+        />
+        <path
+            d="M65,68 L33,5 L21,7 L51,68 Z"
+            fill="#1a1a1a"
+            stroke="#444"
+            stroke-width="1.8"
+        />
+        <path
+            d="M45,63 L33,5 L21,7 L35,64 Z"
+            fill="#1a1a1a"
+            stroke="#444"
+            stroke-width="1.8"
+        />
+        <path
+            d="M70,246 L90,412 L135,412 L131,241 L123,170 L123,140 L106,68 L37,68 L17,140 L17,170 L9,241 L5,412 L50,412 Z"
+            fill="#1a1a1a"
+            stroke="#444"
+            stroke-width="1.8"
+        />
+        <path
+            d="M43,95 L98,95 L98,130 L93,135 L48,135 L43,130 Z"
+            fill="none"
+            stroke="#444"
+            stroke-width="1.8"
+        />
+        <path
+            d="M17,157 L123,157"
+            fill="none"
+            stroke="#444"
+            stroke-width="1.8"
+        />
+        <path
+            d="M17,170 L123,170"
+            fill="none"
+            stroke="#444"
+            stroke-width="1.8"
+        />
+        <path
+            d="M15,194 L39,170"
+            fill="none"
+            stroke="#444"
+            stroke-width="1.8"
+        />
+        <path
+            d="M125,194 L102,170"
+            fill="none"
+            stroke="#444"
+            stroke-width="1.8"
+        />
+        <circle cx="42" cy="73" r="2.5" stroke="none" fill="#9a9a9a" />
+        <circle cx="100" cy="73" r="2.5" stroke="none" fill="#9a9a9a" />
+        <text
+            x="70"
+            y="439"
+            text-anchor="middle"
+            font-size="16"
+        >Black Dungarees</text>
+  </g>
+
+
+  <text
+        x="550"
+        y="75"
+        font-size="22"
+        font-weight="bold"
+        fill="#333"
+    >Outerwear</text>
+
+
+  <!-- Puffer Black -->
+  <g transform="translate(550,100)">
+
+    <!-- left sleeve -->
+    <path
+            d="M47,198 Q49,214 46,226 L11,230 Q2,214 5,198 Q2,176 6,159 Q4,139 10,121 Q10,99 17,83 Q20,65 30,51 L50,78 Z"
+            fill="#1a1a1a"
+            stroke="#444"
+            stroke-width="1.2"
+        />
+        <path d="M5,198 L47,196" stroke="#444" stroke-width="1.2" />
+        <path d="M6,159 L48,159" stroke="#444" stroke-width="1.2" />
+        <path d="M10,121 L49,121" stroke="#444" stroke-width="1.2" />
+        <path d="M16,83 L50,94" stroke="#444" stroke-width="1.2" />
+
+        <!-- left body -->
+        <path
+            d="M50,78 L48,192 L54,216 Q75,218 101,218 L101,44 L71,25 Q47,36 30,51 Z"
+            fill="#1a1a1a"
+            stroke="#444"
+            stroke-width="1.2"
+        />
+
+        <path d="M48,165 L101,165" stroke="#444" stroke-width="1.2" />
+        <path d="M49,119 L101,119" stroke="#444" stroke-width="1.2" />
+        <path d="M50,78 Q75,72 101,71" stroke="#444" stroke-width="1.2" />
+
+        <!-- right sleeve -->
+        <path
+            d="M155,198 Q153,214 156,226 L191,230 Q200,214 197,198 Q200,176 196,159 Q198,139 192,121 Q192,99 185,83 Q182,65 172,51 L152,78 Z"
+            fill="#1a1a1a"
+            stroke="#444"
+            stroke-width="1.2"
+        />
+        <path d="M197,198 L155,196" stroke="#444" stroke-width="1.2" />
+        <path d="M196,159 L154,159" stroke="#444" stroke-width="1.2" />
+        <path d="M192,121 L153,121" stroke="#444" stroke-width="1.2" />
+        <path d="M186,83 L152,94" stroke="#444" stroke-width="1.2" />
+
+
+        <!-- right body -->
+        <path
+            d="M152,78 L154,192 L148,216 Q127,218 101,218 L101,44 L131,25 Q155,36 172,51 Z"
+            fill="#1a1a1a"
+            stroke="#444"
+            stroke-width="1.2"
+        />
+        <path d="M154,165 L101,165" stroke="#444" stroke-width="1.2" />
+        <path d="M153,119 L101,119" stroke="#444" stroke-width="1.2" />
+        <path d="M152,78 Q127,72 101,71" stroke="#444" stroke-width="1.2" />
+
+        <!-- collar -->
+        <path
+            d="M78,6 L124,6 L130,10 L131,25 L101,44 L71,25 L72,10 Z"
+            fill="#1a1a1a"
+            stroke="#444"
+            stroke-width="1.2"
+        />
+
+        <path d="M78,6 Q101,20 124,6" stroke="#444" stroke-width="1.2" />
+        <path d="M101,13 101,44" stroke="#444" stroke-width="1.2" />
+        <text
+            x="100"
+            y="255"
+            text-anchor="middle"
+            font-size="16"
+            fill="#555"
+        >Black puffer</text>
+    </g>
+
+    <!-- Shell black -->
+    <g transform="translate(770,90)">
+
+    <path
+            d="M5,224 L36,234 L49,193 L66,91 L49,193 L46,222 Q114,236 182,222 L179,193 L163,91 L179,193 L192,234 L224,224 L171,56 L168,52 L142,40 Q140,25 137,12 L127,6 L114,5 L100,6 L92,12 Q88,25 86,40 L60,52 L56,56 Z"
+            fill="#1a1a1a"
+            stroke="#444"
+            stroke-width="1.2"
+        />
+
+    <path
+            d="M92,12 L99,21 L114,23 L128,21 L137,12"
+            stroke="#444"
+            stroke-width="1.2"
+        />
+
+    <path d="M46,222 Q114,220 182,222" stroke="#444" stroke-width="1.2" />
+    <path d="M114,23 L114,220" stroke="#444" stroke-width="1.2" />
+    <path d="M79,141 L65,201" stroke="#444" stroke-width="1.2" />
+    <path d="M149,141 L163,201" stroke="#444" stroke-width="1.2" />
+    <text
+            x="115"
+            y="265"
+            text-anchor="middle"
+            font-size="16"
+            fill="#555"
+        >Black Shell</text>
+    </g>
+
+    <text
+        x="770"
+        y="410"
+        font-size="22"
+        font-weight="bold"
+    >Trainers</text>
+
+    <!-- Trainers White -->
+    <g transform="translate(900,440)">
+
+        <g>
+            <path
+                d="M33,8 L40,14 L43,24 L44,38 L43,53 L42,66 L42,79 L42,90 L40,100 L35,106 L29,111 L22,111 L17,107 L13,99 L10,89 L10,78 L9,66 L7,53 L7,38 L9,26 L13,15 L23,7 Z"
+                fill="#fdfdfd"
+                stroke="#ccc"
+                stroke-width="1.8"
+            />
+            <path
+                d="M35,79 L35,87 L35,94 L32,101 L25,103 L19,100 L17,95 L15,85 L16,79 L19,75 L26,74 L31,75 Z"
+                fill="#ededed"
+                stroke="#ccc"
+                stroke-width="1.8"
+            />
+            <path
+                d="M35,79 L35,75 L33,70 L32,63 L32,56 L33,37 L30,35 L24,34 L20,36 L19,66 L16,74 L16,79"
+                fill="none"
+                stroke="#ccc"
+                stroke-width="1.8"
+            />
+            <path d="M18,37 L34,37" stroke="#ccc" stroke-width="3" />
+            <path d="M18,37 L32,40" stroke="#ccc" stroke-width="3" />
+            <path d="M18,43 L32,46" stroke="#ccc" stroke-width="3" />
+            <path d="M18,48 L32,52" stroke="#ccc" stroke-width="3" />
+            <path d="M18,53 L32,57" stroke="#ccc" stroke-width="3" />
+            <path d="M18,59 L36,64" stroke="#ccc" stroke-width="3" />
+
+            <path d="M20,43 33,40" stroke="#ccc" stroke-width="3" />
+            <path d="M20,47 35,43" stroke="#ccc" stroke-width="3" />
+            <path d="M20,52 35,48" stroke="#ccc" stroke-width="3" />
+            <path d="M20,57 35,54" stroke="#ccc" stroke-width="3" />
+            <path d="M16,65 35,59" stroke="#ccc" stroke-width="3" />
+        </g>
+
+        <g transform="scale(-1, 1) translate(-105,0)">
+            <path
+                d="M33,8 L40,14 L43,24 L44,38 L43,53 L42,66 L42,79 L42,90 L40,100 L35,106 L29,111 L22,111 L17,107 L13,99 L10,89 L10,78 L9,66 L7,53 L7,38 L9,26 L13,15 L23,7 Z"
+                fill="#fdfdfd"
+                stroke="#ccc"
+                stroke-width="1.8"
+            />
+            <path
+                d="M35,79 L35,87 L35,94 L32,101 L25,103 L19,100 L17,95 L15,85 L16,79 L19,75 L26,74 L31,75 Z"
+                fill="#ededed"
+                stroke="#ccc"
+                stroke-width="1.8"
+            />
+            <path
+                d="M35,79 L35,75 L33,70 L32,63 L32,56 L33,37 L30,35 L24,34 L20,36 L19,66 L16,74 L16,79"
+                fill="none"
+                stroke="#ccc"
+                stroke-width="1.8"
+            />
+            <path d="M18,37 L34,37" stroke="#ccc" stroke-width="3" />
+            <path d="M18,37 L32,40" stroke="#ccc" stroke-width="3" />
+            <path d="M18,43 L32,46" stroke="#ccc" stroke-width="3" />
+            <path d="M18,48 L32,52" stroke="#ccc" stroke-width="3" />
+            <path d="M18,53 L32,57" stroke="#ccc" stroke-width="3" />
+            <path d="M18,59 L36,64" stroke="#ccc" stroke-width="3" />
+
+            <path d="M20,43 33,40" stroke="#ccc" stroke-width="3" />
+            <path d="M20,47 35,43" stroke="#ccc" stroke-width="3" />
+            <path d="M20,52 35,48" stroke="#ccc" stroke-width="3" />
+            <path d="M20,57 35,54" stroke="#ccc" stroke-width="3" />
+            <path d="M16,65 35,59" stroke="#ccc" stroke-width="3" />
+        </g>
+        <text x="53" y="135" text-anchor="middle" font-size="16">
+            White Trainers
+        </text>
+    </g>
+
+    <!-- Trainers Grey -->
+    <g transform="translate(1030,440)">
+
+        <g>
+            <path
+                d="M33,8 L40,14 L43,24 L44,38 L43,53 L42,66 L42,79 L42,90 L40,100 L35,106 L29,111 L22,111 L17,107 L13,99 L10,89 L10,78 L9,66 L7,53 L7,38 L9,26 L13,15 L23,7 Z"
+                fill="#9a9a9a"
+                stroke="#777"
+                stroke-width="1.8"
+            />
+            <path
+                d="M35,79 L35,87 L35,94 L32,101 L25,103 L19,100 L17,95 L15,85 L16,79 L19,75 L26,74 L31,75 Z"
+                fill="#8a9a9a"
+                stroke="#777"
+                stroke-width="1.8"
+            />
+            <path
+                d="M35,79 L35,75 L33,70 L32,63 L32,56 L33,37 L30,35 L24,34 L20,36 L19,66 L16,74 L16,79"
+                fill="none"
+                stroke="#777"
+                stroke-width="1.8"
+            />
+            <path d="M18,37 L34,37" stroke="#777" stroke-width="3" />
+            <path d="M18,37 L32,40" stroke="#777" stroke-width="3" />
+            <path d="M18,43 L32,46" stroke="#777" stroke-width="3" />
+            <path d="M18,48 L32,52" stroke="#777" stroke-width="3" />
+            <path d="M18,53 L32,57" stroke="#777" stroke-width="3" />
+            <path d="M18,59 L36,64" stroke="#777" stroke-width="3" />
+
+            <path d="M20,43 33,40" stroke="#777" stroke-width="3" />
+            <path d="M20,47 35,43" stroke="#777" stroke-width="3" />
+            <path d="M20,52 35,48" stroke="#777" stroke-width="3" />
+            <path d="M20,57 35,54" stroke="#777" stroke-width="3" />
+            <path d="M16,65 35,59" stroke="#777" stroke-width="3" />
+        </g>
+
+        <g transform="scale(-1, 1) translate(-105,0)">
+            <path
+                d="M33,8 L40,14 L43,24 L44,38 L43,53 L42,66 L42,79 L42,90 L40,100 L35,106 L29,111 L22,111 L17,107 L13,99 L10,89 L10,78 L9,66 L7,53 L7,38 L9,26 L13,15 L23,7 Z"
+                fill="#9a9a9a"
+                stroke="#777"
+                stroke-width="1.8"
+            />
+            <path
+                d="M35,79 L35,87 L35,94 L32,101 L25,103 L19,100 L17,95 L15,85 L16,79 L19,75 L26,74 L31,75 Z"
+                fill="#8a8a8a"
+                stroke="#777"
+                stroke-width="1.8"
+            />
+            <path
+                d="M35,79 L35,75 L33,70 L32,63 L32,56 L33,37 L30,35 L24,34 L20,36 L19,66 L16,74 L16,79"
+                fill="none"
+                stroke="#777"
+                stroke-width="1.8"
+            />
+            <path d="M18,37 L34,37" stroke="#777" stroke-width="3" />
+            <path d="M18,37 L32,40" stroke="#777" stroke-width="3" />
+            <path d="M18,43 L32,46" stroke="#777" stroke-width="3" />
+            <path d="M18,48 L32,52" stroke="#777" stroke-width="3" />
+            <path d="M18,53 L32,57" stroke="#777" stroke-width="3" />
+            <path d="M18,59 L36,64" stroke="#777" stroke-width="3" />
+
+            <path d="M20,43 33,40" stroke="#777" stroke-width="3" />
+            <path d="M20,47 35,43" stroke="#777" stroke-width="3" />
+            <path d="M20,52 35,48" stroke="#777" stroke-width="3" />
+            <path d="M20,57 35,54" stroke="#777" stroke-width="3" />
+            <path d="M16,65 35,59" stroke="#777" stroke-width="3" />
+        </g>
+        <text x="53" y="135" text-anchor="middle" font-size="16">
+            Grey Trainers
+        </text>
+    </g>
+
+    <!-- Trainers Black -->
+    <g transform="translate(770,440)">
+
+        <g>
+            <path
+                d="M33,8 L40,14 L43,24 L44,38 L43,53 L42,66 L42,79 L42,90 L40,100 L35,106 L29,111 L22,111 L17,107 L13,99 L10,89 L10,78 L9,66 L7,53 L7,38 L9,26 L13,15 L23,7 Z"
+                fill="#1a1a1a"
+                stroke="#444"
+                stroke-width="1.8"
+            />
+            <path
+                d="M35,79 L35,87 L35,94 L32,101 L25,103 L19,100 L17,95 L15,85 L16,79 L19,75 L26,74 L31,75 Z"
+                fill="#0a0a0a"
+                stroke="#444"
+                stroke-width="1.8"
+            />
+            <path
+                d="M35,79 L35,75 L33,70 L32,63 L32,56 L33,37 L30,35 L24,34 L20,36 L19,66 L16,74 L16,79"
+                fill="none"
+                stroke="#444"
+                stroke-width="1.8"
+            />
+            <path d="M18,37 L34,37" stroke="#444" stroke-width="3" />
+            <path d="M18,37 L32,40" stroke="#444" stroke-width="3" />
+            <path d="M18,43 L32,46" stroke="#444" stroke-width="3" />
+            <path d="M18,48 L32,52" stroke="#444" stroke-width="3" />
+            <path d="M18,53 L32,57" stroke="#444" stroke-width="3" />
+            <path d="M18,59 L36,64" stroke="#444" stroke-width="3" />
+
+            <path d="M20,43 33,40" stroke="#444" stroke-width="3" />
+            <path d="M20,47 35,43" stroke="#444" stroke-width="3" />
+            <path d="M20,52 35,48" stroke="#444" stroke-width="3" />
+            <path d="M20,57 35,54" stroke="#444" stroke-width="3" />
+            <path d="M16,65 35,59" stroke="#444" stroke-width="3" />
+        </g>
+
+        <g transform="scale(-1, 1) translate(-105,0)">
+            <path
+                d="M33,8 L40,14 L43,24 L44,38 L43,53 L42,66 L42,79 L42,90 L40,100 L35,106 L29,111 L22,111 L17,107 L13,99 L10,89 L10,78 L9,66 L7,53 L7,38 L9,26 L13,15 L23,7 Z"
+                fill="#1a1a1a"
+                stroke="#444"
+                stroke-width="1.8"
+            />
+            <path
+                d="M35,79 L35,87 L35,94 L32,101 L25,103 L19,100 L17,95 L15,85 L16,79 L19,75 L26,74 L31,75 Z"
+                fill="#0a0a0a"
+                stroke="#444"
+                stroke-width="1.8"
+            />
+            <path
+                d="M35,79 L35,75 L33,70 L32,63 L32,56 L33,37 L30,35 L24,34 L20,36 L19,66 L16,74 L16,79"
+                fill="none"
+                stroke="#444"
+                stroke-width="1.8"
+            />
+            <path d="M18,37 L34,37" stroke="#444" stroke-width="3" />
+            <path d="M18,37 L32,40" stroke="#444" stroke-width="3" />
+            <path d="M18,43 L32,46" stroke="#444" stroke-width="3" />
+            <path d="M18,48 L32,52" stroke="#444" stroke-width="3" />
+            <path d="M18,53 L32,57" stroke="#444" stroke-width="3" />
+            <path d="M18,59 L36,64" stroke="#444" stroke-width="3" />
+
+            <path d="M20,43 33,40" stroke="#444" stroke-width="3" />
+            <path d="M20,47 35,43" stroke="#444" stroke-width="3" />
+            <path d="M20,52 35,48" stroke="#444" stroke-width="3" />
+            <path d="M20,57 35,54" stroke="#444" stroke-width="3" />
+            <path d="M16,65 35,59" stroke="#444" stroke-width="3" />
+        </g>
+        <text x="53" y="135" text-anchor="middle" font-size="16">
+            Black Trainers
+        </text>
+
+    </g>
+
+    <text
+        x="770"
+        y="650"
+        font-size="22"
+        font-weight="bold"
+    >Socks</text>
+
+    <!-- Socks Black -->
+    <g transform="translate(800,690)">
+        <g transform="translate(7,-7)">
+        <path
+            d="
+                M32,5
+                L32,56
+                Q33,66 37,74
+                L58,104
+                Q58,121 41,117
+                Q19,89 11,84
+                Q5,78 8,68
+                L10,58
+                L10,5
+                Z
+            "
+            fill="#1a1a1a"
+            stroke="#444"
+            stroke-width="1.8"
+        />
+        </g>
+        <g>
+        <path
+            d="
+                M32,5
+                L32,56
+                Q33,66 37,74
+                L58,104
+                Q58,121 41,117
+                Q19,89 11,84
+                Q5,78 8,68
+                L10,58
+                L10,5
+                Z
+            "
+            fill="#1a1a1a"
+            stroke="#444"
+            stroke-width="1.8"
+        />
+        </g>
+
+        <text x="40" y="145" text-anchor="middle" font-size="16">
+            Black Socks ×8
+        </text>
+    </g>
+
+    <!-- Socks White -->
+    <g transform="translate(930,690)">
+        <g transform="translate(7,-7)">
+        <path
+            d="
+                M32,5
+                L32,56
+                Q33,66 37,74
+                L58,104
+                Q58,121 41,117
+                Q19,89 11,84
+                Q5,78 8,68
+                L10,58
+                L10,5
+                Z
+            "
+            fill="#fdfdfd"
+            stroke="#ccc"
+            stroke-width="1.8"
+        />
+        </g>
+        <g>
+        <path
+            d="
+                M32,5
+                L32,56
+                Q33,66 37,74
+                L58,104
+                Q58,121 41,117
+                Q19,89 11,84
+                Q5,78 8,68
+                L10,58
+                L10,5
+                Z
+            "
+            fill="#fdfdfd"
+            stroke="#ccc"
+            stroke-width="1.8"
+        />
+        </g>
+        <text x="40" y="145" text-anchor="middle" font-size="16">
+            White Socks ×8
+        </text>
+    </g>
+
+
+
+</svg>

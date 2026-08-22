@@ -15,11 +15,11 @@
         <link rel="icon" href="resources/icon.png">
         <link
             rel="stylesheet"
-            href="resources/style.css?v=1787165882"
+            href="resources/style.css?v=1787389882"
         >
         <link
             rel="stylesheet"
-            href="resources/assorted.css?v=1787165882"
+            href="resources/assorted.css?v=1787389882"
         >
         <link
             rel="alternate"
@@ -37,6 +37,79 @@
         </header>
         <div id="_ab" class="analytics-banner" hidden></div>
         <main>
+<article id="post-22" class="multiple-posts full-post">
+<h2><a href="22.html">Character counter tool</a></h2>
+<div class="post-body"><p>Here&rsquo;s a little hand-cranked tool for counting the number of characters of a text. I&rsquo;ve created it for when posting microblog posts here on the blog, as those can only be 240 characters long.</p>
+<style>
+
+    #counter-form {
+        margin-top: 1.5rem;
+    }
+
+    #counter-text {
+        background-color: #eceff1;
+        border: 1px solid #dee1d3;
+        min-height: 5rem;
+        font-size: 1rem;
+        width: 100%;
+        padding: 1rem;
+        border-radius: 6px;
+        resize: none;
+        outline: none;
+        overflow: hidden;
+        transition: height 0.2s ease;
+        line-height: 1.5rem;
+    }
+
+    #counter-counter {
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-align: right;
+        margin-top: 0.5rem;
+    }
+
+    .counter-ok {
+      color: #43a047;
+    }
+    .counter-warning {
+        color: #fb8c00;
+    }
+    .counter-nok {
+        color: #e53935;
+    }
+
+</style>
+
+<script>
+  function updateCounter() {
+    var text =  document.getElementById("counter-text");
+    var counter = document.getElementById("counter-counter");
+    var len = text.value.length;
+
+    counter.innerHTML = len;
+    text.style.height = "auto";
+    text.style.height = text.scrollHeight + "px";
+
+    if (len > 240) {
+      counter.className = "counter-nok";
+    } else if (len > 235) {
+      counter.className = "counter-warning";
+    } else {
+      counter.className = "counter-ok";
+    }
+  }
+</script>
+
+<form id="counter-form">
+    <textarea
+        id="counter-text"
+        oninput="script: updateCounter();"
+        placeholder="Enter text here to count the number of characters"
+    ></textarea>
+    <div id="counter-counter" class="counter-ok">0</div>
+</form></div>
+<footer><time datetime="2026-06-13"><a href="22.html">13 June 2026</a></time><a href="making-things.html" class="category">Making Things</a></footer>
+</article>
 <article id="post-21" class="multiple-posts image-post">
 <div class="post-images">
 <figure><a href="21.html"><img src="21-image-01-resized.jpg" alt="Sunlight through green leaves"></a></figure>
@@ -121,11 +194,6 @@
 <div class="post-body"><p>This is my first commute by public transport in eight years. It takes just under 40 minutes door to door but I&rsquo;m no longer getting my 10K steps per day.</p></div>
 <footer><time datetime="2026-06-05"><a href="11.html">5 June 2026</a></time><a href="day-to-day.html" class="category">Day-to-Day</a></footer>
 </article>
-<article id="post-10" class="multiple-posts note">
-<h2><a href="10.html">Note posted 5 June 2026</a></h2>
-<div class="post-body"><p>Why are the doors inside UK flats self-closing, so you need to bend down and remove a doorstop whenever you <em>actually</em> want to close the door? 🤔</p></div>
-<footer><time datetime="2026-06-05"><a href="10.html">5 June 2026</a></time><a href="notes.html" class="notes">Short note</a><a href="day-to-day.html" class="category">Day-to-Day</a></footer>
-</article>
 </main>
 <nav><ul><li class="newer"><a href="index-4.html">Newer posts</a></li><li class="older"><a href="index-6.html">Older posts</a></li></ul></nav>
         <footer>
@@ -138,6 +206,6 @@
         <img id="_b" alt="" width="1" height="1"
              style="position:absolute;left:-9999px"
              data-src="/api/track/index-5.svg">
-        <script src="resources/blog.js?v=1787165882"></script>
+        <script src="resources/blog.js?v=1787389882"></script>
     </body>
 </html>
