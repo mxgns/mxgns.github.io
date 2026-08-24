@@ -40,6 +40,84 @@
        clear status colour rather than the -900 tier's muted container text. */
     --pink-600: #b53047;
     --green-600: #61701a;
+
+    --overlay-soft: rgba(0, 0, 0, 0.07);
+
+    color-scheme: light;
+}
+
+/* === Colours: dark palette ===
+   Applies when the visitor's system prefers dark and they haven't forced
+   light via the theme switcher, or when they've forced dark explicitly.
+   The category/callout colours (pink/green/yellow/blue/beige/brown pairs,
+   the comment card, the avatar chip and the calendar heatmap) are
+   deliberately left unchanged in both themes: each is an opaque background
+   paired with its own fixed text colour, already readable on its own
+   terms regardless of the page background, so re-deriving six colour
+   pairs would add risk without a real payoff. */
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        --black: #ececec;
+        --white: #16161a;
+
+        --grey-600: #9a9a9a;
+        --grey-400: #6e6e6e;
+        --grey-300: #6a6a6a;
+        --grey-200: #2c2c30;
+        --grey-150: #29292d;
+        --grey-100: #232327;
+
+        --blue-600: #6ea8ff;
+        --blue-800: #a0c4ff;
+
+        --purple-600: #c9a3f0;
+        --purple-800: #ddc2f7;
+
+        --green-600: #8fce55;
+        --pink-600: #ef7f92;
+
+        --yellow-500: #e3a83c;
+
+        --overlay-soft: rgba(255, 255, 255, 0.09);
+
+        color-scheme: dark;
+    }
+
+    :root:not([data-theme="light"]) mark {
+        color: #1a1a1a;
+    }
+}
+
+:root[data-theme="dark"] {
+    --black: #ececec;
+    --white: #16161a;
+
+    --grey-600: #9a9a9a;
+    --grey-400: #6e6e6e;
+    --grey-300: #6a6a6a;
+    --grey-200: #2c2c30;
+    --grey-150: #29292d;
+    --grey-100: #232327;
+
+    --blue-600: #6ea8ff;
+    --blue-800: #a0c4ff;
+
+    --purple-600: #c9a3f0;
+    --purple-800: #ddc2f7;
+
+    --green-600: #8fce55;
+    --pink-600: #ef7f92;
+
+    --yellow-500: #e3a83c;
+
+    --overlay-soft: rgba(255, 255, 255, 0.09);
+
+    color-scheme: dark;
+}
+
+:root[data-theme="dark"] mark {
+    color: #1a1a1a;
 }
 
 /* === Reset & base === */
@@ -119,6 +197,14 @@ header .masthead-logo:hover {
     border-bottom-color: var(--black);
 }
 
+/* Groups the nav and the theme switcher so header's space-between still
+   only has two children (logo, this group) and they stay adjacent. */
+header .masthead-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
 header .masthead-nav ul {
     list-style: none;
     display: flex;
@@ -133,7 +219,7 @@ header .masthead-nav li {
     align-items: center;
 }
 
-header .masthead-nav a:not(.nav-feed) {
+header .masthead-nav a {
     display: inline-block;
     line-height: 1;
     font-size: 1.07rem;
@@ -143,39 +229,9 @@ header .masthead-nav a:not(.nav-feed) {
     border-bottom: 6px solid transparent;
 }
 
-header .masthead-nav a:not(.nav-feed):hover,
-header .masthead-nav a:not(.nav-feed).current {
+header .masthead-nav a:hover,
+header .masthead-nav a.current {
     border-bottom-color: var(--black);
-}
-
-header .masthead-nav a.nav-feed {
-    display: inline-flex;
-    align-items: center;
-    font-size: 0;
-    color: var(--black);
-    text-decoration: none;
-    padding-bottom: 0.5rem;
-    border-bottom: 6px solid transparent;
-}
-
-header .masthead-nav a.nav-feed::before {
-    content: "";
-    display: inline-block;
-    width: 1.4rem;
-    height: 1.4rem;
-    background-color: currentColor;
-    -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48cGF0aCBkPSJNMTYwIDk2QzEyNC43IDk2IDk2IDEyNC43IDk2IDE2MEw5NiA0ODBDOTYgNTE1LjMgMTI0LjcgNTQ0IDE2MCA1NDRMNDgwIDU0NEM1MTUuMyA1NDQgNTQ0IDUxNS4zIDU0NCA0ODBMNTQ0IDE2MEM1NDQgMTI0LjcgNTE1LjMgOTYgNDgwIDk2TDE2MCA5NnpNMTkyIDIwMEMxOTIgMTg2LjcgMjAyLjcgMTc2IDIxNiAxNzZDMzUzIDE3NiA0NjQgMjg3IDQ2NCA0MjRDNDY0IDQzNy4zIDQ1My4zIDQ0OCA0NDAgNDQ4QzQyNi43IDQ0OCA0MTYgNDM3LjMgNDE2IDQyNEM0MTYgMzEzLjUgMzI2LjUgMjI0IDIxNiAyMjRDMjAyLjcgMjI0IDE5MiAyMTMuMyAxOTIgMjAwek0xOTIgMjk2QzE5MiAyODIuNyAyMDIuNyAyNzIgMjE2IDI3MkMyOTkuOSAyNzIgMzY4IDM0MC4xIDM2OCA0MjRDMzY4IDQzNy4zIDM1Ny4zIDQ0OCAzNDQgNDQ4QzMzMC43IDQ0OCAzMjAgNDM3LjMgMzIwIDQyNEMzMjAgMzY2LjYgMjczLjQgMzIwIDIxNiAzMjBDMjAyLjcgMzIwIDE5MiAzMDkuMyAxOTIgMjk2ek0xOTIgNDE2QzE5MiAzOTguMyAyMDYuMyAzODQgMjI0IDM4NEMyNDEuNyAzODQgMjU2IDM5OC4zIDI1NiA0MTZDMjU2IDQzMy43IDI0MS43IDQ0OCAyMjQgNDQ4QzIwNi4zIDQ0OCAxOTIgNDMzLjcgMTkyIDQxNnoiLz48L3N2Zz4=");
-    mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48cGF0aCBkPSJNMTYwIDk2QzEyNC43IDk2IDk2IDEyNC43IDk2IDE2MEw5NiA0ODBDOTYgNTE1LjMgMTI0LjcgNTQ0IDE2MCA1NDRMNDgwIDU0NEM1MTUuMyA1NDQgNTQ0IDUxNS4zIDU0NCA0ODBMNTQ0IDE2MEM1NDQgMTI0LjcgNTE1LjMgOTYgNDgwIDk2TDE2MCA5NnpNMTkyIDIwMEMxOTIgMTg2LjcgMjAyLjcgMTc2IDIxNiAxNzZDMzUzIDE3NiA0NjQgMjg3IDQ2NCA0MjRDNDY0IDQzNy4zIDQ1My4zIDQ0OCA0NDAgNDQ4QzQyNi43IDQ0OCA0MTYgNDM3LjMgNDE2IDQyNEM0MTYgMzEzLjUgMzI2LjUgMjI0IDIxNiAyMjRDMjAyLjcgMjI0IDE5MiAyMTMuMyAxOTIgMjAwek0xOTIgMjk2QzE5MiAyODIuNyAyMDIuNyAyNzIgMjE2IDI3MkMyOTkuOSAyNzIgMzY4IDM0MC4xIDM2OCA0MjRDMzY4IDQzNy4zIDM1Ny4zIDQ0OCAzNDQgNDQ4QzMzMC43IDQ0OCAzMjAgNDM3LjMgMzIwIDQyNEMzMjAgMzY2LjYgMjczLjQgMzIwIDIxNiAzMjBDMjAyLjcgMzIwIDE5MiAzMDkuMyAxOTIgMjk2ek0xOTIgNDE2QzE5MiAzOTguMyAyMDYuMyAzODQgMjI0IDM4NEMyNDEuNyAzODQgMjU2IDM5OC4zIDI1NiA0MTZDMjU2IDQzMy43IDI0MS43IDQ0OCAyMjQgNDQ4QzIwNi4zIDQ0OCAxOTIgNDMzLjcgMTkyIDQxNnoiLz48L3N2Zz4=");
-    -webkit-mask-size: contain;
-    mask-size: contain;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-    mask-position: center;
-}
-
-header .masthead-nav a.nav-feed:hover::before {
-    transform: scale(1.15);
 }
 
 @media (max-width: 600px) {
@@ -186,9 +242,105 @@ header .masthead-nav a.nav-feed:hover::before {
         padding-bottom: 3rem;
     }
 
-    header .masthead-nav {
+    header .masthead-right {
         order: -1;
+        flex-wrap: wrap;
+        justify-content: center;
     }
+}
+
+/* === Theme switcher === */
+
+/* The divider is a top-aligned pseudo-element instead of a border spanning
+   the switcher's own box: the toggle button reserves space below its icon
+   for the same hover/current underline trick the nav links use, so a
+   border-left across the full box would sit lower than the visible nav
+   text. Matching the icon's own height and top edge instead keeps it
+   level with the text. */
+.theme-switcher {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
+}
+
+.theme-switcher::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 1.25rem;
+    background: var(--grey-300);
+}
+
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    padding-bottom: 0.5rem;
+    border: none;
+    border-bottom: 6px solid transparent;
+    background: none;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.theme-toggle-icon {
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: currentColor;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+}
+
+.theme-toggle:hover .theme-toggle-icon {
+    transform: scale(1.15);
+}
+
+/* The icon shows the theme a click switches TO, not the current one, so
+   it's the moon (switch to dark) while light and the sun (switch to
+   light) while dark — inverted from the palette's own light/dark logic,
+   but otherwise the same CSS-only trick, no JS needed to stay in sync
+   with system changes. */
+.theme-toggle-icon.icon-sun {
+    display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .theme-toggle-icon.icon-moon {
+        display: none;
+    }
+
+    :root:not([data-theme="light"]) .theme-toggle-icon.icon-sun {
+        display: inline-block;
+    }
+}
+
+:root[data-theme="dark"] .theme-toggle-icon.icon-moon {
+    display: none;
+}
+
+:root[data-theme="dark"] .theme-toggle-icon.icon-sun {
+    display: inline-block;
+}
+
+.theme-toggle-icon.icon-sun {
+    -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSI0Ii8+PHBhdGggZD0iTTEyIDJ2MiIvPjxwYXRoIGQ9Ik0xMiAyMHYyIi8+PHBhdGggZD0ibTQuOTMgNC45MyAxLjQxIDEuNDEiLz48cGF0aCBkPSJtMTcuNjYgMTcuNjYgMS40MSAxLjQxIi8+PHBhdGggZD0iTTIgMTJoMiIvPjxwYXRoIGQ9Ik0yMCAxMmgyIi8+PHBhdGggZD0ibTYuMzQgMTcuNjYtMS40MSAxLjQxIi8+PHBhdGggZD0ibTE5LjA3IDQuOTMtMS40MSAxLjQxIi8+PC9zdmc+");
+    mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSI0Ii8+PHBhdGggZD0iTTEyIDJ2MiIvPjxwYXRoIGQ9Ik0xMiAyMHYyIi8+PHBhdGggZD0ibTQuOTMgNC45MyAxLjQxIDEuNDEiLz48cGF0aCBkPSJtMTcuNjYgMTcuNjYgMS40MSAxLjQxIi8+PHBhdGggZD0iTTIgMTJoMiIvPjxwYXRoIGQ9Ik0yMCAxMmgyIi8+PHBhdGggZD0ibTYuMzQgMTcuNjYtMS40MSAxLjQxIi8+PHBhdGggZD0ibTE5LjA3IDQuOTMtMS40MSAxLjQxIi8+PC9zdmc+");
+}
+
+/* Moon and monitor icons: Font Awesome Free (CC BY 4.0),
+   https://fontawesome.com/license/free */
+.theme-toggle-icon.icon-moon {
+    -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48cGF0aCBkPSJNMzAzLjMgMTEyLjdDMTk2LjIgMTIxLjIgMTEyIDIxMC44IDExMiAzMjBDMTEyIDQzNC45IDIwNS4xIDUyOCAzMjAgNTI4QzM1My4zIDUyOCAzODQuNyA1MjAuMiA0MTIuNiA1MDYuM0MzMDkuMiA0ODIuOSAyMzIgMzkwLjUgMjMyIDI4MEMyMzIgMjE0LjIgMjU5LjQgMTU0LjkgMzAzLjMgMTEyLjd6TTY0IDMyMEM2NCAxNzguNiAxNzguNiA2NCAzMjAgNjRDMzM5LjQgNjQgMzU4LjQgNjYuMiAzNzYuNyA3MC4zQzM4Ni42IDcyLjUgMzk0IDgwLjggMzk1LjIgOTAuOEMzOTYuNCAxMDAuOCAzOTEuMiAxMTAuNiAzODIuMSAxMTUuMkMzMjEuNSAxNDUuNCAyODAgMjA3LjkgMjgwIDI4MEMyODAgMzgxLjYgMzYyLjQgNDY0IDQ2NCA0NjRDNDY5IDQ2NCA0NzMuOSA0NjMuOCA0NzguOCA0NjMuNEM0ODguOSA0NjIuNiA0OTguNCA0NjguMiA1MDIuNiA0NzcuNUM1MDYuOCA0ODYuOCA1MDQuNiA0OTcuNiA0OTcuMyA1MDQuNkM0NTEuMyA1NDguOCAzODguOCA1NzYgMzIwIDU3NkMxNzguNiA1NzYgNjQgNDYxLjQgNjQgMzIweiIvPjwvc3ZnPg==");
+    mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48cGF0aCBkPSJNMzAzLjMgMTEyLjdDMTk2LjIgMTIxLjIgMTEyIDIxMC44IDExMiAzMjBDMTEyIDQzNC45IDIwNS4xIDUyOCAzMjAgNTI4QzM1My4zIDUyOCAzODQuNyA1MjAuMiA0MTIuNiA1MDYuM0MzMDkuMiA0ODIuOSAyMzIgMzkwLjUgMjMyIDI4MEMyMzIgMjE0LjIgMjU5LjQgMTU0LjkgMzAzLjMgMTEyLjd6TTY0IDMyMEM2NCAxNzguNiAxNzguNiA2NCAzMjAgNjRDMzM5LjQgNjQgMzU4LjQgNjYuMiAzNzYuNyA3MC4zQzM4Ni42IDcyLjUgMzk0IDgwLjggMzk1LjIgOTAuOEMzOTYuNCAxMDAuOCAzOTEuMiAxMTAuNiAzODIuMSAxMTUuMkMzMjEuNSAxNDUuNCAyODAgMjA3LjkgMjgwIDI4MEMyODAgMzgxLjYgMzYyLjQgNDY0IDQ2NCA0NjRDNDY5IDQ2NCA0NzMuOSA0NjMuOCA0NzguOCA0NjMuNEM0ODguOSA0NjIuNiA0OTguNCA0NjguMiA1MDIuNiA0NzcuNUM1MDYuOCA0ODYuOCA1MDQuNiA0OTcuNiA0OTcuMyA1MDQuNkM0NTEuMyA1NDguOCAzODguOCA1NzYgMzIwIDU3NkMxNzguNiA1NzYgNjQgNDYxLjQgNjQgMzIweiIvPjwvc3ZnPg==");
 }
 
 /* === Main layout === */
@@ -376,7 +528,7 @@ article.single-post .post-images img {
 .post-body blockquote {
     margin: 1.35rem 0;
     font-size: 1.07rem;
-    background: rgba(0, 0, 0, 0.07);
+    background: var(--overlay-soft);
     border-left: 5px solid var(--grey-400);
     padding: 1.6rem;
     line-height: 1.55;
@@ -971,7 +1123,7 @@ h4.author {
     margin: 0.6rem 0 0;
     font-size: 0.95rem;
     line-height: 1.5;
-    background: rgba(0, 0, 0, 0.07);
+    background: var(--overlay-soft);
     border-left: 5px solid var(--grey-400);
     padding: 1rem 1.2rem;
 }
@@ -1430,6 +1582,30 @@ body > footer a {
 
 body > footer a:hover {
     color: var(--blue-800);
+}
+
+body > footer .footer-feed-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
+    padding-right: 0.85rem;
+    border-right: 1px solid var(--grey-300);
+}
+
+body > footer .footer-feed-link::before {
+    content: "";
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: currentColor;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48cGF0aCBkPSJNMTYwIDk2QzEyNC43IDk2IDk2IDEyNC43IDk2IDE2MEw5NiA0ODBDOTYgNTE1LjMgMTI0LjcgNTQ0IDE2MCA1NDRMNDgwIDU0NEM1MTUuMyA1NDQgNTQ0IDUxNS4zIDU0NCA0ODBMNTQ0IDE2MEM1NDQgMTI0LjcgNTE1LjMgOTYgNDgwIDk2TDE2MCA5NnpNMTkyIDIwMEMxOTIgMTg2LjcgMjAyLjcgMTc2IDIxNiAxNzZDMzUzIDE3NiA0NjQgMjg3IDQ2NCA0MjRDNDY0IDQzNy4zIDQ1My4zIDQ0OCA0NDAgNDQ4QzQyNi43IDQ0OCA0MTYgNDM3LjMgNDE2IDQyNEM0MTYgMzEzLjUgMzI2LjUgMjI0IDIxNiAyMjRDMjAyLjcgMjI0IDE5MiAyMTMuMyAxOTIgMjAwek0xOTIgMjk2QzE5MiAyODIuNyAyMDIuNyAyNzIgMjE2IDI3MkMyOTkuOSAyNzIgMzY4IDM0MC4xIDM2OCA0MjRDMzY4IDQzNy4zIDM1Ny4zIDQ0OCAzNDQgNDQ4QzMzMC43IDQ0OCAzMjAgNDM3LjMgMzIwIDQyNEMzMjAgMzY2LjYgMjczLjQgMzIwIDIxNiAzMjBDMjAyLjcgMzIwIDE5MiAzMDkuMyAxOTIgMjk2ek0xOTIgNDE2QzE5MiAzOTguMyAyMDYuMyAzODQgMjI0IDM4NEMyNDEuNyAzODQgMjU2IDM5OC4zIDI1NiA0MTZDMjU2IDQzMy43IDI0MS43IDQ0OCAyMjQgNDQ4QzIwNi4zIDQ0OCAxOTIgNDMzLjcgMTkyIDQxNnoiLz48L3N2Zz4=");
+    mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48cGF0aCBkPSJNMTYwIDk2QzEyNC43IDk2IDk2IDEyNC43IDk2IDE2MEw5NiA0ODBDOTYgNTE1LjMgMTI0LjcgNTQ0IDE2MCA1NDRMNDgwIDU0NEM1MTUuMyA1NDQgNTQ0IDUxNS4zIDU0NCA0ODBMNTQ0IDE2MEM1NDQgMTI0LjcgNTE1LjMgOTYgNDgwIDk2TDE2MCA5NnpNMTkyIDIwMEMxOTIgMTg2LjcgMjAyLjcgMTc2IDIxNiAxNzZDMzUzIDE3NiA0NjQgMjg3IDQ2NCA0MjRDNDY0IDQzNy4zIDQ1My4zIDQ0OCA0NDAgNDQ4QzQyNi43IDQ0OCA0MTYgNDM3LjMgNDE2IDQyNEM0MTYgMzEzLjUgMzI2LjUgMjI0IDIxNiAyMjRDMjAyLjcgMjI0IDE5MiAyMTMuMyAxOTIgMjAwek0xOTIgMjk2QzE5MiAyODIuNyAyMDIuNyAyNzIgMjE2IDI3MkMyOTkuOSAyNzIgMzY4IDM0MC4xIDM2OCA0MjRDMzY4IDQzNy4zIDM1Ny4zIDQ0OCAzNDQgNDQ4QzMzMC43IDQ0OCAzMjAgNDM3LjMgMzIwIDQyNEMzMjAgMzY2LjYgMjczLjQgMzIwIDIxNiAzMjBDMjAyLjcgMzIwIDE5MiAzMDkuMyAxOTIgMjk2ek0xOTIgNDE2QzE5MiAzOTguMyAyMDYuMyAzODQgMjI0IDM4NEMyNDEuNyAzODQgMjU2IDM5OC4zIDI1NiA0MTZDMjU2IDQzMy43IDI0MS43IDQ0OCAyMjQgNDQ4QzIwNi4zIDQ0OCAxOTIgNDMzLjcgMTkyIDQxNnoiLz48L3N2Zz4=");
 }
 
 body > footer .footer-notrack {

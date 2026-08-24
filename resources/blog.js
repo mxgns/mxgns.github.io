@@ -88,3 +88,44 @@
     img.src = pixelSrc;
   }
 })();
+
+// Separate IIFE: unrelated to analytics, and the block above returns early
+// when tracking is opted out, which must not disable the theme toggle.
+(function () {
+  var STORAGE_KEY = 'theme';
+
+  function getStoredTheme() {
+    try {
+      return sessionStorage.getItem(STORAGE_KEY);
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function effectiveTheme() {
+    var stored = getStoredTheme();
+    if (stored === 'light' || stored === 'dark') return stored;
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  function updateLabel() {
+    toggle.setAttribute('aria-label', effectiveTheme() === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
+  }
+
+  var toggle = document.getElementById('theme-toggle');
+  if (!toggle) return;
+
+  // Only written on click: leaving data-theme unset until then means the
+  // page keeps following prefers-color-scheme live for anyone who hasn't
+  // made an explicit choice this session.
+  toggle.addEventListener('click', function () {
+    var next = effectiveTheme() === 'dark' ? 'light' : 'dark';
+    try {
+      sessionStorage.setItem(STORAGE_KEY, next);
+    } catch (e) {}
+    document.documentElement.setAttribute('data-theme', next);
+    updateLabel();
+  });
+
+  updateLabel();
+})();
