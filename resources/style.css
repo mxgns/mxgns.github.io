@@ -41,6 +41,27 @@
     --pink-600: #b53047;
     --green-600: #61701a;
 
+    /* "Card" tokens: the surface + text pair used by post containers, the
+       info box, the analytics banner and the comment card. Default to the
+       same -100/-900 pair above, so light mode is unchanged. Kept separate
+       from the raw -100/-900 tokens (rather than redefining those directly)
+       because -900/-100 are ALSO used the other way round — a dark chip
+       with light text, e.g. the avatar and the li-circles diagram — and
+       those already read correctly in dark mode as-is; flipping the raw
+       tokens would fix the cards but break those chips. */
+    --card-pink: var(--pink-100);
+    --card-pink-text: var(--pink-900);
+    --card-green: var(--green-100);
+    --card-green-text: var(--green-900);
+    --card-yellow: var(--yellow-100);
+    --card-yellow-text: var(--yellow-900);
+    --card-blue: var(--blue-100);
+    --card-blue-text: var(--blue-900);
+    --card-beige: var(--beige-100);
+    --card-beige-text: var(--beige-900);
+    --card-brown: var(--brown-100);
+    --card-brown-text: var(--brown-900);
+
     --overlay-soft: rgba(0, 0, 0, 0.07);
 
     color-scheme: light;
@@ -48,13 +69,7 @@
 
 /* === Colours: dark palette ===
    Applies when the visitor's system prefers dark and they haven't forced
-   light via the theme switcher, or when they've forced dark explicitly.
-   The category/callout colours (pink/green/yellow/blue/beige/brown pairs,
-   the comment card, the avatar chip and the calendar heatmap) are
-   deliberately left unchanged in both themes: each is an opaque background
-   paired with its own fixed text colour, already readable on its own
-   terms regardless of the page background, so re-deriving six colour
-   pairs would add risk without a real payoff. */
+   light via the theme switcher, or when they've forced dark explicitly. */
 
 @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
@@ -78,6 +93,19 @@
         --pink-600: #ef7f92;
 
         --yellow-500: #e3a83c;
+
+        --card-pink: #3a262b;
+        --card-pink-text: #f0c9d1;
+        --card-green: #2c2f1f;
+        --card-green-text: #d3d7ad;
+        --card-yellow: #362f1c;
+        --card-yellow-text: #ecdcac;
+        --card-blue: #212c3b;
+        --card-blue-text: #bcd0e6;
+        --card-beige: #302b23;
+        --card-beige-text: #e3d8c7;
+        --card-brown: #382c20;
+        --card-brown-text: #e8caa9;
 
         --overlay-soft: rgba(255, 255, 255, 0.09);
 
@@ -110,6 +138,19 @@
     --pink-600: #ef7f92;
 
     --yellow-500: #e3a83c;
+
+    --card-pink: #3a262b;
+    --card-pink-text: #f0c9d1;
+    --card-green: #2c2f1f;
+    --card-green-text: #d3d7ad;
+    --card-yellow: #362f1c;
+    --card-yellow-text: #ecdcac;
+    --card-blue: #212c3b;
+    --card-blue-text: #bcd0e6;
+    --card-beige: #302b23;
+    --card-beige-text: #e3d8c7;
+    --card-brown: #382c20;
+    --card-brown-text: #e8caa9;
 
     --overlay-soft: rgba(255, 255, 255, 0.09);
 
@@ -543,34 +584,34 @@ article > .container {
 }
 
 .post-body .container-pink {
-    background: var(--pink-100);
-    color: var(--pink-900);
+    background: var(--card-pink);
+    color: var(--card-pink-text);
 }
 
 .post-body .container-green {
-    background: var(--green-100);
-    color: var(--green-900);
+    background: var(--card-green);
+    color: var(--card-green-text);
 }
 
 .post-body .container-yellow {
-    background: var(--yellow-100);
-    color: var(--yellow-900);
+    background: var(--card-yellow);
+    color: var(--card-yellow-text);
 }
 
 .post-body .container-blue {
-    background: var(--blue-100);
-    color: var(--blue-900);
+    background: var(--card-blue);
+    color: var(--card-blue-text);
 }
 
 .post-body .container-beige {
-    background: var(--beige-100);
-    color: var(--beige-900);
+    background: var(--card-beige);
+    color: var(--card-beige-text);
 }
 
 .post-body .container-brown,
 article > .container-brown {
-    background: var(--brown-100);
-    color: var(--brown-900);
+    background: var(--card-brown);
+    color: var(--card-brown-text);
 }
 
 /* === AI-assisted disclosure banner === */
@@ -602,8 +643,8 @@ article > .ai-disclosure p {
 }
 
 .post-body .info {
-    background: var(--blue-100);
-    color: var(--blue-900);
+    background: var(--card-blue);
+    color: var(--card-blue-text);
     padding: 1rem 1rem 1rem 3.25rem;
     position: relative;
 }
@@ -615,7 +656,7 @@ article > .ai-disclosure p {
     top: calc(1rem + (1.65rem - 1.5rem) / 2);
     width: 1.5rem;
     height: 1.5rem;
-    background-color: var(--blue-900);
+    background-color: var(--card-blue-text);
     -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48cGF0aCBkPSJNMzIwIDU3NkM0NjEuNCA1NzYgNTc2IDQ2MS40IDU3NiAzMjBDNTc2IDE3OC42IDQ2MS40IDY0IDMyMCA2NEMxNzguNiA2NCA2NCAxNzguNiA2NCAzMjBDNjQgNDYxLjQgMTc4LjYgNTc2IDMyMCA1NzZ6TTI4OCAyMjRDMjg4IDIwNi4zIDMwMi4zIDE5MiAzMjAgMTkyQzMzNy43IDE5MiAzNTIgMjA2LjMgMzUyIDIyNEMzNTIgMjQxLjcgMzM3LjcgMjU2IDMyMCAyNTZDMzAyLjMgMjU2IDI4OCAyNDEuNyAyODggMjI0ek0yODAgMjg4TDMyOCAyODhDMzQxLjMgMjg4IDM1MiAyOTguNyAzNTIgMzEyTDM1MiA0MDBMMzYwIDQwMEMzNzMuMyA0MDAgMzg0IDQxMC43IDM4NCA0MjRDMzg0IDQzNy4zIDM3My4zIDQ0OCAzNjAgNDQ4TDI4MCA0NDhDMjY2LjcgNDQ4IDI1NiA0MzcuMyAyNTYgNDI0QzI1NiA0MTAuNyAyNjYuNyA0MDAgMjgwIDQwMEwzMDQgNDAwTDMwNCAzMzZMMjgwIDMzNkMyNjYuNyAzMzYgMjU2IDMyNS4zIDI1NiAzMTJDMjU2IDI5OC43IDI2Ni43IDI4OCAyODAgMjg4eiIvPjwvc3ZnPg==");
     mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48cGF0aCBkPSJNMzIwIDU3NkM0NjEuNCA1NzYgNTc2IDQ2MS40IDU3NiAzMjBDNTc2IDE3OC42IDQ2MS40IDY0IDMyMCA2NEMxNzguNiA2NCA2NCAxNzguNiA2NCAzMjBDNjQgNDYxLjQgMTc4LjYgNTc2IDMyMCA1NzZ6TTI4OCAyMjRDMjg4IDIwNi4zIDMwMi4zIDE5MiAzMjAgMTkyQzMzNy43IDE5MiAzNTIgMjA2LjMgMzUyIDIyNEMzNTIgMjQxLjcgMzM3LjcgMjU2IDMyMCAyNTZDMzAyLjMgMjU2IDI4OCAyNDEuNyAyODggMjI0ek0yODAgMjg4TDMyOCAyODhDMzQxLjMgMjg4IDM1MiAyOTguNyAzNTIgMzEyTDM1MiA0MDBMMzYwIDQwMEMzNzMuMyA0MDAgMzg0IDQxMC43IDM4NCA0MjRDMzg0IDQzNy4zIDM3My4zIDQ0OCAzNjAgNDQ4TDI4MCA0NDhDMjY2LjcgNDQ4IDI1NiA0MzcuMyAyNTYgNDI0QzI1NiA0MTAuNyAyNjYuNyA0MDAgMjgwIDQwMEwzMDQgNDAwTDMwNCAzMzZMMjgwIDMzNkMyNjYuNyAzMzYgMjU2IDMyNS4zIDI1NiAzMTJDMjU2IDI5OC43IDI2Ni43IDI4OCAyODAgMjg4eiIvPjwvc3ZnPg==");
     -webkit-mask-size: contain;
@@ -1061,7 +1102,7 @@ section.comments h2 {
     margin: 0;
     border: none;
     padding: 1.5rem;
-    background: var(--yellow-100);
+    background: var(--card-yellow);
     border-radius: 1rem;
 }
 
@@ -1096,13 +1137,14 @@ h4.author {
     font-size: 1.07rem;
     font-weight: 600;
     margin: 0;
-    color: var(--black);
+    color: var(--card-yellow-text);
 }
 
 .comment time {
     grid-column: 2;
     font-size: 0.90rem;
-    color: var(--grey-600);
+    color: var(--card-yellow-text);
+    opacity: 0.75;
 }
 
 .comment p {
@@ -1110,7 +1152,7 @@ h4.author {
     margin: 0.6rem 0 0;
     font-size: 1rem;
     line-height: 1.5;
-    color: var(--black);
+    color: var(--card-yellow-text);
 }
 
 .comment blockquote,
@@ -1468,8 +1510,8 @@ body > .analytics-banner {
     max-width: 680px;
     margin: 1.5rem auto 3rem;
     padding: 1rem 1.5rem 1rem 3.25rem;
-    background: var(--green-100);
-    color: var(--green-900);
+    background: var(--card-green);
+    color: var(--card-green-text);
     border-radius: 8px;
     font-size: 1rem;
     position: relative;
@@ -1502,7 +1544,7 @@ body > .analytics-banner::before {
     top: calc(1rem + (1.65rem - 1.5rem) / 2);
     width: 1.5rem;
     height: 1.5rem;
-    background-color: var(--green-900);
+    background-color: var(--card-green-text);
     -webkit-mask-size: contain;
     mask-size: contain;
     -webkit-mask-repeat: no-repeat;
