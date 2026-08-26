@@ -575,6 +575,27 @@ article.single-post .post-images img {
     line-height: 1.55;
 }
 
+.post-body table {
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+    margin: 1.35rem 0;
+    border-collapse: collapse;
+    font-size: 0.97rem;
+}
+
+.post-body th,
+.post-body td {
+    padding: 0.6rem 0.9rem;
+    border-bottom: 1px solid var(--grey-200);
+    text-align: left;
+}
+
+.post-body th {
+    background: var(--overlay-soft);
+    font-weight: 600;
+}
+
 .post-body .container,
 article > .container {
     background: var(--grey-100);
