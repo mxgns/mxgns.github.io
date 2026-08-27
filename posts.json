@@ -1,4 +1,9 @@
 {
+  "75": {
+    "title": "My current and upcoming personal projects",
+    "category": "day-to-day",
+    "date": "2026-08-27"
+  },
   "74": {
     "title": "After using DuckDuckGo for a while,\u2026",
     "category": "web-and-tech",
@@ -386,6 +391,11 @@
   },
   "index-6": {
     "title": "Magnus\u2019s Homepage (page 6)",
+    "category": null,
+    "date": null
+  },
+  "index-7": {
+    "title": "Magnus\u2019s Homepage (page 7)",
     "category": null,
     "date": null
   },
