@@ -4,8 +4,15 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-08-27T00:01:15Z</updated>
+  <updated>2026-08-29T00:01:16Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Photo posted 29 August 2026</title>
+    <link href="https://mxgns.uk/76.html?src=atom" />
+    <id>https://mxgns.uk/76.html</id>
+    <updated>2026-08-29T00:01:16Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/76-image-01-resized.jpeg" alt="Dragon fly up close"></figure><p>Dragon fly</p>]]></content>
+  </entry>
   <entry>
     <title>My current and upcoming personal projects</title>
     <link href="https://mxgns.uk/75.html?src=atom" />
@@ -520,7 +527,7 @@
 <h4>AI disclosure</h4>
 <p>The following pages have been marked as created with the help of AI:</p>
 <ul class="ai-post-list"><li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li><li><a href="syntax.html">Test Page / Syntax Guide</a></li><li><a href="privacy.html">Privacy Policy</a></li></ul>
-<p>This list updates automatically whenever the blog is updated, which last happened <span class="today">28/8/26</span>.</p>
+<p>This list updates automatically whenever the blog is updated, which last happened <span class="today">29/8/26</span>.</p>
 </div>]]></content>
   </entry>
   <entry>
