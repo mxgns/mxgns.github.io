@@ -4,8 +4,15 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-08-29T00:01:17Z</updated>
+  <updated>2026-08-30T00:01:18Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Photo posted 30 August 2026</title>
+    <link href="https://mxgns.uk/78.html?src=atom" />
+    <id>https://mxgns.uk/78.html</id>
+    <updated>2026-08-30T00:01:18Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/78-image-01-resized.jpeg" alt="My boat from above"></figure><p>After a week in Sweden, it’s time for the boat to come out of the water and for me to head back to London.</p>]]></content>
+  </entry>
   <entry>
     <title>Note posted 29 August 2026</title>
     <link href="https://mxgns.uk/77.html?src=atom" />
@@ -535,7 +542,7 @@
 <h4>AI disclosure</h4>
 <p>The following pages have been marked as created with the help of AI:</p>
 <ul class="ai-post-list"><li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li><li><a href="syntax.html">Test Page / Syntax Guide</a></li><li><a href="privacy.html">Privacy Policy</a></li></ul>
-<p>This list updates automatically whenever the blog is updated, which last happened <span class="today">29/8/26</span>.</p>
+<p>This list updates automatically whenever the blog is updated, which last happened <span class="today">30/8/26</span>.</p>
 </div>]]></content>
   </entry>
   <entry>
