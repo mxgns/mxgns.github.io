@@ -4,8 +4,16 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-08-30T00:01:18Z</updated>
+  <updated>2026-08-31T00:01:19Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Note posted 31 August 2026</title>
+    <link href="https://mxgns.uk/79.html?src=atom" />
+    <id>https://mxgns.uk/79.html</id>
+    <updated>2026-08-31T00:01:19Z</updated>
+    <content type="html"><![CDATA[<p>For mortgage reasons, I’ve had to return to Lloyds Bank after many years with newer banks, and I’d forgotten quite how crap they are.</p>
+<p>How can the old banks still be incapable of paying standing orders on the weekend or, as in the case of today, on a bank holiday? 💩</p>]]></content>
+  </entry>
   <entry>
     <title>Photo posted 30 August 2026</title>
     <link href="https://mxgns.uk/78.html?src=atom" />
@@ -542,7 +550,7 @@
 <h4>AI disclosure</h4>
 <p>The following pages have been marked as created with the help of AI:</p>
 <ul class="ai-post-list"><li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li><li><a href="syntax.html">Test Page / Syntax Guide</a></li><li><a href="privacy.html">Privacy Policy</a></li></ul>
-<p>This list updates automatically whenever the blog is updated, which last happened <span class="today">30/8/26</span>.</p>
+<p>This list updates automatically whenever the blog is updated, which last happened <span class="today">31/8/26</span>.</p>
 </div>]]></content>
   </entry>
   <entry>
