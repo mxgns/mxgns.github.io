@@ -497,6 +497,46 @@ article.single-post .post-images img {
     border-radius: 0;
 }
 
+/* === Gallery === */
+
+#gallery {
+    list-style: none;
+    margin: 0 -0.5rem 1.5rem;
+    padding: 0;
+}
+
+.gallery-item {
+    width: 33.333%;
+    padding: 0 0.5rem 1rem;
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    .gallery-item {
+        width: 50%;
+    }
+}
+
+.gallery-item a,
+.gallery-item a:visited,
+.gallery-item a:hover,
+.gallery-item a:visited:hover {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 2px;
+}
+
+.gallery-item a:hover img {
+    opacity: 0.85;
+}
+
 /* === Post body === */
 
 .post-body a {
@@ -1816,4 +1856,77 @@ main + nav > ul li.older a::after {
     -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48cGF0aCBkPSJNNTY2LjYgMzQyLjZDNTc5LjEgMzMwLjEgNTc5LjEgMzA5LjggNTY2LjYgMjk3LjNMNDA2LjYgMTM3LjNDMzk0LjEgMTI0LjggMzczLjggMTI0LjggMzYxLjMgMTM3LjNDMzQ4LjggMTQ5LjggMzQ4LjggMTcwLjEgMzYxLjMgMTgyLjZMNDY2LjcgMjg4TDk2IDI4OEM3OC4zIDI4OCA2NCAzMDIuMyA2NCAzMjBDNjQgMzM3LjcgNzguMyAzNTIgOTYgMzUyTDQ2Ni43IDM1MkwzNjEuMyA0NTcuNEMzNDguOCA0NjkuOSAzNDguOCA0OTAuMiAzNjEuMyA1MDIuN0MzNzMuOCA1MTUuMiAzOTQuMSA1MTUuMiA0MDYuNiA1MDIuN0w1NjYuNiAzNDIuN3oiLz48L3N2Zz4=");
     mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48cGF0aCBkPSJNNTY2LjYgMzQyLjZDNTc5LjEgMzMwLjEgNTc5LjEgMzA5LjggNTY2LjYgMjk3LjNMNDA2LjYgMTM3LjNDMzk0LjEgMTI0LjggMzczLjggMTI0LjggMzYxLjMgMTM3LjNDMzQ4LjggMTQ5LjggMzQ4LjggMTcwLjEgMzYxLjMgMTgyLjZMNDY2LjcgMjg4TDk2IDI4OEM3OC4zIDI4OCA2NCAzMDIuMyA2NCAzMjBDNjQgMzM3LjcgNzguMyAzNTIgOTYgMzUyTDQ2Ni43IDM1MkwzNjEuMyA0NTcuNEMzNDguOCA0NjkuOSAzNDguOCA0OTAuMiAzNjEuMyA1MDIuN0MzNzMuOCA1MTUuMiAzOTQuMSA1MTUuMiA0MDYuNiA1MDIuN0w1NjYuNiAzNDIuN3oiLz48L3N2Zz4=");
     margin-left: 0.4em;
+}
+
+/* === Gallery: load-more button ===
+   Only applied once resources/blog.js has enhanced the "Older photos" link
+   (adds .load-more-button to the <a> and .load-more-li to its <li>) — without
+   JS this stays a plain pagination link, styled by the rules above. Selectors
+   repeat the same main/nav/ul/li chain as those rules so specificity ties and
+   this later declaration wins, rather than reaching for !important. */
+
+main + nav > ul li.load-more-li {
+    margin: 0 auto;
+}
+
+main + nav > ul li a.load-more-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.4rem 1rem;
+    border: 1px solid var(--blue-600);
+    border-radius: 0.5rem;
+    color: var(--blue-600);
+}
+
+main + nav > ul li a.load-more-button:hover {
+    color: var(--blue-800);
+    border-color: var(--blue-800);
+}
+
+main + nav > ul li a.load-more-button::after {
+    content: none;
+}
+
+main + nav > ul li a.load-more-button::before {
+    content: "";
+    display: inline-block;
+    width: 0.9em;
+    height: 0.9em;
+    background-color: currentColor;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48cGF0aCBkPSJNMzUyIDEyOEMzNTIgMTEwLjMgMzM3LjcgOTYgMzIwIDk2QzMwMi4zIDk2IDI4OCAxMTAuMyAyODggMTI4TDI4OCAyODhMMTI4IDI4OEMxMTAuMyAyODggOTYgMzAyLjMgOTYgMzIwQzk2IDMzNy43IDExMC4zIDM1MiAxMjggMzUyTDI4OCAzNTJMMjg4IDUxMkMyODggNTI5LjcgMzAyLjMgNTQ0IDMyMCA1NDRDMzM3LjcgNTQ0IDM1MiA1MjkuNyAzNTIgNTEyTDM1MiAzNTJMNTEyIDM1MkM1MjkuNyAzNTIgNTQ0IDMzNy43IDU0NCAzMjBDNTQ0IDMwMi4zIDUyOS43IDI4OCA1MTIgMjg4TDM1MiAyODhMMzUyIDEyOHoiLz48L3N2Zz4=");
+    mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48cGF0aCBkPSJNMzUyIDEyOEMzNTIgMTEwLjMgMzM3LjcgOTYgMzIwIDk2QzMwMi4zIDk2IDI4OCAxMTAuMyAyODggMTI4TDI4OCAyODhMMTI4IDI4OEMxMTAuMyAyODggOTYgMzAyLjMgOTYgMzIwQzk2IDMzNy43IDExMC4zIDM1MiAxMjggMzUyTDI4OCAzNTJMMjg4IDUxMkMyODggNTI5LjcgMzAyLjMgNTQ0IDMyMCA1NDRDMzM3LjcgNTQ0IDM1MiA1MjkuNyAzNTIgNTEyTDM1MiAzNTJMNTEyIDM1MkM1MjkuNyAzNTIgNTQ0IDMzNy43IDU0NCAzMjBDNTQ0IDMwMi4zIDUyOS43IDI4OCA1MTIgMjg4TDM1MiAyODhMMzUyIDEyOHoiLz48L3N2Zz4=");
+}
+
+/* The button is only ever disabled by JS while a fetch is in flight — see
+   resources/blog.js — never on initial render, so no plain (non-.is-loading)
+   [aria-disabled] state needs styling here. */
+main + nav > ul li a.load-more-button.is-loading {
+    cursor: default;
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+main + nav > ul li a.load-more-button.is-loading::before {
+    -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48cGF0aCBkPSJNMjcyIDExMkMyNzIgODUuNSAyOTMuNSA2NCAzMjAgNjRDMzQ2LjUgNjQgMzY4IDg1LjUgMzY4IDExMkMzNjggMTM4LjUgMzQ2LjUgMTYwIDMyMCAxNjBDMjkzLjUgMTYwIDI3MiAxMzguNSAyNzIgMTEyek0yNzIgNTI4QzI3MiA1MDEuNSAyOTMuNSA0ODAgMzIwIDQ4MEMzNDYuNSA0ODAgMzY4IDUwMS41IDM2OCA1MjhDMzY4IDU1NC41IDM0Ni41IDU3NiAzMjAgNTc2QzI5My41IDU3NiAyNzIgNTU0LjUgMjcyIDUyOHpNMTEyIDI3MkMxMzguNSAyNzIgMTYwIDI5My41IDE2MCAzMjBDMTYwIDM0Ni41IDEzOC41IDM2OCAxMTIgMzY4Qzg1LjUgMzY4IDY0IDM0Ni41IDY0IDMyMEM2NCAyOTMuNSA4NS41IDI3MiAxMTIgMjcyek00ODAgMzIwQzQ4MCAyOTMuNSA1MDEuNSAyNzIgNTI4IDI3MkM1NTQuNSAyNzIgNTc2IDI5My41IDU3NiAzMjBDNTc2IDM0Ni41IDU1NC41IDM2OCA1MjggMzY4QzUwMS41IDM2OCA0ODAgMzQ2LjUgNDgwIDMyMHpNMTM5IDQzMy4xQzE1Ny44IDQxNC4zIDE4OC4xIDQxNC4zIDIwNi45IDQzMy4xQzIyNS43IDQ1MS45IDIyNS43IDQ4Mi4yIDIwNi45IDUwMUMxODguMSA1MTkuOCAxNTcuOCA1MTkuOCAxMzkgNTAxQzEyMC4yIDQ4Mi4yIDEyMC4yIDQ1MS45IDEzOSA0MzMuMXpNMTM5IDEzOUMxNTcuOCAxMjAuMiAxODguMSAxMjAuMiAyMDYuOSAxMzlDMjI1LjcgMTU3LjggMjI1LjcgMTg4LjEgMjA2LjkgMjA2LjlDMTg4LjEgMjI1LjcgMTU3LjggMjI1LjcgMTM5IDIwNi45QzEyMC4yIDE4OC4xIDEyMC4yIDE1Ny44IDEzOSAxMzl6TTUwMSA0MzMuMUM1MTkuOCA0NTEuOSA1MTkuOCA0ODIuMiA1MDEgNTAxQzQ4Mi4yIDUxOS44IDQ1MS45IDUxOS44IDQzMy4xIDUwMUM0MTQuMyA0ODIuMiA0MTQuMyA0NTEuOSA0MzMuMSA0MzMuMUM0NTEuOSA0MTQuMyA0ODIuMiA0MTQuMyA1MDEgNDMzLjF6Ii8+PC9zdmc+");
+    mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48cGF0aCBkPSJNMjcyIDExMkMyNzIgODUuNSAyOTMuNSA2NCAzMjAgNjRDMzQ2LjUgNjQgMzY4IDg1LjUgMzY4IDExMkMzNjggMTM4LjUgMzQ2LjUgMTYwIDMyMCAxNjBDMjkzLjUgMTYwIDI3MiAxMzguNSAyNzIgMTEyek0yNzIgNTI4QzI3MiA1MDEuNSAyOTMuNSA0ODAgMzIwIDQ4MEMzNDYuNSA0ODAgMzY4IDUwMS41IDM2OCA1MjhDMzY4IDU1NC41IDM0Ni41IDU3NiAzMjAgNTc2QzI5My41IDU3NiAyNzIgNTU0LjUgMjcyIDUyOHpNMTEyIDI3MkMxMzguNSAyNzIgMTYwIDI5My41IDE2MCAzMjBDMTYwIDM0Ni41IDEzOC41IDM2OCAxMTIgMzY4Qzg1LjUgMzY4IDY0IDM0Ni41IDY0IDMyMEM2NCAyOTMuNSA4NS41IDI3MiAxMTIgMjcyek00ODAgMzIwQzQ4MCAyOTMuNSA1MDEuNSAyNzIgNTI4IDI3MkM1NTQuNSAyNzIgNTc2IDI5My41IDU3NiAzMjBDNTc2IDM0Ni41IDU1NC41IDM2OCA1MjggMzY4QzUwMS41IDM2OCA0ODAgMzQ2LjUgNDgwIDMyMHpNMTM5IDQzMy4xQzE1Ny44IDQxNC4zIDE4OC4xIDQxNC4zIDIwNi45IDQzMy4xQzIyNS43IDQ1MS45IDIyNS43IDQ4Mi4yIDIwNi45IDUwMUMxODguMSA1MTkuOCAxNTcuOCA1MTkuOCAxMzkgNTAxQzEyMC4yIDQ4Mi4yIDEyMC4yIDQ1MS45IDEzOSA0MzMuMXpNMTM5IDEzOUMxNTcuOCAxMjAuMiAxODguMSAxMjAuMiAyMDYuOSAxMzlDMjI1LjcgMTU3LjggMjI1LjcgMTg4LjEgMjA2LjkgMjA2LjlDMTg4LjEgMjI1LjcgMTU3LjggMjI1LjcgMTM5IDIwNi45QzEyMC4yIDE4OC4xIDEyMC4yIDE1Ny44IDEzOSAxMzl6TTUwMSA0MzMuMUM1MTkuOCA0NTEuOSA1MTkuOCA0ODIuMiA1MDEgNTAxQzQ4Mi4yIDUxOS44IDQ1MS45IDUxOS44IDQzMy4xIDUwMUM0MTQuMyA0ODIuMiA0MTQuMyA0NTEuOSA0MzMuMSA0MzMuMUM0NTEuOSA0MTQuMyA0ODIuMiA0MTQuMyA1MDEgNDMzLjF6Ii8+PC9zdmc+");
+    animation: load-more-spin 0.8s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    main + nav > ul li a.load-more-button.is-loading::before {
+        animation: none;
+    }
+}
+
+@keyframes load-more-spin {
+    to {
+        transform: rotate(360deg);
+    }
 }

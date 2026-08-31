@@ -1,4 +1,9 @@
 {
+  "80": {
+    "title": "New blog feature: photo archive",
+    "category": "blog-updates",
+    "date": "2026-08-31"
+  },
   "79": {
     "title": "For mortgage reasons, I\u2019ve had to\u2026",
     "category": "day-to-day",
@@ -481,6 +486,16 @@
   },
   "notes": {
     "title": "Short notes",
+    "category": null,
+    "date": null
+  },
+  "gallery": {
+    "title": "Photo archive",
+    "category": null,
+    "date": null
+  },
+  "gallery-2": {
+    "title": "Photo archive (page 2)",
     "category": null,
     "date": null
   },

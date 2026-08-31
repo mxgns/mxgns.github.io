@@ -129,3 +129,66 @@
 
   updateLabel();
 })();
+
+// Separate IIFE: gallery masonry layout + load-more, unrelated to
+// analytics/theme, and a no-op on every page except gallery.html/gallery-N.html.
+(function () {
+  var gallery = document.getElementById('gallery');
+  if (!gallery) return;
+
+  var msnry = null;
+  var script = document.createElement('script');
+  script.src = 'https://cdn.jsdelivr.net/npm/masonry-layout@4/dist/masonry.pkgd.min.js';
+  script.onload = function () {
+    msnry = new Masonry(gallery, { itemSelector: '.gallery-item', percentPosition: true });
+  };
+  document.head.appendChild(script);
+
+  // A continuous, ever-growing photo stream doesn't have a meaningful "go
+  // back to newer photos" step once older pages are loaded in below it.
+  var newer = document.querySelector('.newer');
+  if (newer) newer.hidden = true;
+
+  var link = document.querySelector('.load-more');
+  if (!link) return;
+
+  var li = link.closest('li');
+  link.textContent = 'Load more';
+  link.classList.add('load-more-button');
+  if (li) li.classList.add('load-more-li');
+
+  link.addEventListener('click', function (event) {
+    event.preventDefault();
+    if (link.classList.contains('is-loading')) return;
+    link.classList.add('is-loading');
+    link.setAttribute('aria-disabled', 'true');
+
+    fetch(link.href).then(function (response) {
+      if (!response.ok) throw new Error(response.status);
+      return response.text();
+    }).then(function (html) {
+      var doc = new DOMParser().parseFromString(html, 'text/html');
+      var items = Array.prototype.slice.call(doc.querySelectorAll('#gallery > li'));
+      items.forEach(function (item) { gallery.appendChild(item); });
+
+      if (msnry) {
+        msnry.appended(items);
+        msnry.layout();
+      }
+
+      var next = doc.querySelector('.load-more');
+      if (next) {
+        link.href = next.getAttribute('href');
+      } else if (li) {
+        li.remove();
+      } else {
+        link.remove();
+      }
+    }).catch(function () {
+      window.location.href = link.href;
+    }).finally(function () {
+      link.classList.remove('is-loading');
+      link.removeAttribute('aria-disabled');
+    });
+  });
+})();

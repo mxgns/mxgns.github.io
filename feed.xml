@@ -4,8 +4,15 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-08-31T00:01:19Z</updated>
+  <updated>2026-08-31T00:01:20Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>New blog feature: photo archive</title>
+    <link href="https://mxgns.uk/80.html?src=atom" />
+    <id>https://mxgns.uk/80.html</id>
+    <updated>2026-08-31T00:01:20Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/80-image-01-resized.jpg" alt="Screenshot of photo archive"></figure><p>I’ve added a <a href="gallery.html">photo archive</a> to the blog to make it easier to find articles by their photo. Feel free to have a look!</p>]]></content>
+  </entry>
   <entry>
     <title>Note posted 31 August 2026</title>
     <link href="https://mxgns.uk/79.html?src=atom" />
