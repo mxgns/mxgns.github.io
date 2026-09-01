@@ -4,8 +4,17 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-08-31T00:01:20Z</updated>
+  <updated>2026-09-01T00:01:21Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Note posted 1 September 2026</title>
+    <link href="https://mxgns.uk/81.html?src=atom" />
+    <id>https://mxgns.uk/81.html</id>
+    <updated>2026-09-01T00:01:21Z</updated>
+    <content type="html"><![CDATA[<p>The husband said he won’t eat sugar in September, and having put on a bit of weight lately, I decided to join him.</p>
+<p>That means last night was the last ice cream in a while 😬</p>
+<p>Wake me up when September ends.</p>]]></content>
+  </entry>
   <entry>
     <title>New blog feature: photo archive</title>
     <link href="https://mxgns.uk/80.html?src=atom" />
@@ -557,7 +566,7 @@
 <h4>AI disclosure</h4>
 <p>The following pages have been marked as created with the help of AI:</p>
 <ul class="ai-post-list"><li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li><li><a href="syntax.html">Test Page / Syntax Guide</a></li><li><a href="privacy.html">Privacy Policy</a></li></ul>
-<p>This list updates automatically whenever the blog is updated, which last happened <span class="today">31/8/26</span>.</p>
+<p>This list updates automatically whenever the blog is updated, which last happened <span class="today">1/9/26</span>.</p>
 </div>]]></content>
   </entry>
   <entry>
