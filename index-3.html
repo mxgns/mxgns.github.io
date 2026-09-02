@@ -23,11 +23,11 @@
         <link rel="icon" href="resources/icon.png">
         <link
             rel="stylesheet"
-            href="resources/style.css?v=1788325221"
+            href="resources/style.css?v=1788326512"
         >
         <link
             rel="stylesheet"
-            href="resources/assorted.css?v=1788325221"
+            href="resources/assorted.css?v=1788326512"
         >
         <link
             rel="alternate"
@@ -217,7 +217,7 @@
   const START_DATE = new Date('2025-07-26T00:00:00Z');
   const MS_PER_WEEK = 7 * 24 * 60 * 60 * 1000;
   const TOTAL = 4384;
-  const NOW = 2500 + Math.floor((Date.now() - START_DATE) / MS_PER_WEEK); 
+  const NOW = 2500 + Math.floor((Date.now() - START_DATE) / MS_PER_WEEK);
 
   const tracker = document.getElementById('tracker');
   var result = document.createDocumentFragment();
@@ -227,11 +227,8 @@
     result.appendChild(div)
   }
   tracker.appendChild(result);
-
   const summary = document.createElement("p");
-  const date = new Date();
-  const output = `${NOW}/${TOTAL}`;
-  summary.textContent = output;
+  summary.textContent = `${(NOW / TOTAL * 100).toFixed(1)}% done.`;
   tracker.appendChild(summary);
 </script>
 
@@ -262,6 +259,6 @@
         <img id="_b" alt="" width="1" height="1"
              style="position:absolute;left:-9999px"
              data-src="/api/track/index-3.svg">
-        <script src="resources/blog.js?v=1788325221"></script>
+        <script src="resources/blog.js?v=1788326512"></script>
     </body>
 </html>
