@@ -4,8 +4,15 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-09-02T00:01:22Z</updated>
+  <updated>2026-09-03T00:01:23Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Note posted 3 September 2026</title>
+    <link href="https://mxgns.uk/83.html?src=atom" />
+    <id>https://mxgns.uk/83.html</id>
+    <updated>2026-09-03T00:01:23Z</updated>
+    <content type="html"><![CDATA[<p>It&rsquo;s a new month, so I have updated my <a href="now.html">now page</a>.</p>]]></content>
+  </entry>
   <entry>
     <title>I bought a second pair of JNCOs</title>
     <link href="https://mxgns.uk/82.html?src=atom" />
@@ -341,12 +348,5 @@
     <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/54-image-01-resized.jpeg" alt="A big mirror on the balcony of the Hayward Gallery"></figure><figure><img src="https://mxgns.uk/54-image-02-resized.jpeg" alt="Abstract photo of abstract artwork"></figure><figure><img src="https://mxgns.uk/54-image-03-resized.jpeg" alt="A big red blob fills much of one of the rooms"></figure><p>I always enjoy Anish Kapoor’s art, and his latest exhibition was a treat.</p>
 <p>Much of the theme this time was red blobs. A big inflated red blob filling most of a gallery and the one next to it. A big lava-like blob hanging from the ceiling. Other big red organic-looking ones in shrinkwrap.</p>
 <p>I’m not sure I’m doing it justice&hellip;</p><p><a href="https://mxgns.uk/54.html?src=atom" class="read-more">Read more</a></p>]]></content>
-  </entry>
-  <entry>
-    <title>Note posted 25 July 2026</title>
-    <link href="https://mxgns.uk/53.html?src=atom" />
-    <id>https://mxgns.uk/53.html</id>
-    <updated>2026-07-25T00:00:53Z</updated>
-    <content type="html"><![CDATA[<p>It&rsquo;s good fun updating the script that generates my blog pages, adding or changing features. It&rsquo;s fair to say I spend a lot more time doing that than creating the content! 😅</p>]]></content>
   </entry>
 </feed>
