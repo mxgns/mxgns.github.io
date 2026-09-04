@@ -4,8 +4,16 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-09-03T00:01:23Z</updated>
+  <updated>2026-09-04T00:01:24Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Photo posted 4 September 2026</title>
+    <link href="https://mxgns.uk/84.html?src=atom" />
+    <id>https://mxgns.uk/84.html</id>
+    <updated>2026-09-04T00:01:24Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/84-image-01-resized.jpeg" alt="Tall buildings sticking up through low clouds"></figure><p>This photo from Willis Tower in Chicago, taken in 2018, popped up on my phone’s lock screen.</p>
+<p>I went there on a training course and took the opportunity to combine it with a few days’ holiday with my partner. It was a good trip, and I could definitely go back sometime.</p>]]></content>
+  </entry>
   <entry>
     <title>Note posted 3 September 2026</title>
     <link href="https://mxgns.uk/83.html?src=atom" />
@@ -339,14 +347,5 @@
 </li>
 </ul>
 <p>All in all, so far, so good! 😊</p>]]></content>
-  </entry>
-  <entry>
-    <title>Anish Kapoor at Hayward Gallery</title>
-    <link href="https://mxgns.uk/54.html?src=atom" />
-    <id>https://mxgns.uk/54.html</id>
-    <updated>2026-07-25T00:00:54Z</updated>
-    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/54-image-01-resized.jpeg" alt="A big mirror on the balcony of the Hayward Gallery"></figure><figure><img src="https://mxgns.uk/54-image-02-resized.jpeg" alt="Abstract photo of abstract artwork"></figure><figure><img src="https://mxgns.uk/54-image-03-resized.jpeg" alt="A big red blob fills much of one of the rooms"></figure><p>I always enjoy Anish Kapoor’s art, and his latest exhibition was a treat.</p>
-<p>Much of the theme this time was red blobs. A big inflated red blob filling most of a gallery and the one next to it. A big lava-like blob hanging from the ceiling. Other big red organic-looking ones in shrinkwrap.</p>
-<p>I’m not sure I’m doing it justice&hellip;</p><p><a href="https://mxgns.uk/54.html?src=atom" class="read-more">Read more</a></p>]]></content>
   </entry>
 </feed>
