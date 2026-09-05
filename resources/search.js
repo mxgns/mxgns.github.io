@@ -45,23 +45,12 @@
       var article = document.createElement('article');
       article.className = 'search-result';
 
-      var head = document.createElement('div');
-      head.className = 'search-result-head';
-
       var heading = document.createElement('h2');
       var link = document.createElement('a');
       link.href = result.url;
       link.textContent = result.meta.title || '';
       heading.appendChild(link);
-      head.appendChild(heading);
-
-      if (result.meta.date) {
-        var time = document.createElement('time');
-        time.textContent = result.meta.date;
-        head.appendChild(time);
-      }
-
-      article.appendChild(head);
+      article.appendChild(heading);
 
       var body = document.createElement('div');
       body.className = 'post-body';
@@ -69,6 +58,12 @@
       excerpt.innerHTML = result.excerpt;
       body.appendChild(excerpt);
       article.appendChild(body);
+
+      if (result.meta.date) {
+        var time = document.createElement('time');
+        time.textContent = result.meta.date;
+        article.appendChild(time);
+      }
 
       list.appendChild(article);
     });

@@ -1982,8 +1982,12 @@ main + nav > ul li a.load-more-button.is-loading::before {
     color: var(--grey-400);
 }
 
+/* Black rather than the browser-default blue — matches how the rest of the
+   header/nav chrome (masthead logo, nav links, theme toggle) shows an
+   active/current state, since blue on this site is reserved for actual
+   inline links (dates, categories), not interactive controls. */
 #search-input:focus-visible {
-    outline: 2px solid var(--blue-600);
+    outline: 2px solid var(--black);
     outline-offset: 1px;
 }
 
@@ -2008,6 +2012,12 @@ main + nav > ul li a.load-more-button.is-loading::before {
 
 #search-form button:hover {
     color: var(--blue-600);
+}
+
+#search-form button:focus-visible {
+    outline: 2px solid var(--black);
+    outline-offset: 2px;
+    border-radius: 2px;
 }
 
 /* Without this, [hidden]'s UA-stylesheet display:none loses to the
@@ -2043,37 +2053,41 @@ main + nav > ul li a.load-more-button.is-loading::before {
     color: var(--grey-600);
 }
 
-/* .search-result is a plain <article>, so it already gets the standard
-   article/article+article spacing and border-top rule for free. The h2
-   inside .search-result-head isn't a direct child of <article> (the head
-   div wraps it alongside <time>), so article > h2's font-size/weight/
-   line-height and article > h2 a's colours don't apply automatically —
-   restated here rather than loosened at the source, since that selector
-   is deliberately scoped to avoid matching headings inside post bodies. */
-.search-result-head {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 0.25rem 1rem;
+/* .search-result is a plain <article>, so h2 as its direct child already
+   gets article > h2 / article > h2 a's colour+hover for free — only size
+   needs overriding, smaller than a full post's title so results don't
+   compete with the "Search" heading above them. Spacing is tightened
+   relative to the site's default article rhythm too: a dense, scannable
+   list reads better here than a full post card's generous spacing. */
+.search-result-list .search-result {
+    margin-bottom: 1.5rem;
 }
 
-.search-result-head h2 {
-    margin: 0;
-    font-size: 2.1rem;
+.search-result-list .search-result + .search-result {
+    padding-top: 1.5rem;
+}
+
+.search-result > h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.35rem;
     font-weight: 500;
     line-height: 1.3;
 }
 
-.search-result-head h2 a {
-    color: var(--black);
-    text-decoration: none;
+.search-result .post-body p {
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
 }
 
-.search-result-head h2 a:hover {
-    color: var(--blue-600);
+/* Below the excerpt and left-aligned, not beside the title — a search
+   result reads title-first, then how much of it matched, then when. */
+.search-result time {
+    display: block;
+    font-size: 0.9rem;
 }
 
-.search-result-head time {
-    flex-shrink: 0;
+/* Same highlight colour as everywhere else on the site, just dialled back
+   so it doesn't outweigh the result text it's meant to be pointing at. */
+.search-result mark {
+    background: color-mix(in srgb, var(--yellow-300) 55%, transparent);
 }
