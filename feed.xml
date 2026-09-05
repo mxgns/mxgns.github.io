@@ -4,8 +4,15 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-09-05T00:01:25Z</updated>
+  <updated>2026-09-05T00:01:26Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Note posted 5 September 2026</title>
+    <link href="https://mxgns.uk/86.html?src=atom" />
+    <id>https://mxgns.uk/86.html</id>
+    <updated>2026-09-05T00:01:26Z</updated>
+    <content type="html"><![CDATA[<p>This blog now has a <a href="search.html">search page</a> 🔎</p>]]></content>
+  </entry>
   <entry>
     <title>Thinking about buying a camera</title>
     <link href="https://mxgns.uk/85.html?src=atom" />
@@ -316,15 +323,5 @@
     <updated>2026-07-28T00:00:57Z</updated>
     <content type="html"><![CDATA[<p>One sad thing about the state of the internet in 2026 is how SEO means that it’s genuinely rare to find anything useful on the first page of search results when googling a problem 🤬 </p>
 <p>If anyone launches a search engine that punishes so-called good SEO practices, I’ll be the first in line to sign up for the waiting list!</p>]]></content>
-  </entry>
-  <entry>
-    <title>I bought a pair of JNCOs</title>
-    <link href="https://mxgns.uk/56.html?src=atom" />
-    <id>https://mxgns.uk/56.html</id>
-    <updated>2026-07-27T00:00:56Z</updated>
-    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/56-image-01-resized.jpeg" alt="My JNCO Twin Cannon, seen from the back"></figure><figure><img src="https://mxgns.uk/56-image-02-resized.jpeg" alt="My JNCO Twin Cannon, seen from the front"></figure><p>I’ve always had a thing for baggy jeans. It makes me tremendously happy that they are back in fashion at the moment, and I enjoy seeing them everywhere around me.</p>
-<p>Back in the day, the last time we were wearing baggy jeans, JNCOs weren’t a thing where I’m from, but I came across them online and from the first moment I saw them, I wanted a pair. However, the lack of supply and, I guess, my lack of courage meant I never bought any.</p>
-<p>Until now, that is. A couple of weeks ago, I was browsing the web, and I can’t remember quite how, but I ended up on JNCO’s homepage, and there they were. I kept coming back, browsing the product list for a couple of days, and then I suddenly hit the “add to basket” button, satisfying a lifelong ambition in just a click.</p>
-<p>Yesterday, they arrived, and I love them!</p><p><a href="https://mxgns.uk/56.html?src=atom" class="read-more">Read more</a></p>]]></content>
   </entry>
 </feed>
