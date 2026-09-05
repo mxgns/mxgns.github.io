@@ -23,6 +23,23 @@
     return window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
   }
 
+  // Same opt-out cookie and check as blog.js — duplicated rather than
+  // shared, since these are separate no-build-step files and this is a
+  // three-line check, not worth introducing cross-file coupling for.
+  function hasNotrackCookie() {
+    return new RegExp('(?:^|; )_notrack=').test(document.cookie);
+  }
+
+  // A search is a distinct event from the page view blog.js's own pixel
+  // already records for search.html — the same visitor searching the same
+  // term twice is two views, same semantics as revisiting a page.
+  function trackSearch(query) {
+    if (hasNotrackCookie()) return;
+    var params = new URLSearchParams();
+    params.set('q', query);
+    new Image().src = '/api/track/search-term.svg?' + params.toString();
+  }
+
   function currentQuery() {
     return new URLSearchParams(location.search).get('q') || '';
   }
@@ -79,6 +96,7 @@
   }
 
   function runSearch(query) {
+    trackSearch(query);
     clearBtn.hidden = false;
     statusEl.textContent = 'Searching…';
     resultsEl.replaceChildren();
