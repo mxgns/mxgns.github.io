@@ -1,4 +1,9 @@
 {
+  "87": {
+    "title": "The next Apple event is on Wednesday\u2026",
+    "category": "day-to-day",
+    "date": "2026-09-06"
+  },
   "86": {
     "title": "This blog now has a search page \ud83d\udd0e",
     "category": "blog-updates",
@@ -454,6 +459,11 @@
     "category": null,
     "date": null
   },
+  "index-8": {
+    "title": "Magnus\u2019s Homepage (page 8)",
+    "category": null,
+    "date": null
+  },
   "out-and-about": {
     "title": "Out & About",
     "category": "out-and-about",
@@ -481,6 +491,11 @@
   },
   "day-to-day-2": {
     "title": "Day-to-Day (page 2)",
+    "category": "day-to-day",
+    "date": null
+  },
+  "day-to-day-3": {
+    "title": "Day-to-Day (page 3)",
     "category": "day-to-day",
     "date": null
   },

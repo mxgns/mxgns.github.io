@@ -4,8 +4,16 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-09-05T00:01:26Z</updated>
+  <updated>2026-09-06T00:01:27Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Note posted 6 September 2026</title>
+    <link href="https://mxgns.uk/87.html?src=atom" />
+    <id>https://mxgns.uk/87.html</id>
+    <updated>2026-09-06T00:01:27Z</updated>
+    <content type="html"><![CDATA[<p>The next Apple event is on Wednesday and I will be watching, as always, even if I found them much more enjoyable when they were live, rather than just a 1-hour polished commercial. </p>
+<p>This time, though, I’m not so much looking at what they are releasing as what they are not.  I’m looking to buy an iPad very soon (the basic one), and am just waiting for the event to pass to make sure they don’t release a new one the day after I buy mine.</p>]]></content>
+  </entry>
   <entry>
     <title>Note posted 5 September 2026</title>
     <link href="https://mxgns.uk/86.html?src=atom" />
@@ -315,13 +323,5 @@
     <updated>2026-07-28T00:00:58Z</updated>
     <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/58-image-01-resized.jpg" alt="Screenshots from my phone"></figure><p>Too often, I get my phone out to make a quick note, and then I get distracted by something on the screen and forget the thing I was going to write down in the first place. That’s why I try to reduce the distractions on my phone as much as I can. I allow notifications from only the bare minimum of applications, and have reduced the number of visible apps and widgets to remove the clutter.</p>
 <p>Here’s what my setup looks like.</p><p><a href="https://mxgns.uk/58.html?src=atom" class="read-more">Read more</a></p>]]></content>
-  </entry>
-  <entry>
-    <title>Note posted 28 July 2026</title>
-    <link href="https://mxgns.uk/57.html?src=atom" />
-    <id>https://mxgns.uk/57.html</id>
-    <updated>2026-07-28T00:00:57Z</updated>
-    <content type="html"><![CDATA[<p>One sad thing about the state of the internet in 2026 is how SEO means that it’s genuinely rare to find anything useful on the first page of search results when googling a problem 🤬 </p>
-<p>If anyone launches a search engine that punishes so-called good SEO practices, I’ll be the first in line to sign up for the waiting list!</p>]]></content>
   </entry>
 </feed>
