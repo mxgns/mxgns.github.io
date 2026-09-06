@@ -1466,11 +1466,11 @@ li.favourite a::after {
 }
 
 .contribution-calendar {
+    font-size: 1rem;
     margin: 0 0 2.5rem;
 }
 
 .calendar-summary {
-    font-size: 1rem;
     margin: 0 0 1.5rem;
 }
 
