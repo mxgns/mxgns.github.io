@@ -4,8 +4,24 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-09-06T00:01:27Z</updated>
+  <updated>2026-09-06T00:01:28Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>My most popular Tumblr post ever</title>
+    <link href="https://mxgns.uk/88.html?src=atom" />
+    <id>https://mxgns.uk/88.html</id>
+    <updated>2026-09-06T00:01:28Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/88-image-01-resized.jpg" alt="A rainy London skyline"></figure><figure><img src="https://mxgns.uk/88-image-02-resized.jpg" alt="A rainy Langham Place seen from above"></figure><p>The throwback post with <a href="84.html">the view from Willis Tower</a> that I posted the other day made me think of my most popular Tumblr post ever, with 6,181 reposts and 3,001 likes.</p>
+<figure><img src="88-image-01-resized.jpg" alt="A rainy London skyline"></figure>
+
+<figure><img src="88-image-02-resized.jpg" alt="A rainy Langham Place seen from above"></figure>
+
+<p>The original caption was:</p>
+<blockquote>
+<p>A rainy London, seen from the 15th-floor restaurant at Saint George’s Hotel, Langham Place.</p>
+</blockquote>
+<p>I do miss what Tumblr was back then. It was a much friendlier place than anything we have now.</p>]]></content>
+  </entry>
   <entry>
     <title>Note posted 6 September 2026</title>
     <link href="https://mxgns.uk/87.html?src=atom" />
@@ -315,13 +331,5 @@
   For many years, I didn’t have a laptop and just used an iPad for everything. I do love the MacBook Air that eventually replaced it, but there are times when I miss the iPad’s simplicity. Not least in my EDC, so I don’t have to wear my backpack. I’m therefore quite tempted to get an iPad Mini, but the current model feels a bit old, so I’m waiting to see what happens.</p>
 </li>
 </ul>]]></content>
-  </entry>
-  <entry>
-    <title>My minimal-ish iPhone setup</title>
-    <link href="https://mxgns.uk/58.html?src=atom" />
-    <id>https://mxgns.uk/58.html</id>
-    <updated>2026-07-28T00:00:58Z</updated>
-    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/58-image-01-resized.jpg" alt="Screenshots from my phone"></figure><p>Too often, I get my phone out to make a quick note, and then I get distracted by something on the screen and forget the thing I was going to write down in the first place. That’s why I try to reduce the distractions on my phone as much as I can. I allow notifications from only the bare minimum of applications, and have reduced the number of visible apps and widgets to remove the clutter.</p>
-<p>Here’s what my setup looks like.</p><p><a href="https://mxgns.uk/58.html?src=atom" class="read-more">Read more</a></p>]]></content>
   </entry>
 </feed>
