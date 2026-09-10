@@ -4,8 +4,23 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-09-08T00:01:30Z</updated>
+  <updated>2026-09-09T00:01:31Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Thoughts on Apple’s latest launch event</title>
+    <link href="https://mxgns.uk/91.html?src=atom" />
+    <id>https://mxgns.uk/91.html</id>
+    <updated>2026-09-09T00:01:31Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/91-image-01-resized.jpeg" alt="Watching the Apple event on my MacBook"></figure><p>Some thoughts from watching Apple’s “Surprise and Shine” event yesterday:</p>
+<ul>
+<li>With all the leaks beforehand, the surprise element the name promised was non-existent. I very much miss when there was at least <em>something</em> you weren’t expecting.</li>
+<li>Calling it an “event” is just taking the piss. Ever since they started pre-recording the whole thing during Covid, it’s really just a 75-minute-long commercial.</li>
+<li>I literally fell asleep during the iPhone 18 Pro presentation. CPU cores, blah blah, GPU, blah blah, Neural Engine, blah blah 💤 The camera seems nice, though.</li>
+<li>The iPhone Duo with its unfoldable screen seems technically very impressive. However, making it wider than the Pro Max, where I already can’t reach things with my thumb, seems like a wrong move. All in all, the whole concept feels like a compromise when it comes to the device you use all the time, just to be able to unfold a bigger screen you might use once in a while. It will no doubt get many fans, but it’s not for me.</li>
+</ul>
+<p>I’ve been an Apple fanboy for more than 20 years, and still am. I’m not going anywhere, but we’re definitely on a plateau at the moment. Technical specs keep getting more and more impressive, but there’s nothing genuinely new or exciting.</p>
+<p>It feels as if it’s time for them to think different™ again.</p>]]></content>
+  </entry>
   <entry>
     <title>Note posted 8 September 2026</title>
     <link href="https://mxgns.uk/90.html?src=atom" />
@@ -296,12 +311,5 @@
     <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/62-image-01-resized.jpeg" alt="90’s me sitting in front of a CRT screen in my student room, wearing a Fubu jersey and Fubu jeans."></figure><p>Getting my <a href="56.html">JNCO jeans</a> the other week made me think of this picture of me back in the day.</p>
 <p>There’s not a lot of picture evidence, but while in uni, I was basically the guy in Pretty Fly for a White Guy.</p>
 <p>I wish so much I kept that Fubu jersey!</p>]]></content>
-  </entry>
-  <entry>
-    <title>Note posted 6 August 2026</title>
-    <link href="https://mxgns.uk/61.html?src=atom" />
-    <id>https://mxgns.uk/61.html</id>
-    <updated>2026-08-06T00:01:01Z</updated>
-    <content type="html"><![CDATA[<p>One downside of having my life packed in boxes at the moment is straining my back from moving the boxes around to get something out! 😖</p>]]></content>
   </entry>
 </feed>
