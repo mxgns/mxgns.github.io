@@ -4,8 +4,22 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-09-10T00:01:31Z</updated>
+  <updated>2026-09-11T00:01:32Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>I have an iPad again</title>
+    <link href="https://mxgns.uk/92.html?src=atom" />
+    <id>https://mxgns.uk/92.html</id>
+    <updated>2026-09-11T00:01:32Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/92-image-01-resized.jpeg" alt="iPad"></figure><p>Yay, I have an iPad again! 😊</p>
+<p>For years, I didn’t have a laptop and used an iPad for everything. These days, they are definitely capable enough, and I strongly disagree with those who say tablets are only for consuming, not creating.</p>
+<p>What eventually made me replace the iPad with a laptop, though, was something rather counterintuitive: I wanted something easier to carry around. With the iPad, once you add a keyboard, a stand and a trackpad, you have a great setup for tasks like hobby coding, but it ends up being a lot to carry in your backpack for a session in a cafe.</p>
+<p>So, a couple of years ago, I replaced it with a MacBook Air. </p>
+<p>I love the MacBook, but there have still been situations where I have missed the iPad. Reading the newspaper or a book on a laptop just doesn’t feel right. And undeniably, a laptop is much less convenient when you want to watch an episode of a K-drama on the plane. And using a laptop in bed just isn’t very ergonomic or relaxing at all. And lastly, and ironically: the portability. For the times when I <em>don’t</em> need a keyboard and trackpad, it feels silly wearing a backpack just to carry a backpack just to fit the laptop </p>
+<p>So, I’ve been thinking lately: why not both?</p>
+<p>I waited for Apple’s launch event on Wednesday, just to make sure they didn’t release anything interesting right after I bought the iPad.</p>
+<p>With this being a secondary device, I settled for the iPad A16, a.k.a. the standard iPad. I’m very happy with it so far. It’s definitely quick enough, the screen is perfectly fine, and unless Apple get their act together, the lack of Apple AI is almost a good thing.</p>]]></content>
+  </entry>
   <entry>
     <title>Thoughts on Apple’s latest launch event</title>
     <link href="https://mxgns.uk/91.html?src=atom" />
@@ -302,14 +316,5 @@
 <p>I haven’t actually shared the blog address with anyone and the traffic is <em>very</em> low. Tbh, that’s quite liberating! I can post whatever I feel like, without worrying about whether anyone will find it interesting or whether it is “on brand” or whatever.</p>
 <p>Because that’s the whole point of this blog. It’s <em>mine</em>. It’s a manually curated feed of my life and interests. By me, for me. There are no retweets and no like button for anyone to press and no sense of failure when they don’t.</p>
 <p>It’s just me putting my notes on my wall. If anyone happens to walk past and see them, that’s cool, but it’s not the main purpose.</p>]]></content>
-  </entry>
-  <entry>
-    <title>Back in the day</title>
-    <link href="https://mxgns.uk/62.html?src=atom" />
-    <id>https://mxgns.uk/62.html</id>
-    <updated>2026-08-07T00:01:02Z</updated>
-    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/62-image-01-resized.jpeg" alt="90’s me sitting in front of a CRT screen in my student room, wearing a Fubu jersey and Fubu jeans."></figure><p>Getting my <a href="56.html">JNCO jeans</a> the other week made me think of this picture of me back in the day.</p>
-<p>There’s not a lot of picture evidence, but while in uni, I was basically the guy in Pretty Fly for a White Guy.</p>
-<p>I wish so much I kept that Fubu jersey!</p>]]></content>
   </entry>
 </feed>
