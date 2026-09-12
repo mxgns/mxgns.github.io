@@ -4,8 +4,16 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-09-11T00:01:32Z</updated>
+  <updated>2026-09-12T00:01:33Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Places I’ve been</title>
+    <link href="https://mxgns.uk/93.html?src=atom" />
+    <id>https://mxgns.uk/93.html</id>
+    <updated>2026-09-12T00:01:33Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/93-image-01.svg" alt="World map in a honeycomb pattern of circles"></figure><p>So many places still to go!</p>
+<p>This map took surprisingly many hours to create and involved a huge array in Python, but it was a relaxing task 😌</p>]]></content>
+  </entry>
   <entry>
     <title>I have an iPad again</title>
     <link href="https://mxgns.uk/92.html?src=atom" />
@@ -304,17 +312,5 @@
 <li>Give a little bit to charity</li>
 </ol>
 <figure><img src="64-image-01-resized.png" alt="Budget breakdown"></figure><p><a href="https://mxgns.uk/64.html?src=atom" class="read-more">Read more</a></p>]]></content>
-  </entry>
-  <entry>
-    <title>Thoughts on the blog so far</title>
-    <link href="https://mxgns.uk/63.html?src=atom" />
-    <id>https://mxgns.uk/63.html</id>
-    <updated>2026-08-08T00:01:03Z</updated>
-    <content type="html"><![CDATA[<p>I’m happy to see how this blog project seems to be surviving so far, two and a half months in.</p>
-<p>The whole thing <a href="1.html">started</a> as an impulse and an AI prompt about me missing personal blogs and when the Internet was free from slop and ads.</p>
-<p>The <a href="4.html">AI helped me build the platform</a>, and I have semi-regularly been <a href="archive.html">filling it</a> with short journal posts, photos and random thoughts. This is the 44th post, excluding the very shortest notes.</p>
-<p>I haven’t actually shared the blog address with anyone and the traffic is <em>very</em> low. Tbh, that’s quite liberating! I can post whatever I feel like, without worrying about whether anyone will find it interesting or whether it is “on brand” or whatever.</p>
-<p>Because that’s the whole point of this blog. It’s <em>mine</em>. It’s a manually curated feed of my life and interests. By me, for me. There are no retweets and no like button for anyone to press and no sense of failure when they don’t.</p>
-<p>It’s just me putting my notes on my wall. If anyone happens to walk past and see them, that’s cool, but it’s not the main purpose.</p>]]></content>
   </entry>
 </feed>
