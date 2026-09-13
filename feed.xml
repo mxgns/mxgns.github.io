@@ -4,8 +4,16 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-09-12T00:01:33Z</updated>
+  <updated>2026-09-13T00:01:34Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>What’s in my bag</title>
+    <link href="https://mxgns.uk/94.html?src=atom" />
+    <id>https://mxgns.uk/94.html</id>
+    <updated>2026-09-13T00:01:34Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/94-image-01-resized.jpeg" alt="Flatlay of the items in my bag"></figure><p>One of my <a href="75.html">little projects</a> to get ready for autumn was rebooting my everyday carry (EDC), and I think I’m done enough for a trial in the real world.</p>
+<p>Here’s what I will carry, starting with my commute tomorrow.</p><p><a href="https://mxgns.uk/94.html?src=atom" class="read-more">Read more</a></p>]]></content>
+  </entry>
   <entry>
     <title>Places I’ve been</title>
     <link href="https://mxgns.uk/93.html?src=atom" />
@@ -295,22 +303,5 @@
     <id>https://mxgns.uk/65.html</id>
     <updated>2026-08-09T00:01:05Z</updated>
     <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/65-image-01-resized.jpeg" alt="Canary Wharf view in the sunset"></figure><p>Last night in Canary Wharf</p>]]></content>
-  </entry>
-  <entry>
-    <title>How I budget</title>
-    <link href="https://mxgns.uk/64.html?src=atom" />
-    <id>https://mxgns.uk/64.html</id>
-    <updated>2026-08-08T00:01:04Z</updated>
-    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/64-image-01-resized.png" alt="Budget breakdown"></figure><p>When it comes to finances, I subscribe to the idea that automation is how to make it easy to stay on top of things. I just don’t have the will to track every expense or go through account statements.</p>
-<p>Over time, I have fine-tuned a system that I find makes it really easy for me to stay on top of things without thinking, avoiding my expenses ballooning or me wondering at the end of the month where all the money went.</p>
-<p>The main ideas are:</p>
-<ol>
-<li>Use a joint account for joint expenses, and joint expenses only</li>
-<li>Pay myself a monthly allowance for everyday spending</li>
-<li>Automated, simple investments</li>
-<li>Save for big expenses</li>
-<li>Give a little bit to charity</li>
-</ol>
-<figure><img src="64-image-01-resized.png" alt="Budget breakdown"></figure><p><a href="https://mxgns.uk/64.html?src=atom" class="read-more">Read more</a></p>]]></content>
   </entry>
 </feed>
