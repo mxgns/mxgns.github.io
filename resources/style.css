@@ -717,7 +717,8 @@ article > .ai-disclosure {
     align-items: center;
     gap: 1.25rem;
     padding: 1rem;
-    margin-bottom: 3rem;
+    margin: 0 -1.5rem 3rem;
+    width: calc(100% + 3rem);
 }
 
 article > .ai-disclosure::before {

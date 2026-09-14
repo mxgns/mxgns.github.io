@@ -89,6 +89,16 @@
   }
 })();
 
+// Separate IIFE: the masthead logo links to "/", which only resolves on the
+// deployed site. Opening pages straight from the filesystem while developing
+// needs "index.html" instead, since "file:///" has no server root to redirect.
+(function () {
+  if (location.protocol !== 'file:') return;
+
+  var logo = document.querySelector('.masthead-logo');
+  if (logo && logo.getAttribute('href') === '/') logo.setAttribute('href', 'index.html');
+})();
+
 // Separate IIFE: unrelated to analytics, and the block above returns early
 // when tracking is opted out, which must not disable the theme toggle.
 (function () {
