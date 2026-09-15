@@ -4,8 +4,15 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-09-14T00:01:35Z</updated>
+  <updated>2026-09-15T00:01:36Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Photo posted 15 September 2026</title>
+    <link href="https://mxgns.uk/96.html?src=atom" />
+    <id>https://mxgns.uk/96.html</id>
+    <updated>2026-09-15T00:01:36Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/96-image-01-resized.jpeg" alt="City of London skyline at dusk, with a train passing by in the foreground"></figure><p>On an evening like this, the view while waiting for the DLR at Shadwell is not too bad.</p>]]></content>
+  </entry>
   <entry>
     <title>3 pics from the weekend</title>
     <link href="https://mxgns.uk/95.html?src=atom" />
@@ -298,14 +305,5 @@
     <updated>2026-08-15T00:01:07Z</updated>
     <content type="html"><![CDATA[<p>I’ve been finding Grammarly extremely useful for keeping an eye on my grammar when I write. However, once my half-price offer ended, it’s just <em>way</em> too expensive for what it is. </p>
 <p>For that reason, I’m now trying <a href="https://languagetool.org/editor/new" class="external-link" target="_blank" rel="noopener">LanguageTool</a> instead. I’ll let you know how it goes.</p>]]></content>
-  </entry>
-  <entry>
-    <title>Note posted 9 August 2026</title>
-    <link href="https://mxgns.uk/66.html?src=atom" />
-    <id>https://mxgns.uk/66.html</id>
-    <updated>2026-08-09T00:01:06Z</updated>
-    <content type="html"><![CDATA[<p><a href="https://www.londongraphics.co.uk" class="external-link" target="_blank" rel="noopener">London Graphic Centre</a> suddenly have a lot of Japanese stationery in store, including my favourite <a href="https://stalogy.com/products/006/" class="external-link" target="_blank" rel="noopener">sticky dots from Stalogy</a>.</p>
-<p>It was hard not to buy anything, but I had to stay strong as I’ll be going to Tokyo in the autumn.</p>
-<p>🔜 🇯🇵</p>]]></content>
   </entry>
 </feed>
