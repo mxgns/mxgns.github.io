@@ -4,8 +4,24 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-09-15T00:01:36Z</updated>
+  <updated>2026-09-16T00:01:37Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Note posted 16 September 2026</title>
+    <link href="https://mxgns.uk/97.html?src=atom" />
+    <id>https://mxgns.uk/97.html</id>
+    <updated>2026-09-16T00:01:37Z</updated>
+    <content type="html"><![CDATA[<p>I installed iOS 27 yesterday. Is it just me, or is it the least exciting iOS release ever? 😔</p>
+<ul>
+<li>You can make UI elements less transparent after they made them transparent last year.</li>
+<li>You can make the clock smaller on the lock screen after they made it bigger last year.</li>
+<li>Genmoji is a bit more reliable, but buggier in other ways. </li>
+<li>You can AI-manipulate photos in ways that make them no longer representative of the photo you took.</li>
+</ul>
+<p>Plus, Siri is allegedly less rubbish, but it’s been bad for so long it’s hard to care.</p>
+<p>That’s it? 🤨</p>
+<p>End of rant.</p>]]></content>
+  </entry>
   <entry>
     <title>Photo posted 15 September 2026</title>
     <link href="https://mxgns.uk/96.html?src=atom" />
@@ -297,13 +313,5 @@
 <p>But then four events roughly coincided in time. Firstly, Google bought Fitbit and demanded to get all my data. Secondly, I bought an iPhone Pro Max, thinking the bigger screen would make reading more pleasant than a normal-sized phone. Thirdly, London became the phone theft capital of the world and I started worrying about having my phone snatched when taking it out to skip the ads in the podcast I was listening to, or whatever. And lastly, I went to Korea and was able to buy an Apple Watch on the cheep.</p>
 <p>That was why I decided to get an Apple Watch. I wanted a non-Google, phone-snatching-preventing iPhone remote at a discount.</p>
 <p>I have now had my Apple Watch Series 11 for 10 months and feel there are a few things I want to get off my chest, so here’s a very honest review.</p><p><a href="https://mxgns.uk/68.html?src=atom" class="read-more">Read more</a></p>]]></content>
-  </entry>
-  <entry>
-    <title>Note posted 15 August 2026</title>
-    <link href="https://mxgns.uk/67.html?src=atom" />
-    <id>https://mxgns.uk/67.html</id>
-    <updated>2026-08-15T00:01:07Z</updated>
-    <content type="html"><![CDATA[<p>I’ve been finding Grammarly extremely useful for keeping an eye on my grammar when I write. However, once my half-price offer ended, it’s just <em>way</em> too expensive for what it is. </p>
-<p>For that reason, I’m now trying <a href="https://languagetool.org/editor/new" class="external-link" target="_blank" rel="noopener">LanguageTool</a> instead. I’ll let you know how it goes.</p>]]></content>
   </entry>
 </feed>
