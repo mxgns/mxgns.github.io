@@ -36,8 +36,9 @@
   function trackSearch(query) {
     if (hasNotrackCookie()) return;
     var params = new URLSearchParams();
-    params.set('q', query);
-    new Image().src = '/api/track/search-term.svg?' + params.toString();
+    params.set('type', 'search');
+    params.set('data', query);
+    new Image().src = '/api/track/event.svg?' + params.toString();
   }
 
   function currentQuery() {

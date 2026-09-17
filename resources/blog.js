@@ -87,6 +87,16 @@
     }
     img.src = pixelSrc;
   }
+
+  // Separate from the pageview pixel above: the 404 page's own view is
+  // still just page_id "404" (no info on what was actually requested), so
+  // this fires a second, independent event recording the attempted path.
+  if (document.body.dataset.page === '404') {
+    var notFoundParams = new URLSearchParams();
+    notFoundParams.set('type', 'notfound');
+    notFoundParams.set('data', location.pathname);
+    new Image().src = '/api/track/event.svg?' + notFoundParams.toString();
+  }
 })();
 
 // Separate IIFE: the masthead logo links to "/", which only resolves on the
