@@ -4,8 +4,15 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-09-16T00:01:37Z</updated>
+  <updated>2026-09-17T00:01:38Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>At the recording of Live at the Apollo</title>
+    <link href="https://mxgns.uk/98.html?src=atom" />
+    <id>https://mxgns.uk/98.html</id>
+    <updated>2026-09-17T00:01:38Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/98-image-01-resized.jpeg" alt="“Live at the Apollo” sign outside the Hammersmith Apollo"></figure><figure><img src="https://mxgns.uk/98-image-02-resized.jpeg" alt="“Live at the Apollo” sign on the stage before the show started"></figure><p>One thing I enjoy is going to TV recordings, as I find it very interesting to get a behind-the-scenes look. Sometimes, everything is as you expect it would be, and sometimes, it’s quite different. Sometimes you get big celebrities, and sometimes you don’t. Either way, it’s free entertainment.</p><p><a href="https://mxgns.uk/98.html?src=atom" class="read-more">Read more</a></p>]]></content>
+  </entry>
   <entry>
     <title>Note posted 16 September 2026</title>
     <link href="https://mxgns.uk/97.html?src=atom" />
@@ -296,22 +303,5 @@
     <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/69-image-01.svg" alt="ZX81 character map"></figure><figure><img src="69-image-01.svg" alt="ZX81 character map"></figure>
 
 <p>I thought I was nostalgic for ZX81 graphics but looking into it, they were even more simplistic than I remembered. This may not have been when computers peaked, after all.</p>]]></content>
-  </entry>
-  <entry>
-    <title>My honest and somewhat nitpicky review of Apple Watch Series 11</title>
-    <link href="https://mxgns.uk/68.html?src=atom" />
-    <id>https://mxgns.uk/68.html</id>
-    <updated>2026-08-15T00:01:08Z</updated>
-    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/68-image-01-resized.jpg" alt="Apple Watch Series 11 on my wrist"></figure><figure><img src="68-image-01-resized.jpg" alt="Apple Watch Series 11 on my wrist"></figure>
-
-<p>I would love to just have a good old Casio watch, but there are two reasons why I have a smartwatch instead:</p>
-<ol>
-<li>I need a silent alarm to wake me up in the morning without waking my husband.</li>
-<li>I want a step counter that counts every step instead of just those when I carry my phone so that the number looks higher.</li>
-</ol>
-<p>For many years, I had a Fitbit. It did these two things very well, and I was happy.</p>
-<p>But then four events roughly coincided in time. Firstly, Google bought Fitbit and demanded to get all my data. Secondly, I bought an iPhone Pro Max, thinking the bigger screen would make reading more pleasant than a normal-sized phone. Thirdly, London became the phone theft capital of the world and I started worrying about having my phone snatched when taking it out to skip the ads in the podcast I was listening to, or whatever. And lastly, I went to Korea and was able to buy an Apple Watch on the cheep.</p>
-<p>That was why I decided to get an Apple Watch. I wanted a non-Google, phone-snatching-preventing iPhone remote at a discount.</p>
-<p>I have now had my Apple Watch Series 11 for 10 months and feel there are a few things I want to get off my chest, so here’s a very honest review.</p><p><a href="https://mxgns.uk/68.html?src=atom" class="read-more">Read more</a></p>]]></content>
   </entry>
 </feed>
