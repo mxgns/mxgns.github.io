@@ -4,8 +4,16 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-09-20T00:01:39Z</updated>
+  <updated>2026-09-20T00:01:40Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Photo posted 20 September 2026</title>
+    <link href="https://mxgns.uk/100.html?src=atom" />
+    <id>https://mxgns.uk/100.html</id>
+    <updated>2026-09-20T00:01:40Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/100-image-01-resized.jpeg" alt="Mirror selfie of me trying on black Carhartt WIP dungarees"></figure><p>Today’s main task was to go shopping for some dungarees in Carhartt. Unfortunately, they didn’t have my size, just one siize up and one size down, so I ended up having to place an online order when I got back home instead.</p>
+<p>I can’t deny I’m super excited to get a good pair of dungarees again! 😊</p>]]></content>
+  </entry>
   <entry>
     <title>Lunch at Poon’s at Somerset House</title>
     <link href="https://mxgns.uk/99.html?src=atom" />
@@ -294,14 +302,5 @@
     <updated>2026-08-19T00:01:11Z</updated>
     <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/71-image-01-resized.jpeg" alt="Me taking a mirror selfie in a tube station"></figure><p>Sometimes I miss having a real camera.</p>
 <p>Random photo from 28 February 2009.</p>]]></content>
-  </entry>
-  <entry>
-    <title>Note posted 16 August 2026</title>
-    <link href="https://mxgns.uk/70.html?src=atom" />
-    <id>https://mxgns.uk/70.html</id>
-    <updated>2026-08-16T00:01:10Z</updated>
-    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/70-image-01-resized.jpeg" alt="A Golden Mole, Protected Species (oil and gold paint on canvas)"></figure><figure><img src="70-image-01-resized.jpeg" alt="A Golden Mole, Protected Species (oil and gold paint on canvas)"></figure>
-
-<p>Georg Baselitz at White Cube Gallery</p>]]></content>
   </entry>
 </feed>
