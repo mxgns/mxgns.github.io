@@ -1,4 +1,9 @@
 {
+  "99": {
+    "title": "Lunch at Poon\u2019s at Somerset House",
+    "category": "day-to-day",
+    "date": "2026-09-20"
+  },
   "98": {
     "title": "At the recording of Live at the Apollo",
     "category": "out-and-about",
@@ -516,6 +521,11 @@
   },
   "index-8": {
     "title": "Magnus\u2019s Homepage (page 8)",
+    "category": null,
+    "date": null
+  },
+  "index-9": {
+    "title": "Magnus\u2019s Homepage (page 9)",
     "category": null,
     "date": null
   },

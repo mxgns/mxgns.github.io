@@ -4,8 +4,17 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-09-17T00:01:38Z</updated>
+  <updated>2026-09-20T00:01:39Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Lunch at Poon’s at Somerset House</title>
+    <link href="https://mxgns.uk/99.html?src=atom" />
+    <id>https://mxgns.uk/99.html</id>
+    <updated>2026-09-20T00:01:39Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/99-image-01-resized.jpeg" alt="Char Siu pork, rice and mushroom salad, served at the counter"></figure><p>Yesterday, we ended up leaving home too late to be in the mood for our usual Saturday brunch routine. Instead, we decided to do lunch at Poon’s, a Hong Kong restaurant in Somerset House.</p>
+<p>We chose the 3-course set menu, which changes daily, and were served chicken soup, char siu pork, mushroom salad, and vegetables. It was all very nice, and the quality felt very high. It was also nice to sit at the counter and watch the chefs at work. </p>
+<p>We will definitely come back for more.</p>]]></content>
+  </entry>
   <entry>
     <title>At the recording of Live at the Apollo</title>
     <link href="https://mxgns.uk/98.html?src=atom" />
@@ -294,14 +303,5 @@
     <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/70-image-01-resized.jpeg" alt="A Golden Mole, Protected Species (oil and gold paint on canvas)"></figure><figure><img src="70-image-01-resized.jpeg" alt="A Golden Mole, Protected Species (oil and gold paint on canvas)"></figure>
 
 <p>Georg Baselitz at White Cube Gallery</p>]]></content>
-  </entry>
-  <entry>
-    <title>Note posted 16 August 2026</title>
-    <link href="https://mxgns.uk/69.html?src=atom" />
-    <id>https://mxgns.uk/69.html</id>
-    <updated>2026-08-16T00:01:09Z</updated>
-    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/69-image-01.svg" alt="ZX81 character map"></figure><figure><img src="69-image-01.svg" alt="ZX81 character map"></figure>
-
-<p>I thought I was nostalgic for ZX81 graphics but looking into it, they were even more simplistic than I remembered. This may not have been when computers peaked, after all.</p>]]></content>
   </entry>
 </feed>
