@@ -4,8 +4,16 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-09-20T00:01:40Z</updated>
+  <updated>2026-09-21T00:01:41Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Note posted 21 September 2026</title>
+    <link href="https://mxgns.uk/101.html?src=atom" />
+    <id>https://mxgns.uk/101.html</id>
+    <updated>2026-09-21T00:01:41Z</updated>
+    <content type="html"><![CDATA[<p>Today marks the start of wearing my <a href="72.html">14-day wardrobe</a>.</p>
+<p>The OOTD is loose mid-blue jeans, an olive sweatshirt over a white tee, and grey trainers with white socks. The jeans and sweatshirt feel refreshingly colourful for being me! 😅</p>]]></content>
+  </entry>
   <entry>
     <title>Photo posted 20 September 2026</title>
     <link href="https://mxgns.uk/100.html?src=atom" />
@@ -294,13 +302,5 @@
 <p>A while back, I started thinking about <a href="36.html">rebooting my wardrobe</a>, and as autumn is getting closer, I’m back at it.</p>
 <p>I’ve changed course slightly. Instead of trying to create the perfect system for every situation, I’m focusing on what I wear every day, 99% of the time.</p>
 <p>I’m calling this my 14-day uniform.</p><p><a href="https://mxgns.uk/72.html?src=atom" class="read-more">Read more</a></p>]]></content>
-  </entry>
-  <entry>
-    <title>Photo posted 19 August 2026</title>
-    <link href="https://mxgns.uk/71.html?src=atom" />
-    <id>https://mxgns.uk/71.html</id>
-    <updated>2026-08-19T00:01:11Z</updated>
-    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/71-image-01-resized.jpeg" alt="Me taking a mirror selfie in a tube station"></figure><p>Sometimes I miss having a real camera.</p>
-<p>Random photo from 28 February 2009.</p>]]></content>
   </entry>
 </feed>
