@@ -24,11 +24,11 @@
         <link rel="icon" href="resources/icon.png">
         <link
             rel="stylesheet"
-            href="resources/style.css?v=1790051877"
+            href="resources/style.css?v=1790052296"
         >
         <link
             rel="stylesheet"
-            href="resources/assorted.css?v=1790051877"
+            href="resources/assorted.css?v=1790052296"
         >
         <link
             rel="alternate"
@@ -135,6 +135,15 @@
 </tr>
 </tbody>
 </table>
+<h3>Footnotes</h3>
+<p>Source:</p>
+<pre><code>A claim that needs backing up[^1].
+
+[^1]: The source for that claim.
+</code></pre>
+<p>Renders as:</p>
+<p>A claim that needs backing up<sup id="fnref:syntax-1"><a class="footnote-ref" href="#fn:syntax-1">1</a></sup>.</p>
+<p>A footnote&rsquo;s definition can be written anywhere in the post — conventionally kept together at the end — and resolves correctly wherever it&rsquo;s referenced, even from the part of the post shown as an excerpt elsewhere on the site. That said, footnotes are hidden entirely on index and category pages; they only show up once you&rsquo;re on the post&rsquo;s own page.</p>
 <h3>Blockquotes</h3>
 <p>Source:</p>
 <pre><code>&gt; A quoted thought, indented and set apart from the rest of the text.
@@ -311,7 +320,15 @@ Worth calling out separately from the main text.
 <pre><code>Get the full-size version &lt;a href="12-image-01-resized.jpg" class="download-link"&gt;here&lt;/a&gt;.
 </code></pre>
 <p>Renders as:</p>
-<p>Get the full-size version <a href="12-image-01-resized.jpg" class="download-link">here</a>.</p></div>
+<p>Get the full-size version <a href="12-image-01-resized.jpg" class="download-link">here</a>.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:syntax-1">
+<p>The source for that claim.&#160;<a class="footnote-backref" href="#fnref:syntax-1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></div>
 <section class="comments" id="comments">
 <h2>2 comments</h2>
 <article class="comment">
@@ -343,7 +360,7 @@ Worth calling out separately from the main text.
         <img id="_b" alt="" width="1" height="1"
              style="position:absolute;left:-9999px"
              data-src="/api/track/syntax.svg">
-        <script src="resources/blog.js?v=1790051877"></script>
+        <script src="resources/blog.js?v=1790052296"></script>
         
     </body>
 </html>
