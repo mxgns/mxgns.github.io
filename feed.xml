@@ -4,8 +4,16 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-09-22T00:01:43Z</updated>
+  <updated>2026-09-22T00:01:44Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Note posted 22 September 2026</title>
+    <link href="https://mxgns.uk/104.html?src=atom" />
+    <id>https://mxgns.uk/104.html</id>
+    <updated>2026-09-22T00:01:44Z</updated>
+    <content type="html"><![CDATA[<p>Brand new dark-blue jeans and pristine new trainers are a truly awful combo 😬</p>
+<p>Thank God for the good old masking-tape-inside-the-leg-opening trick to prevent colour transfer!</p>]]></content>
+  </entry>
   <entry>
     <title>The “final” 14-day wardrobe list</title>
     <link href="https://mxgns.uk/103.html?src=atom" />
@@ -291,13 +299,5 @@
 <p><strong>Figure out my career path</strong> (in progress) — I’m in a good job with a good employer and have no plan going anywhere, but nevertheless, I need to keep an eye on my future employability. The kind of roles I used to do seem to have all but disappeared, so I need to make sure I build towards something that’s a bit more sought after these days.</p>
 </li>
 </ul>]]></content>
-  </entry>
-  <entry>
-    <title>Note posted 23 August 2026</title>
-    <link href="https://mxgns.uk/74.html?src=atom" />
-    <id>https://mxgns.uk/74.html</id>
-    <updated>2026-08-23T00:01:14Z</updated>
-    <content type="html"><![CDATA[<p>After <a href="19.html">using DuckDuckGo</a> for a while, I’ve decided to take <a href="https://kagi.com/welcome" class="external-link" target="_blank" rel="noopener">Kagi</a> for a spin instead. </p>
-<p>As opposed to DuckDuckGo, Kagi is completely free from ads, and there’s no AI summary unless you ask for it. If it works, I’ll happily pay the $5/month they charge.</p>]]></content>
   </entry>
 </feed>
