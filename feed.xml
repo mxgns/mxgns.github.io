@@ -4,8 +4,22 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-09-23T00:01:45Z</updated>
+  <updated>2026-09-26T00:01:46Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Saturday photo dump</title>
+    <link href="https://mxgns.uk/106.html?src=atom" />
+    <id>https://mxgns.uk/106.html</id>
+    <updated>2026-09-26T00:01:46Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/106-image-01-resized.jpeg" alt="Smoked salmon sandwiches and full English breakfast"></figure><figure><img src="https://mxgns.uk/106-image-02-resized.jpeg" alt="Kitchen showroom"></figure><figure><img src="https://mxgns.uk/106-image-03-resized.jpeg" alt="Greenwich Observatory"></figure><figure><img src="https://mxgns.uk/106-image-04-resized.jpeg" alt="The view from Greenwich Observatory"></figure><figure><img src="https://mxgns.uk/106-image-05-resized.jpeg" alt="Ice cream van in field"></figure><p>A nice autumn day in photos:</p>
+<ol>
+<li>Tried Beringer’s, City Island for brunch. Nice food and very convenient, since it’s close to home.</li>
+<li>We’re hopefully getting close now to exchanging the contract on the new flat now, so we went looking for a new kitchen.</li>
+<li>We were planning to go to Epping Forest, but there was no Central Line, so we ended up in Greenwich instead</li>
+<li>I learned that the Prime Meridian by the observatory hasn’t been the actual prime meridian since 1974. The real one is 102 metres from there!</li>
+<li>From Greenwich, we walked south across the heath to get to Blackheath, where we took the bus back home.</li>
+</ol>]]></content>
+  </entry>
   <entry>
     <title>Photo posted 23 September 2026</title>
     <link href="https://mxgns.uk/105.html?src=atom" />
@@ -273,12 +287,5 @@
     <updated>2026-08-29T00:01:17Z</updated>
     <content type="html"><![CDATA[<p>As I hinted when I posted the throwback photo <a href="71.html">the other day</a>, I am a bit tempted to get a non-phone camera again 📷</p>
 <p>I tell myself it would make perfect sense, since I could go for the standard iPhone next time if I no longer need the Pro for the best camera. But honestly, it’s probably more about the <em>feeling</em> of having a camera 😅 That, and avoiding some of the phone’s automatic photo processing.</p>]]></content>
-  </entry>
-  <entry>
-    <title>Photo posted 29 August 2026</title>
-    <link href="https://mxgns.uk/76.html?src=atom" />
-    <id>https://mxgns.uk/76.html</id>
-    <updated>2026-08-29T00:01:16Z</updated>
-    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/76-image-01-resized.jpeg" alt="Dragon fly up close"></figure><p>Dragon fly</p>]]></content>
   </entry>
 </feed>
