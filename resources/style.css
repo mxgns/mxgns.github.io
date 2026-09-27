@@ -474,6 +474,10 @@ article > h2 {
         display: block;
         margin: 0 auto;
     }
+
+    #post-error-404 h3 {
+        text-align: center;
+    }
 }
 
 article > h1 a,
