@@ -464,6 +464,18 @@ article > h2 {
     margin: 0 0 0.9rem;
 }
 
+#post-error-404 svg {
+    width: 15rem;
+    height: 15rem;
+}
+
+@media (max-width: 450px) {
+    #post-error-404 svg {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
 article > h1 a,
 article > h2 a {
     color: var(--black);
