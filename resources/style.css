@@ -1458,6 +1458,93 @@ li.favourite a::after {
     }
 }
 
+/* === Photo archive preview (archive page) === */
+
+.archive-gallery-preview {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0 0 0.6rem;
+    padding: 0;
+}
+
+.archive-gallery-preview li {
+    aspect-ratio: 1 / 1;
+    min-width: 0;
+}
+
+.archive-gallery-preview a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+.archive-gallery-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.archive-gallery-preview a:hover img {
+    opacity: 0.85;
+}
+
+.archive-gallery-count {
+    margin: 0 0 1.5rem;
+}
+
+.archive-gallery-count a {
+    font-size: 1rem;
+    color: var(--blue-600);
+    text-decoration: none;
+}
+
+.archive-gallery-count a:visited {
+    color: var(--purple-600);
+}
+
+.archive-gallery-count a:hover {
+    color: var(--blue-800);
+}
+
+.archive-gallery-count a:visited:hover {
+    color: var(--purple-800);
+}
+
+.archive-gallery-count svg {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    vertical-align: -0.1em;
+    margin-right: 0.4em;
+}
+
+.archive-gallery-count span {
+    font-variant-numeric: tabular-nums;
+}
+
+.archive-gallery-count a::after {
+    content: "";
+    display: inline-block;
+    width: 0.9em;
+    height: 0.9em;
+    background-color: currentColor;
+    -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48cGF0aCBkPSJNNTY2LjYgMzQyLjZDNTc5LjEgMzMwLjEgNTc5LjEgMzA5LjggNTY2LjYgMjk3LjNMNDA2LjYgMTM3LjNDMzk0LjEgMTI0LjggMzczLjggMTI0LjggMzYxLjMgMTM3LjNDMzQ4LjggMTQ5LjggMzQ4LjggMTcwLjEgMzYxLjMgMTgyLjZMNDY2LjcgMjg4TDk2IDI4OEM3OC4zIDI4OCA2NCAzMDIuMyA2NCAzMjBDNjQgMzM3LjcgNzguMyAzNTIgOTYgMzUyTDQ2Ni43IDM1MkwzNjEuMyA0NTcuNEMzNDguOCA0NjkuOSAzNDguOCA0OTAuMiAzNjEuMyA1MDIuN0MzNzMuOCA1MTUuMiAzOTQuMSA1MTUuMiA0MDYuNiA1MDIuN0w1NjYuNiAzNDIuN3oiLz48L3N2Zz4=");
+    mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48cGF0aCBkPSJNNTY2LjYgMzQyLjZDNTc5LjEgMzMwLjEgNTc5LjEgMzA5LjggNTY2LjYgMjk3LjNMNDA2LjYgMTM3LjNDMzk0LjEgMTI0LjggMzczLjggMTI0LjggMzYxLjMgMTM3LjNDMzQ4LjggMTQ5LjggMzQ4LjggMTcwLjEgMzYxLjMgMTgyLjZMNDY2LjcgMjg4TDk2IDI4OEM3OC4zIDI4OCA2NCAzMDIuMyA2NCAzMjBDNjQgMzM3LjcgNzguMyAzNTIgOTYgMzUyTDQ2Ni43IDM1MkwzNjEuMyA0NTcuNEMzNDguOCA0NjkuOSAzNDguOCA0OTAuMiAzNjEuMyA1MDIuN0MzNzMuOCA1MTUuMiAzOTQuMSA1MTUuMiA0MDYuNiA1MDIuN0w1NjYuNiAzNDIuN3oiLz48L3N2Zz4=");
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    vertical-align: -0.1em;
+    margin-left: 0.4em;
+}
+
 /* === Contribution calendar === */
 
 :root {
