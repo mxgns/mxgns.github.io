@@ -4,8 +4,28 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-10-01T00:01:48Z</updated>
+  <updated>2026-10-02T00:01:49Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>End-of-summer recap</title>
+    <link href="https://mxgns.uk/109.html?src=atom" />
+    <id>https://mxgns.uk/109.html</id>
+    <updated>2026-10-02T00:01:49Z</updated>
+    <content type="html"><![CDATA[<p>Here’s what’s been going on since my <a href="55.html">“summer so far” recap</a> at the end of July:</p>
+<ul>
+<li>On an overall level, life has felt a bit in limbo while we’re waiting to complete the purchase and move into our new flat. Living in a temporary place makes everything feel like one big procrastination! 😤</li>
+<li>I kept spending time playing around with my blog and vibe-coded several new features: a <a href="gallery.html">photo gallery</a>, dark mode, comments on posts (but you’ll have to email me your comments, and I post them 😅), <a href="search.html">site search</a>, a <a href="archive.html">publishing calendar</a> on the archive page and a custom <a href="404.html">404 page</a>.</li>
+<li>I did do a trip, to Sweden, working remotely for a week and taking another week off. I enjoyed <a href="76.html">nature</a> and <a href="73.html">my little boat</a>, before it was time to <a href="78.html">go back</a>.</li>
+<li>Speaking of travel, I spent hours creating a <a href="93.html">map of the places I’ve been to</a>.</li>
+<li>It was good fun going to see the recording of <a href="98.html">Live at the Apollo</a>.</li>
+<li>I <a href="74.html">switched to using Kagi as my search engine</a>, paying a subscription fee to get <em>real</em> search results instead of ads.</li>
+<li>The best meal I had was at <a href="99.html">Poon’s in Somerset House</a>.</li>
+<li>I did a bit of shopping, <a href="92.html">getting myself an iPad again</a>, a <a href="94.html">new bag for my EDC</a> and <a href="100.html">some dungarees</a>. I also bought not <a href="56.html">one</a> but <a href="82.html">two</a> pairs of JNCO jeans, which I see as the start of a little collection, with pairs three and four already planned.</li>
+<li>I rebooted my wardrobe, with the goal of moving from my almost all-black outfits to something more relaxed. It was a fairly thorough process, <a href="72.html">creating a plan</a> and then a <a href="103.html">final list</a>, before shopping to plug the gaps and finally <a href="105.html">doing the switch-over</a>.</li>
+<li>I also posted about my <a href="58.html">minimal-ish iPhone setup</a>, my <a href="59.html">wish list</a>, my <a href="75.html">little projects</a>, and <a href="64.html">how I budget</a>.</li>
+</ul>
+<p>And now I’m really excited that autumn has arrived. It’s definitely my favourite season! 🍂</p>]]></content>
+  </entry>
   <entry>
     <title>Note posted 1 October 2026</title>
     <link href="https://mxgns.uk/108.html?src=atom" />
@@ -279,13 +299,5 @@
     <id>https://mxgns.uk/80.html</id>
     <updated>2026-08-31T00:01:20Z</updated>
     <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/80-image-01-resized.jpg" alt="Screenshot of photo archive"></figure><p>I’ve added a <a href="gallery.html">photo archive</a> to the blog to make it easier to find articles by their photo. Feel free to have a look!</p>]]></content>
-  </entry>
-  <entry>
-    <title>Note posted 31 August 2026</title>
-    <link href="https://mxgns.uk/79.html?src=atom" />
-    <id>https://mxgns.uk/79.html</id>
-    <updated>2026-08-31T00:01:19Z</updated>
-    <content type="html"><![CDATA[<p>For mortgage reasons, I’ve had to return to my old bank after many years with newer banks, and I’d forgotten quite how crap they are.</p>
-<p>How can banks still be incapable of paying standing orders on the weekend or, as in the case of today, on a bank holiday? 💩</p>]]></content>
   </entry>
 </feed>
