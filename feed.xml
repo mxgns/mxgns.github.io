@@ -4,8 +4,25 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-10-02T00:01:49Z</updated>
+  <updated>2026-10-03T00:01:51Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Daytripping to Rye</title>
+    <link href="https://mxgns.uk/111.html?src=atom" />
+    <id>https://mxgns.uk/111.html</id>
+    <updated>2026-10-03T00:01:51Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/111-image-01-resized.jpeg" alt="The Landgate"></figure><figure><img src="https://mxgns.uk/111-image-02-resized.jpeg" alt="Houses in Rye"></figure><figure><img src="https://mxgns.uk/111-image-03-resized.jpeg" alt="Rooftop view of Rye"></figure><figure><img src="https://mxgns.uk/111-image-04-resized.jpeg" alt="The Ypres Castle Inn"></figure><figure><img src="https://mxgns.uk/111-image-05-resized.jpeg" alt="Me in Rye"></figure><p>It’s been a while since we went on a proper day trip, so after a bit of googling, we decided to head to Rye.</p>
+<p>This medieval town is just an hour from London and turned out to be well worth a visit. Very picturesque and not too crowded, with lots of cute old houses lining small, cobbled streets. It’s fascinating, too, that it used to be a seaside town, but the sea is now 2 miles away!</p>
+<p>I particularly enjoyed the view from the tower of the 900-year-old church, a beer in the garden of the Ypres Castle Inn and a nice lunch at The Union Rye.</p>
+<p>A very nice day out!</p>]]></content>
+  </entry>
+  <entry>
+    <title>Note posted 3 October 2026</title>
+    <link href="https://mxgns.uk/110.html?src=atom" />
+    <id>https://mxgns.uk/110.html</id>
+    <updated>2026-10-03T00:01:50Z</updated>
+    <content type="html"><![CDATA[<p>Dungarees are cool and all, until you get hot and have to undress in the street to take off your hoodie 😬</p>]]></content>
+  </entry>
   <entry>
     <title>End-of-summer recap</title>
     <link href="https://mxgns.uk/109.html?src=atom" />
@@ -283,21 +300,5 @@
 
 <p>Once I bought <a href="56.html">my first JNCO jeans</a>, I guess it was just a matter of time before I bought another pair, and my birthday was the perfect excuse to treat myself.</p>
 <p>This time I went for the 34” Rhinos. I thought the Twin Cannons were big, but these are MASSIVE!</p><p><a href="https://mxgns.uk/82.html?src=atom" class="read-more">Read more</a></p>]]></content>
-  </entry>
-  <entry>
-    <title>Note posted 1 September 2026</title>
-    <link href="https://mxgns.uk/81.html?src=atom" />
-    <id>https://mxgns.uk/81.html</id>
-    <updated>2026-09-01T00:01:21Z</updated>
-    <content type="html"><![CDATA[<p>The husband said he won’t eat sugar in September, and having put on a bit of weight lately, I decided to join him.</p>
-<p>That means last night was the last ice cream in a while 😬</p>
-<p>Wake me up when September ends.</p>]]></content>
-  </entry>
-  <entry>
-    <title>New blog feature: photo archive</title>
-    <link href="https://mxgns.uk/80.html?src=atom" />
-    <id>https://mxgns.uk/80.html</id>
-    <updated>2026-08-31T00:01:20Z</updated>
-    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/80-image-01-resized.jpg" alt="Screenshot of photo archive"></figure><p>I’ve added a <a href="gallery.html">photo archive</a> to the blog to make it easier to find articles by their photo. Feel free to have a look!</p>]]></content>
   </entry>
 </feed>

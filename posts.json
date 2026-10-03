@@ -1,4 +1,14 @@
 {
+  "111": {
+    "title": "Daytripping to Rye",
+    "category": "out-and-about",
+    "date": "2026-10-03"
+  },
+  "110": {
+    "title": "Dungarees are cool and all, until you\u2026",
+    "category": "day-to-day",
+    "date": "2026-10-03"
+  },
   "109": {
     "title": "End-of-summer recap",
     "category": "recaps",
@@ -579,6 +589,11 @@
     "category": null,
     "date": null
   },
+  "index-10": {
+    "title": "Magnus\u2019s Homepage (page 10)",
+    "category": null,
+    "date": null
+  },
   "out-and-about": {
     "title": "Out & About",
     "category": "out-and-about",
@@ -611,6 +626,11 @@
   },
   "day-to-day-3": {
     "title": "Day-to-Day (page 3)",
+    "category": "day-to-day",
+    "date": null
+  },
+  "day-to-day-4": {
+    "title": "Day-to-Day (page 4)",
     "category": "day-to-day",
     "date": null
   },
