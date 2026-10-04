@@ -584,16 +584,6 @@
     "category": null,
     "date": null
   },
-  "index-9": {
-    "title": "Magnus\u2019s Homepage (page 9)",
-    "category": null,
-    "date": null
-  },
-  "index-10": {
-    "title": "Magnus\u2019s Homepage (page 10)",
-    "category": null,
-    "date": null
-  },
   "out-and-about": {
     "title": "Out & About",
     "category": "out-and-about",
@@ -629,11 +619,6 @@
     "category": "day-to-day",
     "date": null
   },
-  "day-to-day-4": {
-    "title": "Day-to-Day (page 4)",
-    "category": "day-to-day",
-    "date": null
-  },
   "travel": {
     "title": "Travel",
     "category": "travel",
@@ -641,11 +626,6 @@
   },
   "inventory": {
     "title": "Inventory",
-    "category": "inventory",
-    "date": null
-  },
-  "inventory-2": {
-    "title": "Inventory (page 2)",
     "category": "inventory",
     "date": null
   },
