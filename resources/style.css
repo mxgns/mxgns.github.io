@@ -2219,3 +2219,5 @@ main + nav > ul li a.load-more-button.is-loading::before {
 .search-result mark {
     background: color-mix(in srgb, var(--yellow-300) 55%, transparent);
 }
+
+/* Stage 5 end-to-end check -- safe to remove */
