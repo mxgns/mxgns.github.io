@@ -4,8 +4,15 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-10-04T00:01:52Z</updated>
+  <updated>2026-10-05T00:01:53Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Note posted 5 October 2026</title>
+    <link href="https://mxgns.uk/113.html?src=atom" />
+    <id>https://mxgns.uk/113.html</id>
+    <updated>2026-10-05T00:01:53Z</updated>
+    <content type="html"><![CDATA[<p>After a significant vibe-coded refactor, I can now publish blog posts straight from my iPad 😊</p>]]></content>
+  </entry>
   <entry>
     <title>Sunday reflections</title>
     <link href="https://mxgns.uk/112.html?src=atom" />
@@ -290,12 +297,5 @@
     <updated>2026-09-04T00:01:24Z</updated>
     <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/84-image-01-resized.jpeg" alt="Tall buildings sticking up through low clouds"></figure><p>This photo from Willis Tower in Chicago, taken in 2018, popped up on my phone’s lock screen.</p>
 <p>I went there on a training course and took the opportunity to combine it with a few days’ holiday with my partner. It was a good trip, and I could definitely go back sometime.</p>]]></content>
-  </entry>
-  <entry>
-    <title>Note posted 3 September 2026</title>
-    <link href="https://mxgns.uk/83.html?src=atom" />
-    <id>https://mxgns.uk/83.html</id>
-    <updated>2026-09-03T00:01:23Z</updated>
-    <content type="html"><![CDATA[<p>It&rsquo;s a new month, so I have updated my <a href="now.html">now page</a>.</p>]]></content>
   </entry>
 </feed>
