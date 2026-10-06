@@ -158,7 +158,12 @@
 
   var msnry = null;
   var script = document.createElement('script');
-  script.src = 'https://cdn.jsdelivr.net/npm/masonry-layout@4/dist/masonry.pkgd.min.js';
+  // Exact version + SRI, not a floating "@4" range -- every other third-party
+  // dependency in this project is pinned for reproducibility, and this is the
+  // one piece of code that executes JS fetched live from a CDN into the page.
+  script.src = 'https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js';
+  script.integrity = 'sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D';
+  script.crossOrigin = 'anonymous';
   script.onload = function () {
     msnry = new Masonry(gallery, { itemSelector: '.gallery-item', percentPosition: true });
   };
