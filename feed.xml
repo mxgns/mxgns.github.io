@@ -4,8 +4,19 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-10-08T00:01:55Z</updated>
+  <updated>2026-10-08T00:01:56Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Photo posted 8 October 2026</title>
+    <link href="https://mxgns.uk/116.html?src=atom" />
+    <id>https://mxgns.uk/116.html</id>
+    <updated>2026-10-08T00:01:56Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/116-image-01-resized.jpg" alt="Totoro stage curtain"></figure><p>It’s been a while since I went to the theatre, so I was rather excited to go and see My Neighbour Totoro the musical last night.</p>
+<p>And what a treat it was! I sat absolutely fascinated, my mouth open, through most of it. The set design was incredibly clever, whether it was buildings being put together before our eyes or just some cornfields passing by. </p>
+<p>I loved how the stage workers, if it’s fair to call them that, were sometimes part of the play, sometimes puppeteers and sometimes just doing what stage workers do.</p>
+<p>And the puppets, of course! From the huge Totoro to a flock of chickens. I didn’t think they would do the cat bus, as it seemed too hard to me, but they did!</p>
+<p>Definitely go and see it before it’s gone!</p>]]></content>
+  </entry>
   <entry>
     <title>Note posted 8 October 2026</title>
     <link href="https://mxgns.uk/115.html?src=atom" />
@@ -285,12 +296,5 @@
     <updated>2026-09-06T00:01:27Z</updated>
     <content type="html"><![CDATA[<p>The next Apple event is on Wednesday and I will be watching, as always, even if I found them much more enjoyable when they were live, rather than just a 1-hour polished commercial. </p>
 <p>This time, though, I’m not so much looking at what they are releasing as what they are not.  I’m looking to buy an iPad very soon (the basic one), and am just waiting for the event to pass to make sure they don’t release a new one the day after I buy mine.</p>]]></content>
-  </entry>
-  <entry>
-    <title>Note posted 5 September 2026</title>
-    <link href="https://mxgns.uk/86.html?src=atom" />
-    <id>https://mxgns.uk/86.html</id>
-    <updated>2026-09-05T00:01:26Z</updated>
-    <content type="html"><![CDATA[<p>This blog now has a <a href="search.html">search page</a> 🔎</p>]]></content>
   </entry>
 </feed>
