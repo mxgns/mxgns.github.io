@@ -4,8 +4,18 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-10-10T00:01:58Z</updated>
+  <updated>2026-10-13T00:01:59Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Hello, Panasonic Lumix L10</title>
+    <link href="https://mxgns.uk/119.html?src=atom" />
+    <id>https://mxgns.uk/119.html</id>
+    <updated>2026-10-13T00:01:59Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/119-image-01-resized.jpeg" alt="Panasonic Lumix L10"></figure><p>I finally decided to get a real camera again after years of relying on my phone.</p>
+<p>I went for the Panasonic Lumix L10, and it seems promising so far, but there are definitely a lot of buttons and options to learn. I seem to have forgotten pretty much everything about how to use a camera!</p>
+<p>I don’t necessarily think I will take <em>better</em> photos. I know <em>I’m</em> the limitation, not the camera. What I’m hoping for, though, is photos that look a little bit more like photos, without the phone magically compensating for everything.</p>
+<p>And, tbh, I like the idea of being the type of person who carries an actual camera around! 😅</p>]]></content>
+  </entry>
   <entry>
     <title>Photos posted 10 October 2026</title>
     <link href="https://mxgns.uk/118.html?src=atom" />
@@ -278,15 +288,5 @@
     <id>https://mxgns.uk/90.html</id>
     <updated>2026-09-08T00:01:30Z</updated>
     <content type="html"><![CDATA[<p>I was longing for rain all summer, but now that it’s here, I’m not that keen, tbh ☔️</p>]]></content>
-  </entry>
-  <entry>
-    <title>Note posted 8 September 2026</title>
-    <link href="https://mxgns.uk/89.html?src=atom" />
-    <id>https://mxgns.uk/89.html</id>
-    <updated>2026-09-08T00:01:29Z</updated>
-    <content type="html"><![CDATA[<p>I saw the phrase “September is the real new year” somewhere and realised that’s genuinely how I feel.</p>
-<p>September is when things really restart. It’s time to refocus after the summer, get back into the habits that have been slipping, or start new ones. And you get to wear your sweaters again!</p>
-<p>In comparison, 1 Jan is just a random day in the middle of winter. </p>
-<p>So, Happy New Year! 🎉</p>]]></content>
   </entry>
 </feed>
