@@ -4,8 +4,16 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-10-13T00:01:59Z</updated>
+  <updated>2026-10-14T00:02:00Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Note posted 14 October 2026</title>
+    <link href="https://mxgns.uk/120.html?src=atom" />
+    <id>https://mxgns.uk/120.html</id>
+    <updated>2026-10-14T00:02:00Z</updated>
+    <content type="html"><![CDATA[<p>Went on a pre-breakfast online shopping spree this morning 😅</p>
+<p>Current status: constantly refreshing my inbox to look for delivery updates 😂</p>]]></content>
+  </entry>
   <entry>
     <title>Hello, Panasonic Lumix L10</title>
     <link href="https://mxgns.uk/119.html?src=atom" />
@@ -282,12 +290,5 @@
 </ul>
 <p>I’ve been an Apple fanboy for more than 20 years, and still am. I’m not going anywhere, but we’re definitely on a plateau at the moment. Technical specs keep getting more and more impressive, but there’s nothing genuinely new or exciting.</p>
 <p>It feels as if it’s time for them to think different™ again.</p>]]></content>
-  </entry>
-  <entry>
-    <title>Note posted 8 September 2026</title>
-    <link href="https://mxgns.uk/90.html?src=atom" />
-    <id>https://mxgns.uk/90.html</id>
-    <updated>2026-09-08T00:01:30Z</updated>
-    <content type="html"><![CDATA[<p>I was longing for rain all summer, but now that it’s here, I’m not that keen, tbh ☔️</p>]]></content>
   </entry>
 </feed>
