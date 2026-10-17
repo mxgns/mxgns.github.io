@@ -4,8 +4,24 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-10-16T00:02:02Z</updated>
+  <updated>2026-10-17T00:02:04Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Photo posted 17 October 2026</title>
+    <link href="https://mxgns.uk/124.html?src=atom" />
+    <id>https://mxgns.uk/124.html</id>
+    <updated>2026-10-17T00:02:04Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/124-image-01-resized.jpeg" alt="Mirror selfie in Tottenham Hourt Road tube station"></figure><p>Me and my camera 😅</p>]]></content>
+  </entry>
+  <entry>
+    <title>Photos from a nice autumn day</title>
+    <link href="https://mxgns.uk/123.html?src=atom" />
+    <id>https://mxgns.uk/123.html</id>
+    <updated>2026-10-17T00:02:03Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/123-image-01-resized.jpeg" alt="Bridge"></figure><figure><img src="https://mxgns.uk/123-image-02-resized.jpeg" alt="Victoria Embankment"></figure><figure><img src="https://mxgns.uk/123-image-03-resized.jpeg" alt="Tree"></figure><p>Today was a beautiful day, and I went for a walk in town to try to get used to my new camera.</p>
+<p>I’m still using it in auto mode, and I have always felt a bit awkward actively going around looking for things to photograph. After years of using the big, bright screen on my phone, it takes a bit of getting used to not quite seeing how the picture comes out.</p>
+<p>But I have a good feeling. I think we will become friends, Lumix and I.</p>]]></content>
+  </entry>
   <entry>
     <title>Note posted 16 October 2026</title>
     <link href="https://mxgns.uk/122.html?src=atom" />
@@ -265,21 +281,5 @@
 <li>Checking out SCP’s new store in Clerkenwell on the Saturday.</li>
 <li>An impressive amount of dim sum at Dumpling Legends in Chinatown on the Sunday.</li>
 </ol>]]></content>
-  </entry>
-  <entry>
-    <title>What’s in my bag</title>
-    <link href="https://mxgns.uk/94.html?src=atom" />
-    <id>https://mxgns.uk/94.html</id>
-    <updated>2026-09-13T00:01:34Z</updated>
-    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/94-image-01-resized.jpeg" alt="Flatlay of the items in my bag"></figure><p>One of my <a href="75.html">little projects</a> to get ready for autumn is rebooting my everyday carry (EDC), and I think I’m done enough for a trial in the real world.</p>
-<p>Here’s what I will carry, starting with my commute tomorrow.</p><p><a href="https://mxgns.uk/94.html?src=atom" class="read-more">Read more</a></p>]]></content>
-  </entry>
-  <entry>
-    <title>Places I’ve been</title>
-    <link href="https://mxgns.uk/93.html?src=atom" />
-    <id>https://mxgns.uk/93.html</id>
-    <updated>2026-09-12T00:01:33Z</updated>
-    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/93-image-01.svg" alt="World map in a honeycomb pattern of circles"></figure><p>So many places still to go!</p>
-<p>This map took surprisingly many hours to create and involved a huge array in Python, but it was a nice and relaxing task 😌</p>]]></content>
   </entry>
 </feed>
