@@ -4,8 +4,15 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-10-17T00:02:04Z</updated>
+  <updated>2026-10-18T00:02:05Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Kitchen drawing version 0.1</title>
+    <link href="https://mxgns.uk/125.html?src=atom" />
+    <id>https://mxgns.uk/125.html</id>
+    <updated>2026-10-18T00:02:05Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/125-image-01-resized.jpeg" alt="Amateurish kitchen drawing"></figure><p>We&rsquo;re planning to redo the kitchen in the new place before moving in. This is the first sketch of my thoughts.</p>]]></content>
+  </entry>
   <entry>
     <title>Photo posted 17 October 2026</title>
     <link href="https://mxgns.uk/124.html?src=atom" />
@@ -270,16 +277,5 @@
     <id>https://mxgns.uk/96.html</id>
     <updated>2026-09-15T00:01:36Z</updated>
     <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/96-image-01-resized.jpeg" alt="City of London skyline at dusk, with a train passing by in the foreground"></figure><p>On an evening like this, the view while waiting for the DLR at Shadwell is not too bad.</p>]]></content>
-  </entry>
-  <entry>
-    <title>3 pics from the weekend</title>
-    <link href="https://mxgns.uk/95.html?src=atom" />
-    <id>https://mxgns.uk/95.html</id>
-    <updated>2026-09-14T00:01:35Z</updated>
-    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/95-image-01-resized.jpeg" alt="Schnitzel at Fischer’s"></figure><figure><img src="https://mxgns.uk/95-image-02-resized.jpeg" alt="SCP’s new shop in Clerkenwell"></figure><figure><img src="https://mxgns.uk/95-image-03-resized.jpeg" alt="Dim sum at Dumpling Legends"></figure><ol>
-<li>Schnitzel at Fischer’s in Marylebone on Friday night. Very nice.</li>
-<li>Checking out SCP’s new store in Clerkenwell on the Saturday.</li>
-<li>An impressive amount of dim sum at Dumpling Legends in Chinatown on the Sunday.</li>
-</ol>]]></content>
   </entry>
 </feed>

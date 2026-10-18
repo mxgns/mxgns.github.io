@@ -1,4 +1,9 @@
 {
+  "125": {
+    "title": "Kitchen drawing version 0.1",
+    "category": "flat",
+    "date": "2026-10-18"
+  },
   "124": {
     "title": "Me and my camera \ud83d\ude05",
     "category": "day-to-day",
@@ -11,7 +16,7 @@
   },
   "122": {
     "title": "I\u2019m soo excited! It\u2019s been a long time\u2026",
-    "category": "day-to-day",
+    "category": "flat",
     "date": "2026-10-16"
   },
   "121": {
@@ -689,11 +694,6 @@
     "category": "day-to-day",
     "date": null
   },
-  "day-to-day-4": {
-    "title": "Day-to-Day (page 4)",
-    "category": "day-to-day",
-    "date": null
-  },
   "travel": {
     "title": "Travel",
     "category": "travel",
@@ -722,6 +722,11 @@
   "blog-updates": {
     "title": "Blog Updates",
     "category": "blog-updates",
+    "date": null
+  },
+  "flat": {
+    "title": "Flat",
+    "category": "flat",
     "date": null
   },
   "notes": {
