@@ -4,8 +4,16 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-10-18T00:02:05Z</updated>
+  <updated>2026-10-19T00:02:06Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Note posted 19 October 2026</title>
+    <link href="https://mxgns.uk/126.html?src=atom" />
+    <id>https://mxgns.uk/126.html</id>
+    <updated>2026-10-19T00:02:06Z</updated>
+    <content type="html"><![CDATA[<p>I&rsquo;m expecting a parcel today but the doorbell isn&rsquo;t working, so I keep running to the window every time I hear a van door close 📦 👀</p>
+<p>I would be <em>so</em> disappointed if they fail to deliver! 🥺</p>]]></content>
+  </entry>
   <entry>
     <title>Kitchen drawing version 0.1</title>
     <link href="https://mxgns.uk/125.html?src=atom" />
@@ -270,12 +278,5 @@
 <p>Plus, Siri is allegedly less rubbish, but it’s been bad for so long it’s hard to care.</p>
 <p>That’s it? 🤨</p>
 <p>End of rant.</p>]]></content>
-  </entry>
-  <entry>
-    <title>Photo posted 15 September 2026</title>
-    <link href="https://mxgns.uk/96.html?src=atom" />
-    <id>https://mxgns.uk/96.html</id>
-    <updated>2026-09-15T00:01:36Z</updated>
-    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/96-image-01-resized.jpeg" alt="City of London skyline at dusk, with a train passing by in the foreground"></figure><p>On an evening like this, the view while waiting for the DLR at Shadwell is not too bad.</p>]]></content>
   </entry>
 </feed>
