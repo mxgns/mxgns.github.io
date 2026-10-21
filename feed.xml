@@ -4,8 +4,16 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-10-19T00:02:06Z</updated>
+  <updated>2026-10-21T00:02:07Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Photo posted 21 October 2026</title>
+    <link href="https://mxgns.uk/127.html?src=atom" />
+    <id>https://mxgns.uk/127.html</id>
+    <updated>2026-10-21T00:02:07Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/127-image-01-resized.jpg" alt="Image 1"></figure><p>Behold my new JNCO Convicts! 👀</p>
+<p>It was bound to happen sometime. These are absolutely crazy!</p>]]></content>
+  </entry>
   <entry>
     <title>Note posted 19 October 2026</title>
     <link href="https://mxgns.uk/126.html?src=atom" />
@@ -262,21 +270,5 @@
     <id>https://mxgns.uk/98.html</id>
     <updated>2026-09-17T00:01:38Z</updated>
     <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/98-image-01-resized.jpeg" alt="“Live at the Apollo” sign outside the Hammersmith Apollo"></figure><figure><img src="https://mxgns.uk/98-image-02-resized.jpeg" alt="“Live at the Apollo” sign on the stage before the show started"></figure><p>One thing I enjoy is going to TV recordings, as I find it very interesting to get a behind-the-scenes look. Sometimes, everything is as you expect it would be, and sometimes, it’s quite different. Sometimes you get big celebrities, and sometimes you don’t. Either way, it’s free entertainment.</p><p><a href="https://mxgns.uk/98.html?src=atom" class="read-more">Read more</a></p>]]></content>
-  </entry>
-  <entry>
-    <title>Note posted 16 September 2026</title>
-    <link href="https://mxgns.uk/97.html?src=atom" />
-    <id>https://mxgns.uk/97.html</id>
-    <updated>2026-09-16T00:01:37Z</updated>
-    <content type="html"><![CDATA[<p>I installed iOS 27 yesterday. Is it just me, or is it the least exciting iOS release ever? 😔</p>
-<ul>
-<li>You can make UI elements less transparent after they made them transparent last year.</li>
-<li>You can make the clock on the lock screen smaller after they made it bigger last year.</li>
-<li>Genmoji is a bit more reliable, but buggier in other ways. </li>
-<li>You can AI-manipulate photos in ways that make them no longer representative of the photo you took.</li>
-</ul>
-<p>Plus, Siri is allegedly less rubbish, but it’s been bad for so long it’s hard to care.</p>
-<p>That’s it? 🤨</p>
-<p>End of rant.</p>]]></content>
   </entry>
 </feed>
