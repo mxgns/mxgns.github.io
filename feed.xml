@@ -4,8 +4,15 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-10-22T00:02:08Z</updated>
+  <updated>2026-10-22T00:02:09Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Photo posted 22 October 2026</title>
+    <link href="https://mxgns.uk/129.html?src=atom" />
+    <id>https://mxgns.uk/129.html</id>
+    <updated>2026-10-22T00:02:09Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/129-image-01-resized.jpeg" alt="Me taking a mirror selfie in a mirror on a DLR platform while wearing a The North Face Nuptse puffer in grey"></figure><p>In other news, I started the puffer season today.</p>]]></content>
+  </entry>
   <entry>
     <title>And my fourth pair of JNCOs!</title>
     <link href="https://mxgns.uk/128.html?src=atom" />
@@ -263,14 +270,5 @@
     <updated>2026-09-20T00:01:40Z</updated>
     <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/100-image-01-resized.jpeg" alt="Mirror selfie of me trying on black Carhartt WIP dungarees"></figure><p>Today’s main task was to go shopping for Carhartt dungarees. Unfortunately, they didn’t have my size — just one size up and one size down — so I ended up placing an online order when I got back home instead.</p>
 <p>I can’t deny I’m super excited to get a good pair of dungarees again soon! 😊</p>]]></content>
-  </entry>
-  <entry>
-    <title>Lunch at Poon’s at Somerset House</title>
-    <link href="https://mxgns.uk/99.html?src=atom" />
-    <id>https://mxgns.uk/99.html</id>
-    <updated>2026-09-20T00:01:39Z</updated>
-    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/99-image-01-resized.jpeg" alt="Char Siu pork, rice and mushroom salad, served at the counter"></figure><p>Yesterday, we ended up leaving home too late to be in the mood for our usual Saturday brunch routine. Instead, we decided to do lunch at Poon’s, a Hong Kong restaurant in Somerset House.</p>
-<p>We chose the 3-course set menu, which changes daily, and were served chicken soup, char siu pork, mushroom salad, and vegetables. It was all very nice, and the quality felt very high. It was also nice to sit at the counter and watch the chefs at work. </p>
-<p>We will definitely come back for more.</p>]]></content>
   </entry>
 </feed>
