@@ -1,4 +1,9 @@
 {
+  "128": {
+    "title": "And my fourth pair of JNCOs!",
+    "category": "inventory",
+    "date": "2026-10-22"
+  },
   "127": {
     "title": "Did I just go and get a 3rd pair of JNCOs?",
     "category": "inventory",
@@ -716,6 +721,11 @@
   },
   "inventory": {
     "title": "Inventory",
+    "category": "inventory",
+    "date": null
+  },
+  "inventory-2": {
+    "title": "Inventory (page 2)",
     "category": "inventory",
     "date": null
   },
