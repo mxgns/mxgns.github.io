@@ -652,6 +652,107 @@ article.single-post .post-images img {
     border-radius: 2px;
 }
 
+/* A pair of {{ image N }} tokens on one row -- the row carries the vertical
+   spacing a lone figure normally has, so the figures inside it reset theirs
+   to avoid doubling it. */
+.post-body .image-row {
+    display: flex;
+    gap: 1.5rem;
+    margin: 2.15rem 0;
+}
+
+.post-body .image-row figure {
+    margin: 0;
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+@media (max-width: 600px) {
+    .post-body .image-row {
+        flex-direction: column;
+    }
+}
+
+/* === Image lightbox (single-post page only; see resources/blog.js) === */
+
+article.single-post .post-images figure img,
+article.single-post .post-body figure img {
+    cursor: zoom-in;
+    transition: opacity 0.15s ease;
+}
+
+article.single-post .post-images figure img:hover,
+article.single-post .post-body figure img:hover {
+    opacity: 0.85;
+}
+
+article.single-post .post-images figure img:focus-visible,
+article.single-post .post-body figure img:focus-visible {
+    outline: 3px solid var(--blue-600);
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    article.single-post .post-images figure img,
+    article.single-post .post-body figure img {
+        transition: none;
+    }
+}
+
+dialog.lightbox {
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+
+dialog.lightbox::backdrop {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+dialog.lightbox img {
+    display: block;
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+dialog.lightbox .lightbox-close {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    background: none;
+    color: var(--white);
+    cursor: pointer;
+}
+
+dialog.lightbox .lightbox-close:focus-visible {
+    outline: 2px solid var(--white);
+    outline-offset: 2px;
+}
+
+/* Close icon: Font Awesome Free (CC BY 4.0), https://fontawesome.com/license/free */
+dialog.lightbox .lightbox-close::before {
+    content: "";
+    display: inline-block;
+    width: 2.75rem;
+    height: 2.75rem;
+    background-color: currentColor;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48cGF0aCBkPSJNMTgzLjEgMTM3LjRDMTcwLjYgMTI0LjkgMTUwLjMgMTI0LjkgMTM3LjggMTM3LjRDMTI1LjMgMTQ5LjkgMTI1LjMgMTcwLjIgMTM3LjggMTgyLjdMMjc1LjIgMzIwTDEzNy45IDQ1Ny40QzEyNS40IDQ2OS45IDEyNS40IDQ5MC4yIDEzNy45IDUwMi43QzE1MC40IDUxNS4yIDE3MC43IDUxNS4yIDE4My4yIDUwMi43TDMyMC41IDM2NS4zTDQ1Ny45IDUwMi42QzQ3MC40IDUxNS4xIDQ5MC43IDUxNS4xIDUwMy4yIDUwMi42QzUxNS43IDQ5MC4xIDUxNS43IDQ2OS44IDUwMy4yIDQ1Ny4zTDM2NS44IDMyMEw1MDMuMSAxODIuNkM1MTUuNiAxNzAuMSA1MTUuNiAxNDkuOCA1MDMuMSAxMzcuM0M0OTAuNiAxMjQuOCA0NzAuMyAxMjQuOCA0NTcuOCAxMzcuM0wzMjAuNSAyNzQuN0wxODMuMSAxMzcuNHoiLz48L3N2Zz4=");
+    mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48cGF0aCBkPSJNMTgzLjEgMTM3LjRDMTcwLjYgMTI0LjkgMTUwLjMgMTI0LjkgMTM3LjggMTM3LjRDMTI1LjMgMTQ5LjkgMTI1LjMgMTcwLjIgMTM3LjggMTgyLjdMMjc1LjIgMzIwTDEzNy45IDQ1Ny40QzEyNS40IDQ2OS45IDEyNS40IDQ5MC4yIDEzNy45IDUwMi43QzE1MC40IDUxNS4yIDE3MC43IDUxNS4yIDE4My4yIDUwMi43TDMyMC41IDM2NS4zTDQ1Ny45IDUwMi42QzQ3MC40IDUxNS4xIDQ5MC43IDUxNS4xIDUwMy4yIDUwMi42QzUxNS43IDQ5MC4xIDUxNS43IDQ2OS44IDUwMy4yIDQ1Ny4zTDM2NS44IDMyMEw1MDMuMSAxODIuNkM1MTUuNiAxNzAuMSA1MTUuNiAxNDkuOCA1MDMuMSAxMzcuM0M0OTAuNiAxMjQuOCA0NzAuMyAxMjQuOCA0NTcuOCAxMzcuM0wzMjAuNSAyNzQuN0wxODMuMSAxMzcuNHoiLz48L3N2Zz4=");
+}
+
 .post-body li {
     margin-bottom: 0.65rem;
 }

@@ -217,3 +217,73 @@
     });
   });
 })();
+
+(function () {
+  var article = document.querySelector('article.single-post');
+  if (!article) return;
+
+  var thumbnails = Array.prototype.slice.call(
+    article.querySelectorAll('.post-images figure img, .post-body figure img')
+  );
+  if (!thumbnails.length) return;
+
+  // Tracks actual current input modality, so a focus change driven by our
+  // own script (showModal()'s auto-focus on open; a dialog's own restored
+  // focus on close) only keeps -- and shows a ring on -- the element it
+  // landed on when the user is genuinely navigating by keyboard right now.
+  var usingKeyboard = false;
+  document.addEventListener('keydown', function () { usingKeyboard = true; });
+  document.addEventListener('mousedown', function () { usingKeyboard = false; });
+
+  var dialog = document.createElement('dialog');
+  dialog.className = 'lightbox';
+
+  var closeButton = document.createElement('button');
+  closeButton.type = 'button';
+  closeButton.className = 'lightbox-close';
+  closeButton.setAttribute('aria-label', 'Close image');
+  dialog.appendChild(closeButton);
+
+  var lightboxImg = document.createElement('img');
+  dialog.appendChild(lightboxImg);
+
+  document.body.appendChild(dialog);
+
+  function openLightbox(thumb) {
+    lightboxImg.src = thumb.src;
+    lightboxImg.alt = thumb.alt;
+    dialog.showModal();
+    if (!usingKeyboard) closeButton.blur();
+  }
+
+  thumbnails.forEach(function (thumb) {
+    thumb.tabIndex = 0;
+    thumb.setAttribute('role', 'button');
+    thumb.addEventListener('click', function () { openLightbox(thumb); });
+    thumb.addEventListener('keydown', function (event) {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        openLightbox(thumb);
+      }
+    });
+  });
+
+  // close() restores focus to whichever thumbnail opened the dialog,
+  // synchronously, as part of the same call -- blur it straight after, same
+  // reasoning as the open-side fix above, so returning from the lightbox
+  // with a mouse doesn't leave a focus ring on the thumbnail either.
+  function closeLightbox() {
+    dialog.close();
+    if (!usingKeyboard) document.activeElement.blur();
+  }
+
+  closeButton.addEventListener('click', closeLightbox);
+
+  // A click lands with target === dialog for both the ::backdrop and any
+  // part of the dialog's own box outside its children -- the box is sized
+  // to fit the image and button alone, so in practice this only ever fires
+  // for the backdrop.
+  dialog.addEventListener('click', function (event) {
+    if (event.target === dialog) closeLightbox();
+  });
+})();
