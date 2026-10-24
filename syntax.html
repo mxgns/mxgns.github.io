@@ -24,11 +24,11 @@
         <link rel="icon" href="resources/icon.png">
         <link
             rel="stylesheet"
-            href="resources/style.css?v=1792701181"
+            href="resources/style.css?v=1792878027"
         >
         <link
             rel="stylesheet"
-            href="resources/assorted.css?v=1792701181"
+            href="resources/assorted.css?v=1792878027"
         >
         <link
             rel="alternate"
@@ -59,29 +59,30 @@
 <div class="container container-brown ai-disclosure"><p><b>Disclosure:</b> The contents of this post have been partially or entirely created using AI. <a href="48.html">Read more about how I use or don’t use AI</a>.</p></div>
 <h1 data-pagefind-meta="title">Test Page / Syntax Guide</h1>
 <div class="post-body"><p>This page documents the Markdown syntax and special styles available when writing posts and pages for this blog. It doubles as a live test of the renderer — everything shown below is actually rendered by Magnetizer, not typed out as a picture.</p>
-<p>Since a post&rsquo;s title already occupies the top-level heading, headings inside the body should start at <code>###</code> — anything more prominent (<code>#</code> or <code>##</code>) triggers a build warning.</p>
-<h3>Text formatting</h3>
+<p>Write body headings starting at <code>#</code> for a top-level section and <code>##</code> for a sub-section, as if the post were its own document — only these two levels are allowed; <code>###</code> or deeper triggers a build warning. The renderer automatically renumbers these wherever the post is shown: one level down on the post&rsquo;s own page (and in the Atom feed), two levels down when shown as an excerpt on an index/category/notes listing page — so the body heading never collides with the post&rsquo;s own title.</p>
+<h2>Text formatting</h2>
 <p>Source:</p>
 <pre><code>**bold**, *italic*, `inline code`, and ==highlighted== text.
 </code></pre>
 <p>Renders as:</p>
 <p><strong>bold</strong>, <em>italic</em>, <code>inline code</code>, and <mark>highlighted</mark> text.</p>
-<h3>Headings</h3>
+<h2>Headings</h2>
 <p>Source:</p>
-<pre><code>### A level-3 heading
-#### A level-4 heading
+<pre><code># A top-level heading
+## A sub-level heading
 </code></pre>
-<p>Renders as:</p>
-<h3>A level-3 heading</h3>
-<h4>A level-4 heading</h4>
-<h3>Links</h3>
+<p>Renders as (shifted one level down here, since this is the post&rsquo;s own full page — it would shift two levels down if this page were shown as an excerpt on a listing page):</p>
+<h2>A top-level heading</h2>
+<h3>A sub-level heading</h3>
+<p>Using <code>###</code> or deeper triggers a build warning, since only these two levels are allowed.</p>
+<h2>Links</h2>
 <p>Regular links, and bare URLs/email addresses wrapped in <code>&lt;&gt;</code> for automatic linking:</p>
 <pre><code>[First post](1.html), [External link](https://bbc.co.uk), or just &lt;https://mxgns.uk&gt; and &lt;hello@mxgns.uk&gt;.
 </code></pre>
 <p>Renders as:</p>
 <p><a href="1.html">First post</a>, <a href="https://bbc.co.uk" class="external-link" target="_blank" rel="noopener">External link</a>, or just <a href="https://mxgns.uk">https://mxgns.uk</a> and <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#108;&#111;&#64;&#109;&#120;&#103;&#110;&#115;&#46;&#117;&#107;">&#104;&#101;&#108;&#108;&#111;&#64;&#109;&#120;&#103;&#110;&#115;&#46;&#117;&#107;</a>.</p>
 <p>Any link that isn&rsquo;t relative and doesn&rsquo;t point at mxgns.uk is treated as external — it automatically opens in a new tab and gets a small icon, no extra markup needed.</p>
-<h3>Lists</h3>
+<h2>Lists</h2>
 <p>An unordered list:</p>
 <pre><code>- Optimisation &amp; curation
 - Boating
@@ -104,7 +105,7 @@
 <li>Second</li>
 <li>Third</li>
 </ol>
-<h3>Tables</h3>
+<h2>Tables</h2>
 <p>Source:</p>
 <pre><code>| Column 1 | Column 2 | Column 3 |
 |----------|----------|----------|
@@ -133,7 +134,7 @@
 </tr>
 </tbody>
 </table>
-<h3>Footnotes</h3>
+<h2>Footnotes</h2>
 <p>Source:</p>
 <pre><code>A claim that needs backing up[^1].
 
@@ -142,7 +143,7 @@
 <p>Renders as:</p>
 <p>A claim that needs backing up<sup id="fnref:syntax-1"><a class="footnote-ref" href="#fn:syntax-1">1</a></sup>.</p>
 <p>A footnote&rsquo;s definition can be written anywhere in the post — conventionally kept together at the end — and resolves correctly wherever it&rsquo;s referenced, even from the part of the post shown as an excerpt elsewhere on the site. That said, footnotes are hidden entirely on index and category pages; they only show up once you&rsquo;re on the post&rsquo;s own page.</p>
-<h3>Blockquotes</h3>
+<h2>Blockquotes</h2>
 <p>Source:</p>
 <pre><code>&gt; A quoted thought, indented and set apart from the rest of the text.
 </code></pre>
@@ -150,7 +151,7 @@
 <blockquote>
 <p>A quoted thought, indented and set apart from the rest of the text.</p>
 </blockquote>
-<h3>Code</h3>
+<h2>Code</h2>
 <p>Inline code uses single backticks: <code>`like this`</code>.</p>
 <p>For a proper code block, indent every line with four spaces (or one tab) rather than fencing it with <code>```</code>. Triple backticks are <strong>not</strong> treated as a fenced code block by this renderer — they collapse into an inline <code>&lt;code&gt;</code> span instead, which loses the block formatting and line breaks. Indentation is the only reliable way to get a real block.</p>
 <p>Source:</p>
@@ -161,13 +162,13 @@
 <pre><code>def greeting(name):
     return f"Hello, {name}!"
 </code></pre>
-<h3>Horizontal rule</h3>
+<h2>Horizontal rule</h2>
 <p>Source:</p>
 <pre><code>---
 </code></pre>
 <p>Renders as:</p>
 <hr />
-<h3>Smart typography</h3>
+<h2>Smart typography</h2>
 <p>Straight quotes and apostrophes are automatically converted to their curly (&ldquo;smart&rdquo;) equivalents. <code>--</code> becomes an en dash, <code>---</code> becomes an em dash, and <code>...</code> becomes an ellipsis.</p>
 <p>Source:</p>
 <pre><code>She said "it's fine" -- really... it's --- true.
@@ -175,7 +176,7 @@
 <p>Renders as:</p>
 <p>She said &ldquo;it&rsquo;s fine&rdquo; &ndash; really&hellip; it&rsquo;s &mdash; true.</p>
 <p>Quotes, dashes and ellipses inside inline code or an indented code block are left untouched, e.g. <code>"like this" -- and this...</code>.</p>
-<h3>Images</h3>
+<h2>Images</h2>
 <p>Photos for a post or page aren&rsquo;t inserted with Markdown&rsquo;s <code>![alt](src)</code> syntax. Instead they&rsquo;re placed alongside the <code>.md</code> file in <code>content/</code> as <code>{post-id}-image-{NN}.{ext}</code> (e.g. <code>12-image-01.jpg</code>, <code>12-image-02.png</code>), and alt text is supplied in the frontmatter, in file order:</p>
 <pre><code>---
 date: 2026-05-21
@@ -186,7 +187,7 @@ images:
 ---
 </code></pre>
 <p>Any image not referenced inline (see below) is automatically shown as a strip of <code>&lt;figure&gt;</code> elements above the post body.</p>
-<h4>Inline images</h4>
+<h3>Inline images</h3>
 <p>To place a specific image inline within the body text, use <code>{{ image N }}</code> on its own line, with blank lines before and after — <code>N</code> matches the two-digit number in the filename:</p>
 <pre><code>Some text before the image.
 
@@ -195,7 +196,7 @@ images:
 Some text after.
 </code></pre>
 <p>This is replaced with a <code>&lt;figure&gt;&lt;img&gt;&lt;/figure&gt;</code> using that image&rsquo;s resized file and its frontmatter alt text. Referencing an image number the post doesn&rsquo;t have, or using the token inline with other text, is a build error. (Note: this reference page has no images of its own, so the example above uses a placeholder letter rather than a real number — a real post would give the actual position of the image in its filename, e.g. the third image.)</p>
-<h3>Read more marker</h3>
+<h2>Read more marker</h2>
 <p>Placing the marker below on its own line splits a post&rsquo;s body. On index/category pages only the content above the marker is shown, followed by a &ldquo;Read more&rdquo; link (which folds in a photo count if any images are hidden past the marker); on the individual post page the marker has no effect and the full body is shown.</p>
 <pre><code>An introductory paragraph, shown everywhere.
 
@@ -204,7 +205,7 @@ Some text after.
 The rest of the story, only shown on the post's own page.
 </code></pre>
 <p>(Shown here in capitals only because this reference page is itself parsed by Magnetizer, and the real, lowercase marker would split this very page. In your own posts, write it exactly as above, but lowercase.)</p>
-<h3>Frontmatter fields</h3>
+<h2>Frontmatter fields</h2>
 <p>Beyond <code>date</code>, <code>title</code> and <code>images</code>, a few other fields turn on extra styling:</p>
 <pre><code>---
 date: 2026-05-21
@@ -218,7 +219,7 @@ ai_assisted: true
 <li><code>favourite: true</code> — adds a small star after the post&rsquo;s entry in the archive listing.</li>
 <li><code>ai_assisted: true</code> — adds a disclosure banner (see below) to the top of the post&rsquo;s content, everywhere it&rsquo;s shown.</li>
 </ul>
-<h3>AI-assisted disclosure</h3>
+<h2>AI-assisted disclosure</h2>
 <p>Setting <code>ai_assisted: true</code> in a post&rsquo;s frontmatter inserts a banner at the very top of the post body — on the individual post page, and in the excerpt or full body shown on index and category pages:</p>
 <pre><code>---
 date: 2026-07-17
@@ -230,19 +231,19 @@ ai_assisted: true
 </code></pre>
 <p>This page itself has <code>ai_assisted: true</code> set, so an example of the banner can be seen at the very top of the page.</p>
 <p>The banner uses the <code>container-brown</code> colour variant together with an <code>ai-disclosure</code> class that lays the icon and text out side by side, with tighter padding than a regular container (matching <code>::: info</code>). The black AI icon (per the standard AI-content disclosure symbol) is a CSS background image on <code>.ai-disclosure</code>, base64-encoded in <code>style.css</code> — same as every other icon on the site, not a separate file. If <code>ai_disclosure_html</code> isn&rsquo;t set in <code>config.yaml</code>, a generic fallback sentence is used instead.</p>
-<h3>Dynamic values</h3>
+<h2>Dynamic values</h2>
 <p>Some values are worth computing at build time rather than typing by hand — a post count or word count would go stale the moment a new post is published. Write the value&rsquo;s name inside double braces:</p>
 <p>Source:</p>
 <pre><code>{{ post_count }}
 </code></pre>
 <p>Renders as:</p>
-<p><span class="post-count">127</span></p>
+<p><span class="post-count">128</span></p>
 <p>Five values are available: <code>post_count</code>, <code>word_count</code>, <code>image_count</code>, <code>today</code> and <code>ai_post_list</code>. Whitespace inside the braces doesn&rsquo;t matter — <code>{{post_count}}</code>, <code>{{ post_count }}</code> and <code>{{  post_count  }}</code> all mean the same thing, and the syntax is inert inside <code>inline code</code> or an indented code block (which is how it&rsquo;s shown safely above).</p>
 <p>Source:</p>
 <pre><code>This site has {{ post_count }} posts, totalling {{ word_count }} words and {{ image_count }} images. Today is {{ today }}.
 </code></pre>
 <p>Renders as:</p>
-<p>This site has <span class="post-count">127</span> posts, totalling <span class="word-count">12,999</span> words and <span class="image-count">122</span> images. Today is <span class="today">22/10/26</span>.</p>
+<p>This site has <span class="post-count">128</span> posts, totalling <span class="word-count">13,146</span> words and <span class="image-count">124</span> images. Today is <span class="today">24/10/26</span>.</p>
 <p><code>{{ ai_post_list }}</code> is different — it renders a whole <code>&lt;ul&gt;</code> of posts (and special pages — this page is itself <code>ai_assisted: true</code>, so it&rsquo;s in the list below) with <code>ai_assisted: true</code> set, newest first, so it needs to sit alone on its own line with blank lines before and after, rather than inline with other text:</p>
 <p>Source:</p>
 <pre><code>{{ ai_post_list }}
@@ -250,7 +251,7 @@ ai_assisted: true
 <p>Renders as:</p>
 <ul class="ai-post-list"><li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li><li><a href="syntax.html">Test Page / Syntax Guide</a></li><li><a href="privacy.html">Privacy Policy</a></li></ul>
 <p>An unrecognised name is left exactly as written and logs a build warning — handy for catching typos. Numbers of 1,000 or more get a comma thousands-separator (e.g. <code>12,345</code>). A page using any of these values is automatically rebuilt whenever the underlying numbers change elsewhere on the site (e.g. a new post shifts <code>post_count</code>), not just when the page&rsquo;s own file changes.</p>
-<h3>Container blocks</h3>
+<h2>Container blocks</h2>
 <p>Wrap a section of Markdown in a <code>:::</code> fence to render it inside a <code>&lt;div class="container"&gt;</code>. Content between the fences is itself parsed as Markdown, and an opening <code>:::</code> without a matching closing <code>:::</code> is left as plain text. Containers don&rsquo;t nest.</p>
 <p>Source:</p>
 <pre><code>::: 
@@ -261,7 +262,7 @@ A plain container, useful for setting a block of content apart from the rest of 
 <div class="container">
 <p>A plain container, useful for setting a block of content apart from the rest of the page.</p>
 </div>
-<h4>Colour variants</h4>
+<h3>Colour variants</h3>
 <p>Add one of <code>container-pink</code>, <code>container-green</code>, <code>container-yellow</code>, <code>container-blue</code>, <code>container-beige</code> or <code>container-brown</code> after the fence for a tinted version:</p>
 <pre><code>::: container-pink
 A pink-tinted container.
@@ -287,7 +288,7 @@ A pink-tinted container.
 <div class="container container-brown">
 <p>A brown-tinted container.</p>
 </div>
-<h4>Info box</h4>
+<h3>Info box</h3>
 <p>The <code>info</code> class renders a highlighted callout with an &ldquo;i&rdquo; icon, for asides or notes:</p>
 <pre><code>::: info
 Worth calling out separately from the main text.
@@ -297,7 +298,7 @@ Worth calling out separately from the main text.
 <div class="container info">
 <p>Worth calling out separately from the main text.</p>
 </div>
-<h4>Circle list</h4>
+<h3>Circle list</h3>
 <p>Adding <code>li-circles</code> alongside a plain or colour-variant class turns a bullet list inside the container into a row of circles — handy for a short set of tags or stats. It lays out 1, 2, 4 or 5 items specially (a single item fills the row, 2 or 4 split evenly, 5 splits 3-and-2); any other count wraps as a plain grid of thirds.</p>
 <pre><code>::: container-pink li-circles
 - Item 1
@@ -313,7 +314,7 @@ Worth calling out separately from the main text.
 <li>Item 3</li>
 </ul>
 </div>
-<h3>Download links</h3>
+<h2>Download links</h2>
 <p>There&rsquo;s no Markdown shorthand for a download link with the little download icon — write the anchor tag directly with a <code>download-link</code> class, since raw HTML passes through untouched:</p>
 <pre><code>Get the full-size version &lt;a href="12-image-01-resized.jpg" class="download-link"&gt;here&lt;/a&gt;.
 </code></pre>
@@ -358,7 +359,7 @@ Worth calling out separately from the main text.
         <img id="_b" alt="" width="1" height="1"
              style="position:absolute;left:-9999px"
              data-src="/api/track/syntax.svg">
-        <script src="resources/blog.js?v=1792701181"></script>
+        <script src="resources/blog.js?v=1792878027"></script>
         
     </body>
 </html>

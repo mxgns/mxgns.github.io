@@ -224,7 +224,11 @@
 
   var thumbnails = Array.prototype.slice.call(
     article.querySelectorAll('.post-images figure img, .post-body figure img')
-  );
+  ).filter(function (img) {
+    // An image already wrapped in a link (e.g. a hub page's photo linking
+    // through to that item's own page) navigates instead of lightboxing.
+    return img.parentElement.tagName !== 'A';
+  });
   if (!thumbnails.length) return;
 
   // Tracks actual current input modality, so a focus change driven by our
