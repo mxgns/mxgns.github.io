@@ -4,8 +4,16 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-10-24T00:02:10Z</updated>
+  <updated>2026-10-25T00:02:11Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Photo posted 25 October 2026</title>
+    <link href="https://mxgns.uk/131.html?src=atom" />
+    <id>https://mxgns.uk/131.html</id>
+    <updated>2026-10-25T00:02:11Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/131-image-01-resized.jpeg" alt="POV of JNCO Convicts and silver puffer"></figure><p>I wore my JNCO Convicts today and found they are not the best choice in windy weather, as the legs kept getting tangled up with each other! 🙈</p>
+<p>On another note, I have created a page for <a href="my-jnco-collection.html">my JNCO collection</a>, since it has turned into something of a little project.</p>]]></content>
+  </entry>
   <entry>
     <title>iPhone Duo-n’t</title>
     <link href="https://mxgns.uk/130.html?src=atom" />
@@ -263,13 +271,5 @@
     <id>https://mxgns.uk/102.html</id>
     <updated>2026-09-21T00:01:42Z</updated>
     <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/102-image-01-resized.jpeg" alt="Selfie in convex mirror"></figure><p>Photo evidence of me not wearing all black anymore 😆</p>]]></content>
-  </entry>
-  <entry>
-    <title>Note posted 21 September 2026</title>
-    <link href="https://mxgns.uk/101.html?src=atom" />
-    <id>https://mxgns.uk/101.html</id>
-    <updated>2026-09-21T00:01:41Z</updated>
-    <content type="html"><![CDATA[<p>Today marks the start of wearing my new <a href="72.html">14-day wardrobe</a>.</p>
-<p>The OOTD is loose mid-blue jeans, an olive sweatshirt over a white tee, and grey trainers with white socks. The jeans and sweatshirt feel refreshingly colourful for being me! 😅</p>]]></content>
   </entry>
 </feed>
