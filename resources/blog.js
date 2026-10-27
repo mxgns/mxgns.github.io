@@ -32,6 +32,24 @@
     return location.pathname + (qs ? '?' + qs : '') + location.hash;
   }
 
+  // The hostname that sent this visitor here, for the pixel's ?referrer=.
+  // Only an external referrer counts — internal navigation between pages
+  // on this same site would otherwise look like a referral and overwrite
+  // the visitor's real attribution for the rest of the day (see the
+  // worker's last-touch rule). document.referrer is empty for direct
+  // navigation, a bookmark, or a referrer-policy-restricted link, and (in
+  // principle) malformed in a way new URL() rejects — all treated the same
+  // as "no referrer".
+  function referrerHostname() {
+    if (!document.referrer) return null;
+    try {
+      var hostname = new URL(document.referrer).hostname;
+      return hostname && hostname !== location.hostname ? hostname : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
   function showBanner(text, stateClass, undoHref) {
     var banner = document.getElementById('_ab');
     if (!banner) return;
@@ -80,11 +98,12 @@
   var img = document.getElementById('_b');
   if (img) {
     var pixelSrc = img.dataset.src;
-    if (src) {
-      var pixelParams = new URLSearchParams();
-      pixelParams.set('src', src);
-      pixelSrc += '?' + pixelParams.toString();
-    }
+    var pixelParams = new URLSearchParams();
+    if (src) pixelParams.set('src', src);
+    var referrer = referrerHostname();
+    if (referrer) pixelParams.set('referrer', referrer);
+    var pixelQs = pixelParams.toString();
+    if (pixelQs) pixelSrc += '?' + pixelQs;
     img.src = pixelSrc;
   }
 
