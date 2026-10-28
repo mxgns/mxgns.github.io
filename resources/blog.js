@@ -25,13 +25,6 @@
     return location.pathname + '?' + params.toString() + location.hash;
   }
 
-  function urlWithoutSrc() {
-    var params = new URLSearchParams(location.search);
-    params.delete('src');
-    var qs = params.toString();
-    return location.pathname + (qs ? '?' + qs : '') + location.hash;
-  }
-
   // The hostname that sent this visitor here, for the pixel's ?referrer=.
   // Only an external referrer counts — internal navigation between pages
   // on this same site would otherwise look like a referral and overwrite
@@ -82,12 +75,6 @@
     showBanner('Analytics have been enabled.', 'enabled', urlWithAnalytics('false'));
   }
 
-  // Removed from the address bar unconditionally (even if tracking is
-  // disabled below) so a ?src= link never ends up bookmarked with the
-  // parameter attached.
-  var src = params.get('src');
-  if (src) history.replaceState(null, '', urlWithoutSrc());
-
   var notrack = hasNotrackCookie();
 
   var notice = document.getElementById('_nt');
@@ -98,12 +85,12 @@
   var img = document.getElementById('_b');
   if (img) {
     var pixelSrc = img.dataset.src;
-    var pixelParams = new URLSearchParams();
-    if (src) pixelParams.set('src', src);
     var referrer = referrerHostname();
-    if (referrer) pixelParams.set('referrer', referrer);
-    var pixelQs = pixelParams.toString();
-    if (pixelQs) pixelSrc += '?' + pixelQs;
+    if (referrer) {
+      var pixelParams = new URLSearchParams();
+      pixelParams.set('referrer', referrer);
+      pixelSrc += '?' + pixelParams.toString();
+    }
     img.src = pixelSrc;
   }
 
