@@ -1417,10 +1417,25 @@ section.comments h2 {
 
 h4.author {
     grid-column: 2;
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
     font-size: 1.07rem;
     font-weight: 600;
     margin: 0;
     color: var(--card-yellow-text);
+}
+
+h4.author.author-magnus::after {
+    content: "MXGNS";
+    line-height: 1.6;
+    padding: 0 0.4em;
+    background: var(--card-yellow-text);
+    color: var(--card-yellow);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    border-radius: 0.2em;
 }
 
 .comment time {
