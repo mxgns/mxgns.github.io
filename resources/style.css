@@ -1164,10 +1164,9 @@ time a:visited:hover {
     color: var(--purple-800);
 }
 
-/* === Category, notes & comment-count tags === */
+/* === Category & comment-count tags === */
 
 .category,
-.notes,
 a.comments {
     font-size: 1rem;
     color: var(--blue-600);
@@ -1193,13 +1192,11 @@ a.comments::before {
 }
 
 .category:visited,
-.notes:visited,
 a.comments:visited {
     color: var(--purple-600);
 }
 
 article footer .category,
-article footer .notes,
 article footer a.comments {
     border-left: 1px solid var(--grey-400);
     padding-left: 0.5rem;
@@ -1215,13 +1212,11 @@ article footer a.comments {
 }
 
 .category:hover,
-.notes:hover,
 a.comments:hover {
     color: var(--blue-800);
 }
 
 .category:visited:hover,
-.notes:visited:hover,
 a.comments:visited:hover {
     color: var(--purple-800);
 }
@@ -1639,7 +1634,7 @@ li.favourite a::after {
     }
 
     .archive-categories,
-    .archive-notes {
+    .archive-photos {
         flex: 1;
         min-width: 0;
     }
@@ -1778,8 +1773,7 @@ li.favourite a::after {
     margin: 0 0 1.5rem;
 }
 
-.calendar-post-count,
-.calendar-note-count {
+.calendar-post-count {
     font-variant-numeric: tabular-nums;
 }
 

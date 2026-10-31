@@ -95,7 +95,7 @@
     "date": "2026-10-10"
   },
   "116": {
-    "title": "It\u2019s been a while since I went to the\u2026",
+    "title": "My Neighbour Totoro",
     "category": "out-and-about",
     "date": "2026-10-08"
   },
@@ -796,6 +796,11 @@
   },
   "notes-2": {
     "title": "Short notes (page 2)",
+    "category": null,
+    "date": null
+  },
+  "notes-3": {
+    "title": "Short notes (page 3)",
     "category": null,
     "date": null
   },
