@@ -4,8 +4,15 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-10-30T00:02:15Z</updated>
+  <updated>2026-10-31T00:02:16Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Today was a day of measuring and…</title>
+    <link href="https://mxgns.uk/136.html" />
+    <id>https://mxgns.uk/136.html</id>
+    <updated>2026-10-31T00:02:16Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/136-image-01-resized.jpeg" alt="Me inside the window and a beautiful day outside"></figure><p>Today was a day of measuring and figuring out what furniture we need for the new place. And the weather was very nice, too! ☀️</p>]]></content>
+  </entry>
   <entry>
     <title>Now that I’ve bought the new flat, I…</title>
     <link href="https://mxgns.uk/135.html" />
@@ -257,19 +264,5 @@
     <updated>2026-09-30T00:01:47Z</updated>
     <content type="html"><![CDATA[<p>It’s been a crazy busy week at work so far, with an upcoming product launch.</p>
 <p>Hopefully, a normal service will resume soon 🤞</p>]]></content>
-  </entry>
-  <entry>
-    <title>Saturday photo dump</title>
-    <link href="https://mxgns.uk/106.html" />
-    <id>https://mxgns.uk/106.html</id>
-    <updated>2026-09-26T00:01:46Z</updated>
-    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/106-image-01-resized.jpeg" alt="Smoked salmon sandwiches and full English breakfast"></figure><figure><img src="https://mxgns.uk/106-image-02-resized.jpeg" alt="Kitchen showroom"></figure><figure><img src="https://mxgns.uk/106-image-03-resized.jpeg" alt="Greenwich Observatory"></figure><figure><img src="https://mxgns.uk/106-image-04-resized.jpeg" alt="The view from Greenwich Observatory"></figure><figure><img src="https://mxgns.uk/106-image-05-resized.jpeg" alt="Ice cream van in field"></figure><p>A nice autumn day in photos:</p>
-<ol>
-<li>Tried Beringer’s, City Island for brunch. Nice food and very convenient, since it’s close to home.</li>
-<li>We’re hopefully getting close now to exchanging the contract on the new flat now, so we went looking for a new kitchen.</li>
-<li>We were planning to go to Epping Forest, but there was no Central Line, so we ended up in Greenwich instead</li>
-<li>I learned that the Prime Meridian by the observatory hasn’t been the actual prime meridian since 1974. The real one is 102 metres from there!</li>
-<li>From Greenwich, we walked south across the heath to get to Blackheath, where we took the bus back home.</li>
-</ol>]]></content>
   </entry>
 </feed>
