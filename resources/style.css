@@ -1629,14 +1629,20 @@ li.favourite a::after {
 
 @media (min-width: 601px) {
     .archive-columns {
-        display: flex;
-        gap: 3rem;
+        columns: 2;
+        column-gap: 3rem;
     }
 
     .archive-categories,
-    .archive-photos {
-        flex: 1;
-        min-width: 0;
+    .archive-photos,
+    .archive-favourites {
+        break-inside: avoid;
+        /* A new block formatting context keeps each block's own h2 top margin
+           contained inside it, instead of collapsing through to the column
+           box -- which otherwise happens inconsistently between whichever
+           block lands first in column 1 vs column 2, throwing the two
+           columns out of top alignment. */
+        display: flow-root;
     }
 
     .archive-months {
