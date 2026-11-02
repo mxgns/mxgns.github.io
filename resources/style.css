@@ -439,6 +439,10 @@ main {
     max-width: 880px;
 }
 
+[data-page^="gallery"] main {
+    max-width: 1000px;
+}
+
 /* === Articles === */
 
 article {
@@ -561,6 +565,12 @@ article.single-post .post-images img {
 @media (max-width: 600px) {
     .gallery-item {
         width: 50%;
+    }
+}
+
+@media (min-width: 900px) {
+    .gallery-item {
+        width: 25%;
     }
 }
 
