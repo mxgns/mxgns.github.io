@@ -1547,7 +1547,8 @@ main > ul li::marker,
 
 main > ul a,
 .archive-columns a,
-.archive-index-pages a {
+.archive-index-pages a,
+.archive-random a {
     font-size: 1rem;
     color: var(--blue-600);
     text-decoration: none;
@@ -1555,20 +1556,27 @@ main > ul a,
 
 main > ul a:visited,
 .archive-columns a:visited,
-.archive-index-pages a:visited {
+.archive-index-pages a:visited,
+.archive-random a:visited {
     color: var(--purple-600);
 }
 
 main > ul a:hover,
 .archive-columns a:hover,
-.archive-index-pages a:hover {
+.archive-index-pages a:hover,
+.archive-random a:hover {
     color: var(--blue-800);
 }
 
 main > ul a:visited:hover,
 .archive-columns a:visited:hover,
-.archive-index-pages a:visited:hover {
+.archive-index-pages a:visited:hover,
+.archive-random a:visited:hover {
     color: var(--purple-800);
+}
+
+.archive-random {
+    margin: 0 0 1.5rem;
 }
 
 main section + section {
