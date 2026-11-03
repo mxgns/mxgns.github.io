@@ -24,11 +24,11 @@
         <link rel="icon" href="resources/icon.png">
         <link
             rel="stylesheet"
-            href="resources/style.css?v=1793648174"
+            href="resources/style.css?v=1793684377"
         >
         <link
             rel="stylesheet"
-            href="resources/assorted.css?v=1793648174"
+            href="resources/assorted.css?v=1793684377"
         >
         <link
             rel="alternate"
@@ -243,7 +243,7 @@ ai_assisted: true
 <pre><code>This site has {{ post_count }} posts, totalling {{ word_count }} words and {{ image_count }} images. Today is {{ today }}.
 </code></pre>
 <p>Renders as:</p>
-<p>This site has <span class="post-count">135</span> posts, totalling <span class="word-count">13,801</span> words and <span class="image-count">128</span> images. Today is <span class="today">2/11/26</span>.</p>
+<p>This site has <span class="post-count">135</span> posts, totalling <span class="word-count">13,791</span> words and <span class="image-count">128</span> images. Today is <span class="today">3/11/26</span>.</p>
 <p><code>{{ ai_post_list }}</code> is different — it renders a whole <code>&lt;ul&gt;</code> of posts (and special pages — this page is itself <code>ai_assisted: true</code>, so it&rsquo;s in the list below) with <code>ai_assisted: true</code> set, newest first, so it needs to sit alone on its own line with blank lines before and after, rather than inline with other text:</p>
 <p>Source:</p>
 <pre><code>{{ ai_post_list }}
@@ -298,22 +298,6 @@ Worth calling out separately from the main text.
 <div class="container info">
 <p>Worth calling out separately from the main text.</p>
 </div>
-<h3>Circle list</h3>
-<p>Adding <code>li-circles</code> alongside a plain or colour-variant class turns a bullet list inside the container into a row of circles — handy for a short set of tags or stats. It lays out 1, 2, 4 or 5 items specially (a single item fills the row, 2 or 4 split evenly, 5 splits 3-and-2); any other count wraps as a plain grid of thirds.</p>
-<pre><code>::: container-pink li-circles
-- Item 1
-- Item 2
-- Item 3
-:::
-</code></pre>
-<p>Renders as:</p>
-<div class="container container-pink li-circles">
-<ul>
-<li>Item 1</li>
-<li>Item 2</li>
-<li>Item 3</li>
-</ul>
-</div>
 <h2>Download links</h2>
 <p>There&rsquo;s no Markdown shorthand for a download link with the little download icon — write the anchor tag directly with a <code>download-link</code> class, since raw HTML passes through untouched:</p>
 <pre><code>Get the full-size version &lt;a href="12-image-01-resized.jpg" class="download-link"&gt;here&lt;/a&gt;.
@@ -359,7 +343,7 @@ Worth calling out separately from the main text.
         <img id="_b" alt="" width="1" height="1"
              style="position:absolute;left:-9999px"
              data-src="/api/track/syntax.svg">
-        <script src="resources/blog.js?v=1793648174"></script>
+        <script src="resources/blog.js?v=1793684377"></script>
         
     </body>
 </html>
