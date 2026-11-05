@@ -12,7 +12,7 @@
         })();
         </script>
         <title>Guestbook - MXGNS</title>
-<meta name="description" content="Leave a message in my guestbook, just say hello or share a thought on something I posted. .guestbook { --guestbook-card-bg: var(--grey-100);…">
+<meta name="description" content="Leave a message in my guestbook. Feel free to just say hello or share a thought on something I posted.">
 <link rel="canonical" href="https://mxgns.uk/guestbook.html">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,11 +23,11 @@
         <link rel="icon" href="resources/icon.png">
         <link
             rel="stylesheet"
-            href="resources/style.css?v=1793862409"
+            href="resources/style.css?v=1793863203"
         >
         <link
             rel="stylesheet"
-            href="resources/assorted.css?v=1793862409"
+            href="resources/assorted.css?v=1793863203"
         >
         <link
             rel="alternate"
@@ -56,7 +56,7 @@
         <main>
 <article id="post-guestbook" class="single-post full-post">
 <h1 data-pagefind-meta="title">Guestbook</h1>
-<div class="post-body"><p>Leave a message in my guestbook, just say hello or share a thought on something I posted.</p>
+<div class="post-body"><p>Leave a message in my guestbook. Feel free to just say hello or share a thought on something I posted.</p>
 <!-- guestbook -->
 
 <style>
@@ -81,6 +81,40 @@
   --guestbook-avatar-text-5: var(--card-beige-text);
   --guestbook-author-badge-label: "MXGNS";
 }
+
+/* Same photo/technique as .avatar.author-magnus in style.css -- background-image clips to the
+   circle via the existing border-radius: 50% on .guestbook-avatar, no overflow: hidden needed. */
+.guestbook .guestbook-entry.guestbook-author .guestbook-avatar {
+  background-image: url("resources/magnus.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.guestbook .guestbook-entry.guestbook-author .guestbook-avatar::before {
+  content: none;
+}
+
+/* Match the comment author badge's look (h4.author.author-magnus::after in style.css):
+   smaller, trailing the name, same line-height/padding trick. magbook's own default is a
+   ::before specifically to avoid colliding with .post-body a.external-link::after on a linked
+   name -- overriding to ::after here reopens that collision for an author entry that also has
+   a website set, accepted as a narrow edge case for a personal guestbook. */
+.guestbook .guestbook-entry.guestbook-author .guestbook-entry-name::before {
+  content: none;
+}
+
+.guestbook .guestbook-entry.guestbook-author .guestbook-entry-name::after {
+  content: var(--guestbook-author-badge-label, "Author");
+  margin-left: 0.4em;
+  padding: 0 0.4em;
+  line-height: 1.6;
+  border-radius: 0.2em;
+  background: var(--guestbook-author-badge-bg, #1a1a1a);
+  color: var(--guestbook-author-badge-text, #fff);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
 </style>
 
 <script type="module" src="https://guestbook.mxgns.uk/guestbook.js"></script></div>
@@ -99,7 +133,7 @@
         <img id="_b" alt="" width="1" height="1"
              style="position:absolute;left:-9999px"
              data-src="/api/track/guestbook.svg">
-        <script src="resources/blog.js?v=1793862409"></script>
+        <script src="resources/blog.js?v=1793863203"></script>
         
     </body>
 </html>
