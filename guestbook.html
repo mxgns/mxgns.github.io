@@ -23,11 +23,11 @@
         <link rel="icon" href="resources/icon.png">
         <link
             rel="stylesheet"
-            href="resources/style.css?v=1793902056"
+            href="resources/style.css?v=1793945516"
         >
         <link
             rel="stylesheet"
-            href="resources/assorted.css?v=1793902056"
+            href="resources/assorted.css?v=1793945516"
         >
         <link
             rel="alternate"
@@ -115,6 +115,52 @@
   font-weight: 700;
   letter-spacing: 0.05em;
 }
+
+/* Icon-only by default: the button's own text ("Delete entry"/"Confirm deletion", set by
+   magbook) stays in the DOM for accessibility, just clipped by max-width + overflow: hidden
+   -- the icon (fixed-size ::before, never clipped) is what's actually visible. Growing
+   max-width on --confirming reveals the text and, since this button is the last flex child in
+   .guestbook-entry with nothing to its right, the growth can only extend leftward into the
+   entry content's flex: 1 space -- "grows in place to the left" falls out of the layout that
+   already exists, no new positioning needed. Same mask-image technique as .back-link::before
+   in style.css, just a different icon. */
+.guestbook .guestbook-entries--can-delete .guestbook-delete-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 1.8em;
+  padding: 0.3em;
+  border-radius: 0.3em;
+  transition: max-width 0.2s ease, padding 0.2s ease, background-color 0.2s ease,
+    border-color 0.2s ease, color 0.2s ease;
+}
+
+.guestbook .guestbook-entries--can-delete .guestbook-delete-button::before {
+  content: "";
+  display: inline-block;
+  flex-shrink: 0;
+  width: 1em;
+  height: 1em;
+  background-color: currentColor;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48cGF0aCBkPSJNMjYyLjIgNDhDMjQ4LjkgNDggMjM2LjkgNTYuMyAyMzIuMiA2OC44TDIxNiAxMTJMMTIwIDExMkMxMDYuNyAxMTIgOTYgMTIyLjcgOTYgMTM2Qzk2IDE0OS4zIDEwNi43IDE2MCAxMjAgMTYwTDUyMCAxNjBDNTMzLjMgMTYwIDU0NCAxNDkuMyA1NDQgMTM2QzU0NCAxMjIuNyA1MzMuMyAxMTIgNTIwIDExMkw0MjQgMTEyTDQwNy44IDY4LjhDNDAzLjEgNTYuMyAzOTEuMiA0OCAzNzcuOCA0OEwyNjIuMiA0OHpNMTI4IDIwOEwxMjggNTEyQzEyOCA1NDcuMyAxNTYuNyA1NzYgMTkyIDU3Nkw0NDggNTc2QzQ4My4zIDU3NiA1MTIgNTQ3LjMgNTEyIDUxMkw1MTIgMjA4TDQ2NCAyMDhMNDY0IDUxMkM0NjQgNTIwLjggNDU2LjggNTI4IDQ0OCA1MjhMMTkyIDUyOEMxODMuMiA1MjggMTc2IDUyMC44IDE3NiA1MTJMMTc2IDIwOEwxMjggMjA4ek0yODggMjgwQzI4OCAyNjYuNyAyNzcuMyAyNTYgMjY0IDI1NkMyNTAuNyAyNTYgMjQwIDI2Ni43IDI0MCAyODBMMjQwIDQ1NkMyNDAgNDY5LjMgMjUwLjcgNDgwIDI2NCA0ODBDMjc3LjMgNDgwIDI4OCA0NjkuMyAyODggNDU2TDI4OCAyODB6TTQwMCAyODBDNDAwIDI2Ni43IDM4OS4zIDI1NiAzNzYgMjU2QzM2Mi43IDI1NiAzNTIgMjY2LjcgMzUyIDI4MEwzNTIgNDU2QzM1MiA0NjkuMyAzNjIuNyA0ODAgMzc2IDQ4MEMzODkuMyA0ODAgNDAwIDQ2OS4zIDQwMCA0NTZMNDAwIDI4MHoiLz48L3N2Zz4=");
+  mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48cGF0aCBkPSJNMjYyLjIgNDhDMjQ4LjkgNDggMjM2LjkgNTYuMyAyMzIuMiA2OC44TDIxNiAxMTJMMTIwIDExMkMxMDYuNyAxMTIgOTYgMTIyLjcgOTYgMTM2Qzk2IDE0OS4zIDEwNi43IDE2MCAxMjAgMTYwTDUyMCAxNjBDNTMzLjMgMTYwIDU0NCAxNDkuMyA1NDQgMTM2QzU0NCAxMjIuNyA1MzMuMyAxMTIgNTIwIDExMkw0MjQgMTEyTDQwNy44IDY4LjhDNDAzLjEgNTYuMyAzOTEuMiA0OCAzNzcuOCA0OEwyNjIuMiA0OHpNMTI4IDIwOEwxMjggNTEyQzEyOCA1NDcuMyAxNTYuNyA1NzYgMTkyIDU3Nkw0NDggNTc2QzQ4My4zIDU3NiA1MTIgNTQ3LjMgNTEyIDUxMkw1MTIgMjA4TDQ2NCAyMDhMNDY0IDUxMkM0NjQgNTIwLjggNDU2LjggNTI4IDQ0OCA1MjhMMTkyIDUyOEMxODMuMiA1MjggMTc2IDUyMC44IDE3NiA1MTJMMTc2IDIwOEwxMjggMjA4ek0yODggMjgwQzI4OCAyNjYuNyAyNzcuMyAyNTYgMjY0IDI1NkMyNTAuNyAyNTYgMjQwIDI2Ni43IDI0MCAyODBMMjQwIDQ1NkMyNDAgNDY5LjMgMjUwLjcgNDgwIDI2NCA0ODBDMjc3LjMgNDgwIDI4OCA0NjkuMyAyODggNDU2TDI4OCAyODB6TTQwMCAyODBDNDAwIDI2Ni43IDM4OS4zIDI1NiAzNzYgMjU2QzM2Mi43IDI1NiAzNTIgMjY2LjcgMzUyIDI4MEwzNTIgNDU2QzM1MiA0NjkuMyAzNjIuNyA0ODAgMzc2IDQ4MEMzODkuMyA0ODAgNDAwIDQ2OS4zIDQwMCA0NTZMNDAwIDI4MHoiLz48L3N2Zz4=");
+}
+
+.guestbook .guestbook-entries--can-delete .guestbook-delete-button.guestbook-delete-button--confirming {
+  max-width: 11em;
+  padding: 0.3em 0.6em;
+  background: var(--pink-600);
+  border-color: var(--pink-600);
+  color: var(--white);
+}
 </style>
 
 <script type="module" src="https://guestbook.mxgns.uk/guestbook.js"
@@ -135,7 +181,7 @@
         <img id="_b" alt="" width="1" height="1"
              style="position:absolute;left:-9999px"
              data-src="/api/track/guestbook.svg">
-        <script src="resources/blog.js?v=1793902056"></script>
+        <script src="resources/blog.js?v=1793945516"></script>
         
     </body>
 </html>
