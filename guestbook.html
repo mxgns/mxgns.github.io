@@ -12,7 +12,7 @@
         })();
         </script>
         <title>Guestbook - MXGNS</title>
-<meta name="description" content="Leave a message in my guestbook. Feel free to just say hello or share a thought on something I posted.">
+<meta name="description" content="Leave a message in my guestbook. Feel free to share a thought on something I posted or just say hello.">
 <link rel="canonical" href="https://mxgns.uk/guestbook.html">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,11 +23,11 @@
         <link rel="icon" href="resources/icon.png">
         <link
             rel="stylesheet"
-            href="resources/style.css?v=1793945516"
+            href="resources/style.css?v=1793946715"
         >
         <link
             rel="stylesheet"
-            href="resources/assorted.css?v=1793945516"
+            href="resources/assorted.css?v=1793946715"
         >
         <link
             rel="alternate"
@@ -56,7 +56,7 @@
         <main>
 <article id="post-guestbook" class="single-post full-post">
 <h1 data-pagefind-meta="title">Guestbook</h1>
-<div class="post-body"><p>Leave a message in my guestbook. Feel free to just say hello or share a thought on something I posted.</p>
+<div class="post-body"><p>Leave a message in my guestbook. Feel free to share a thought on something I posted or just say hello.</p>
 <!-- guestbook -->
 
 <style>
@@ -123,26 +123,41 @@
    .guestbook-entry with nothing to its right, the growth can only extend leftward into the
    entry content's flex: 1 space -- "grows in place to the left" falls out of the layout that
    already exists, no new positioning needed. Same mask-image technique as .back-link::before
-   in style.css, just a different icon. */
+   in style.css, just a different icon.
+   min-width pinned to the same 2em as max-width/height forces an exact square click area at
+   rest -- padding-driven sizing alone left it taller than wide, since button line-height adds
+   vertical space padding doesn't add horizontally. --confirming drops min-width back to 0 so
+   content + its own wider max-width can govern width again, growing past the square. border:
+   none overrides magbook's own default border (meant for its plain-text fallback button, not
+   this icon-only treatment), both here and in --confirming (border-color alone did nothing
+   once style/width come from `none` here regardless, so dropped it there too). */
 .guestbook .guestbook-entries--can-delete .guestbook-delete-button {
   display: inline-flex;
   align-items: center;
+  /* Not justify-content: center -- the whole point is that content (icon + hidden text) is
+     WIDER than the box. Centering overflowing flex content clips from both sides equally,
+     which pushed the icon itself half out of view instead of just clipping the text; flex-start
+     (the default) keeps the icon, as the first item, anchored fully inside the visible box with
+     all the overflow landing on the text to its right where it's meant to be clipped. The small
+     left padding below is what actually centers the icon in the resting square. */
   gap: 0.35em;
   overflow: hidden;
   white-space: nowrap;
-  max-width: 1.8em;
-  padding: 0.3em;
+  min-width: 2em;
+  max-width: 2em;
+  height: 2em;
+  padding: 0 0 0 0.35em;
+  border: none;
   border-radius: 0.3em;
-  transition: max-width 0.2s ease, padding 0.2s ease, background-color 0.2s ease,
-    border-color 0.2s ease, color 0.2s ease;
+  transition: max-width 0.2s ease, padding 0.2s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
 .guestbook .guestbook-entries--can-delete .guestbook-delete-button::before {
   content: "";
   display: inline-block;
   flex-shrink: 0;
-  width: 1em;
-  height: 1em;
+  width: 1.3em;
+  height: 1.3em;
   background-color: currentColor;
   -webkit-mask-size: contain;
   mask-size: contain;
@@ -155,10 +170,10 @@
 }
 
 .guestbook .guestbook-entries--can-delete .guestbook-delete-button.guestbook-delete-button--confirming {
+  min-width: 0;
   max-width: 11em;
   padding: 0.3em 0.6em;
   background: var(--pink-600);
-  border-color: var(--pink-600);
   color: var(--white);
 }
 </style>
@@ -181,7 +196,7 @@
         <img id="_b" alt="" width="1" height="1"
              style="position:absolute;left:-9999px"
              data-src="/api/track/guestbook.svg">
-        <script src="resources/blog.js?v=1793945516"></script>
+        <script src="resources/blog.js?v=1793946715"></script>
         
     </body>
 </html>
