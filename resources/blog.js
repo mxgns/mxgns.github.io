@@ -191,7 +191,11 @@
   });
 
   document.addEventListener('click', function (event) {
-    if (!menu.hidden && !menu.contains(event.target) && event.target !== toggle) {
+    // toggle.contains, not === toggle: a click on the chevron icon inside
+    // the button has that <span> as event.target, not the button itself --
+    // comparing by === closed the menu again in the same click that
+    // toggle's own handler above had just opened it with.
+    if (!menu.hidden && !menu.contains(event.target) && !toggle.contains(event.target)) {
       close();
     }
   });
