@@ -144,10 +144,12 @@
 
   if (signOut) {
     signOut.addEventListener('click', function () {
-      // Cosmetic only -- flip back to signed-out regardless, so the UI
-      // doesn't lie about the session even if this request failed, same as
-      // the guestbook widget's own sign-out button.
-      fetch('/api/guestbook/author-logout', { method: 'POST' }).catch(function () {}).then(function () {
+      // access-logout, not author-logout -- it clears this cookie too, but also hands off to
+      // Cloudflare's own logout path to end the underlying Access session, so Magnalytics (or
+      // author-login again) doesn't stay reachable with no new challenge. Cosmetic fallback
+      // only -- flip back to signed-out regardless, so the UI doesn't lie about the session
+      // even if this request failed, same as the guestbook widget's own sign-out button.
+      fetch('/api/guestbook/access-logout').catch(function () {}).then(function () {
         applyAuthorState(false);
       });
     });
