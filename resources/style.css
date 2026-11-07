@@ -287,6 +287,78 @@ header .masthead-nav a.current {
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    /* Guestbook, search and dark mode move into the "More" dropdown below;
+       About/Now/Archive stay visible so active-page highlighting still has
+       something to highlight. */
+    header .masthead-nav .nav-guestbook,
+    .masthead-search,
+    .theme-switcher {
+        display: none;
+    }
+
+    .masthead-more {
+        display: block;
+    }
+}
+
+/* === "More" nav dropdown (mobile only) ===
+   Hidden above the 600px breakpoint, where Guestbook/Search/Darkmode show
+   as their own masthead items instead. */
+
+.masthead-more {
+    display: none;
+    position: relative;
+}
+
+.masthead-more-toggle {
+    display: inline-block;
+    font-size: 1.07rem;
+    color: var(--black);
+    background: none;
+    border: none;
+    padding: 0 0 0.5rem;
+    border-bottom: 6px solid transparent;
+    cursor: pointer;
+}
+
+.masthead-more-toggle[aria-expanded="true"],
+.masthead-more-toggle:hover {
+    border-bottom-color: var(--black);
+}
+
+.masthead-more-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 10;
+    min-width: 10rem;
+    background: var(--white);
+    border: 1px solid var(--grey-200);
+    border-radius: 4px;
+    box-shadow: 0 4px 12px var(--overlay-soft);
+}
+
+.masthead-more-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.6rem;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: var(--black);
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.masthead-more-link:hover {
+    background: var(--grey-100);
 }
 
 /* === Theme switcher === */

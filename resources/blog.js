@@ -135,25 +135,73 @@
   }
 
   function updateLabel() {
-    toggle.setAttribute('aria-label', effectiveTheme() === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
+    var label = effectiveTheme() === 'dark' ? 'Switch to light theme' : 'Switch to dark theme';
+    toggles.forEach(function (toggle) {
+      toggle.setAttribute('aria-label', label);
+    });
   }
 
-  var toggle = document.getElementById('theme-toggle');
-  if (!toggle) return;
+  // A .theme-toggle exists both in the masthead and duplicated inside the
+  // mobile "More" menu below — both need to flip the theme and stay
+  // labelled correctly.
+  var toggles = Array.prototype.slice.call(document.querySelectorAll('.theme-toggle'));
+  if (!toggles.length) return;
 
   // Only written on click: leaving data-theme unset until then means the
   // page keeps following prefers-color-scheme live for anyone who hasn't
   // made an explicit choice this session.
-  toggle.addEventListener('click', function () {
-    var next = effectiveTheme() === 'dark' ? 'light' : 'dark';
-    try {
-      sessionStorage.setItem(STORAGE_KEY, next);
-    } catch (e) {}
-    document.documentElement.setAttribute('data-theme', next);
-    updateLabel();
+  toggles.forEach(function (toggle) {
+    toggle.addEventListener('click', function () {
+      var next = effectiveTheme() === 'dark' ? 'light' : 'dark';
+      try {
+        sessionStorage.setItem(STORAGE_KEY, next);
+      } catch (e) {}
+      document.documentElement.setAttribute('data-theme', next);
+      updateLabel();
+    });
   });
 
   updateLabel();
+})();
+
+// Separate IIFE: the mobile "More" nav dropdown. Only the markup differs
+// by breakpoint (which copies are visible is pure CSS); this just owns
+// open/close state, which is identical at every width.
+(function () {
+  var toggle = document.getElementById('masthead-more-toggle');
+  var menu = document.getElementById('masthead-more-menu');
+  if (!toggle || !menu) return;
+
+  function close() {
+    menu.hidden = true;
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+
+  function open() {
+    menu.hidden = false;
+    toggle.setAttribute('aria-expanded', 'true');
+  }
+
+  toggle.addEventListener('click', function () {
+    if (menu.hidden) {
+      open();
+    } else {
+      close();
+    }
+  });
+
+  document.addEventListener('click', function (event) {
+    if (!menu.hidden && !menu.contains(event.target) && event.target !== toggle) {
+      close();
+    }
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' && !menu.hidden) {
+      close();
+      toggle.focus();
+    }
+  });
 })();
 
 // Separate IIFE: gallery masonry layout + load-more, unrelated to
