@@ -24,11 +24,11 @@
         <link rel="icon" href="resources/icon.png">
         <link
             rel="stylesheet"
-            href="resources/style.css?v=1793969968"
+            href="resources/style.css?v=1794031014"
         >
         <link
             rel="stylesheet"
-            href="resources/assorted.css?v=1793969968"
+            href="resources/assorted.css?v=1794031014"
         >
         <link
             rel="alternate"
@@ -110,8 +110,14 @@
 <p id="privacy-status-disabled" class="privacy-status disabled" hidden><span class="privacy-status-icon"></span><span class="privacy-status-label">Analytics are disabled.</span> You may <a href="privacy.html?analytics=true">opt back in</a>.</p>
 <script>
 (function () {
-  var notrack = /(?:^|; )_notrack=/.test(document.cookie);
-  document.getElementById(notrack ? 'privacy-status-disabled' : 'privacy-status-enabled').hidden = false;
+  // Deferred to DOMContentLoaded: this script sits earlier in the page
+  // than the blog.js tag that actually sets/removes the _notrack cookie
+  // (in response to ?analytics=true/false), so reading the cookie here
+  // immediately would see its state from before that update.
+  document.addEventListener('DOMContentLoaded', function () {
+    var notrack = /(?:^|; )_notrack=/.test(document.cookie);
+    document.getElementById(notrack ? 'privacy-status-disabled' : 'privacy-status-enabled').hidden = false;
+  });
 })();
 </script>
 
@@ -175,7 +181,7 @@ If you opt out, this website sets a cookie named <code>_notrack</code> solely to
         <img id="_b" alt="" width="1" height="1"
              style="position:absolute;left:-9999px"
              data-src="/api/track/privacy.svg">
-        <script src="resources/blog.js?v=1793969968"></script>
+        <script src="resources/blog.js?v=1794031014"></script>
         
     </body>
 </html>
