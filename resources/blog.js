@@ -115,6 +115,45 @@
   if (logo && logo.getAttribute('href') === '/') logo.setAttribute('href', 'index.html');
 })();
 
+// Separate IIFE: unrelated to analytics, and the first block above returns
+// early when tracking is opted out, which must not hide the sign-in/out
+// links. Reflects an already-signed-in Cloudflare Access session back (e.g.
+// from Magnalytics or a previous visit to author-login) -- there's no
+// sign-in form here, just a link to the Access-gated author-login page and
+// a status check against its resulting cookie, same split as the guestbook
+// widget's own author-status/author-login.
+(function () {
+  var signIn = document.getElementById('_si');
+  var analyticsLink = document.getElementById('_an');
+  var signOut = document.getElementById('_so');
+  if (!signIn && !analyticsLink && !signOut) return;
+
+  function applyAuthorState(isAuthor) {
+    if (signIn) signIn.hidden = isAuthor;
+    if (analyticsLink) analyticsLink.hidden = !isAuthor;
+    if (signOut) signOut.hidden = !isAuthor;
+  }
+
+  fetch('/api/guestbook/author-status').then(function (res) {
+    return res.json();
+  }).then(function (status) {
+    applyAuthorState(!!status.isAuthor);
+  }).catch(function () {
+    applyAuthorState(false);
+  });
+
+  if (signOut) {
+    signOut.addEventListener('click', function () {
+      // Cosmetic only -- flip back to signed-out regardless, so the UI
+      // doesn't lie about the session even if this request failed, same as
+      // the guestbook widget's own sign-out button.
+      fetch('/api/guestbook/author-logout', { method: 'POST' }).catch(function () {}).then(function () {
+        applyAuthorState(false);
+      });
+    });
+  }
+})();
+
 // Separate IIFE: unrelated to analytics, and the block above returns early
 // when tracking is opted out, which must not disable the theme toggle.
 (function () {
