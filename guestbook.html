@@ -23,11 +23,11 @@
         <link rel="icon" href="resources/icon.png">
         <link
             rel="stylesheet"
-            href="resources/style.css?v=1793967878"
+            href="resources/style.css?v=1794028806"
         >
         <link
             rel="stylesheet"
-            href="resources/assorted.css?v=1793967878"
+            href="resources/assorted.css?v=1794028806"
         >
         <link
             rel="alternate"
@@ -59,168 +59,13 @@
 <div class="post-body"><p>Leave a message in my guestbook. Feel free to share a thought on something I posted or just say hello.</p>
 <!-- guestbook -->
 
-<style>
-.guestbook {
-  --guestbook-card-bg: var(--grey-100);
-  --guestbook-accent: var(--black);
-  --guestbook-accent-text: var(--white);
-  --guestbook-error-color: var(--pink-600);
-  --guestbook-required-color: var(--pink-600);
-  --guestbook-border-color: var(--grey-300);
-  --guestbook-avatar-color-0: var(--card-blue);
-  --guestbook-avatar-text-0: var(--card-blue-text);
-  --guestbook-avatar-color-1: var(--card-brown);
-  --guestbook-avatar-text-1: var(--card-brown-text);
-  --guestbook-avatar-color-2: var(--card-green);
-  --guestbook-avatar-text-2: var(--card-green-text);
-  --guestbook-avatar-color-3: var(--card-yellow);
-  --guestbook-avatar-text-3: var(--card-yellow-text);
-  --guestbook-avatar-color-4: var(--card-pink);
-  --guestbook-avatar-text-4: var(--card-pink-text);
-  --guestbook-avatar-color-5: var(--card-beige);
-  --guestbook-avatar-text-5: var(--card-beige-text);
-  --guestbook-author-badge-label: "MXGNS";
-}
-
-/* Same photo/technique as .avatar.author-magnus in style.css -- background-image clips to the
-   circle via the existing border-radius: 50% on .guestbook-avatar, no overflow: hidden needed. */
-.guestbook .guestbook-entry.guestbook-author .guestbook-avatar {
-  background-image: url("resources/magnus.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.guestbook .guestbook-entry.guestbook-author .guestbook-avatar::before {
-  content: none;
-}
-
-/* Match the comment author badge's look (h4.author.author-magnus::after in style.css):
-   smaller, trailing the name, same line-height/padding trick. magbook's own default is a
-   ::before specifically to avoid colliding with .post-body a.external-link::after on a linked
-   name -- overriding to ::after here reopens that collision for an author entry that also has
-   a website set, accepted as a narrow edge case for a personal guestbook. */
-.guestbook .guestbook-entry.guestbook-author .guestbook-entry-name::before {
-  content: none;
-}
-
-.guestbook .guestbook-entry.guestbook-author .guestbook-entry-name::after {
-  content: var(--guestbook-author-badge-label, "Author");
-  margin-left: 0.4em;
-  padding: 0 0.4em;
-  line-height: 1.6;
-  border-radius: 0.2em;
-  background: var(--guestbook-author-badge-bg, #1a1a1a);
-  color: var(--guestbook-author-badge-text, #fff);
-  font-size: 0.6rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-}
-
-/* Icon-only by default: the button's own text ("Delete entry"/"Confirm deletion", set by
-   magbook) stays in the DOM for accessibility, just clipped by max-width + overflow: hidden
-   -- the icon (fixed-size ::before, never clipped) is what's actually visible. Growing
-   max-width on --confirming reveals the text and, since this button is the last flex child in
-   .guestbook-entry with nothing to its right, the growth can only extend leftward into the
-   entry content's flex: 1 space -- "grows in place to the left" falls out of the layout that
-   already exists, no new positioning needed. Same mask-image technique as .back-link::before
-   in style.css, just a different icon.
-   min-width pinned to the same 2em as max-width/height forces an exact square click area at
-   rest -- padding-driven sizing alone left it taller than wide, since button line-height adds
-   vertical space padding doesn't add horizontally. --confirming drops min-width back to 0 so
-   content + its own wider max-width can govern width again, growing past the square. border:
-   none overrides magbook's own default border (meant for its plain-text fallback button, not
-   this icon-only treatment), both here and in --confirming (border-color alone did nothing
-   once style/width come from `none` here regardless, so dropped it there too). */
-.guestbook .guestbook-entries--signed-in .guestbook-delete-button {
-  display: inline-flex;
-  align-items: center;
-  /* Not justify-content: center -- the whole point is that content (icon + hidden text) is
-     WIDER than the box. Centering overflowing flex content clips from both sides equally,
-     which pushed the icon itself half out of view instead of just clipping the text; flex-start
-     (the default) keeps the icon, as the first item, anchored fully inside the visible box with
-     all the overflow landing on the text to its right where it's meant to be clipped. The small
-     left padding below is what actually centers the icon in the resting square. */
-  gap: 0.35em;
-  overflow: hidden;
-  white-space: nowrap;
-  min-width: 2em;
-  max-width: 2em;
-  height: 2em;
-  padding: 0 0 0 0.35em;
-  border: none;
-  border-radius: 0.3em;
-  transition: max-width 0.2s ease, padding 0.2s ease, background-color 0.2s ease, color 0.2s ease;
-}
-
-.guestbook .guestbook-entries--signed-in .guestbook-delete-button::before {
-  content: "";
-  display: inline-block;
-  flex-shrink: 0;
-  width: 1.3em;
-  height: 1.3em;
-  background-color: currentColor;
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48cGF0aCBkPSJNMjYyLjIgNDhDMjQ4LjkgNDggMjM2LjkgNTYuMyAyMzIuMiA2OC44TDIxNiAxMTJMMTIwIDExMkMxMDYuNyAxMTIgOTYgMTIyLjcgOTYgMTM2Qzk2IDE0OS4zIDEwNi43IDE2MCAxMjAgMTYwTDUyMCAxNjBDNTMzLjMgMTYwIDU0NCAxNDkuMyA1NDQgMTM2QzU0NCAxMjIuNyA1MzMuMyAxMTIgNTIwIDExMkw0MjQgMTEyTDQwNy44IDY4LjhDNDAzLjEgNTYuMyAzOTEuMiA0OCAzNzcuOCA0OEwyNjIuMiA0OHpNMTI4IDIwOEwxMjggNTEyQzEyOCA1NDcuMyAxNTYuNyA1NzYgMTkyIDU3Nkw0NDggNTc2QzQ4My4zIDU3NiA1MTIgNTQ3LjMgNTEyIDUxMkw1MTIgMjA4TDQ2NCAyMDhMNDY0IDUxMkM0NjQgNTIwLjggNDU2LjggNTI4IDQ0OCA1MjhMMTkyIDUyOEMxODMuMiA1MjggMTc2IDUyMC44IDE3NiA1MTJMMTc2IDIwOEwxMjggMjA4ek0yODggMjgwQzI4OCAyNjYuNyAyNzcuMyAyNTYgMjY0IDI1NkMyNTAuNyAyNTYgMjQwIDI2Ni43IDI0MCAyODBMMjQwIDQ1NkMyNDAgNDY5LjMgMjUwLjcgNDgwIDI2NCA0ODBDMjc3LjMgNDgwIDI4OCA0NjkuMyAyODggNDU2TDI4OCAyODB6TTQwMCAyODBDNDAwIDI2Ni43IDM4OS4zIDI1NiAzNzYgMjU2QzM2Mi43IDI1NiAzNTIgMjY2LjcgMzUyIDI4MEwzNTIgNDU2QzM1MiA0NjkuMyAzNjIuNyA0ODAgMzc2IDQ4MEMzODkuMyA0ODAgNDAwIDQ2OS4zIDQwMCA0NTZMNDAwIDI4MHoiLz48L3N2Zz4=");
-  mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48cGF0aCBkPSJNMjYyLjIgNDhDMjQ4LjkgNDggMjM2LjkgNTYuMyAyMzIuMiA2OC44TDIxNiAxMTJMMTIwIDExMkMxMDYuNyAxMTIgOTYgMTIyLjcgOTYgMTM2Qzk2IDE0OS4zIDEwNi43IDE2MCAxMjAgMTYwTDUyMCAxNjBDNTMzLjMgMTYwIDU0NCAxNDkuMyA1NDQgMTM2QzU0NCAxMjIuNyA1MzMuMyAxMTIgNTIwIDExMkw0MjQgMTEyTDQwNy44IDY4LjhDNDAzLjEgNTYuMyAzOTEuMiA0OCAzNzcuOCA0OEwyNjIuMiA0OHpNMTI4IDIwOEwxMjggNTEyQzEyOCA1NDcuMyAxNTYuNyA1NzYgMTkyIDU3Nkw0NDggNTc2QzQ4My4zIDU3NiA1MTIgNTQ3LjMgNTEyIDUxMkw1MTIgMjA4TDQ2NCAyMDhMNDY0IDUxMkM0NjQgNTIwLjggNDU2LjggNTI4IDQ0OCA1MjhMMTkyIDUyOEMxODMuMiA1MjggMTc2IDUyMC44IDE3NiA1MTJMMTc2IDIwOEwxMjggMjA4ek0yODggMjgwQzI4OCAyNjYuNyAyNzcuMyAyNTYgMjY0IDI1NkMyNTAuNyAyNTYgMjQwIDI2Ni43IDI0MCAyODBMMjQwIDQ1NkMyNDAgNDY5LjMgMjUwLjcgNDgwIDI2NCA0ODBDMjc3LjMgNDgwIDI4OCA0NjkuMyAyODggNDU2TDI4OCAyODB6TTQwMCAyODBDNDAwIDI2Ni43IDM4OS4zIDI1NiAzNzYgMjU2QzM2Mi43IDI1NiAzNTIgMjY2LjcgMzUyIDI4MEwzNTIgNDU2QzM1MiA0NjkuMyAzNjIuNyA0ODAgMzc2IDQ4MEMzODkuMyA0ODAgNDAwIDQ2OS4zIDQwMCA0NTZMNDAwIDI4MHoiLz48L3N2Zz4=");
-}
-
-.guestbook .guestbook-entries--signed-in .guestbook-delete-button.guestbook-delete-button--confirming {
-  min-width: 0;
-  max-width: 11em;
-  padding: 0.3em 0.6em;
-  background: var(--pink-600);
-  color: var(--white);
-}
-
-/* Same icon-only treatment as the delete button's resting state, just without a --confirming
-   counterpart to grow into -- Reply opens a form rather than being a two-step confirm, so
-   there's no second state to style here. */
-.guestbook .guestbook-entries--signed-in .guestbook-reply-button {
-  display: inline-flex;
-  align-items: center;
-  /* Without this, the clipped "Reply" text leaks a sliver past the button's right edge despite
-     overflow: hidden -- empirically confirmed by isolated repro, not just theory: adding gap
-     back (the delete button already has it) is what actually stops it, regardless of width
-     being set via a plain `width` or a matching min-width/max-width pair -- neither of those
-     made a difference on their own. */
-  gap: 0.35em;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 2em;
-  height: 2em;
-  padding: 0 0 0 0.35em;
-  border: none;
-  border-radius: 0.3em;
-  color: inherit;
-  background: none;
-}
-
-.guestbook .guestbook-entries--signed-in .guestbook-reply-button::before {
-  content: "";
-  display: inline-block;
-  flex-shrink: 0;
-  width: 1.3em;
-  height: 1.3em;
-  background-color: currentColor;
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48cGF0aCBkPSJNMjY4LjIgODIuNEMyODAuMiA4Ny40IDI4OCA5OSAyODggMTEyTDI4OCAxOTJMNDAwIDE5MkM0OTcuMiAxOTIgNTc2IDI3MC44IDU3NiAzNjhDNTc2IDQ4MS4zIDQ5NC41IDUzMS45IDQ3NS44IDU0Mi4xQzQ3My4zIDU0My41IDQ3MC41IDU0NCA0NjcuNyA1NDRDNDU2LjggNTQ0IDQ0OCA1MzUuMSA0NDggNTI0LjNDNDQ4IDUxNi44IDQ1Mi4zIDUwOS45IDQ1Ny44IDUwNC44QzQ2Ny4yIDQ5NiA0ODAgNDc4LjQgNDgwIDQ0OC4xQzQ4MCAzOTUuMSA0MzcgMzUyLjEgMzg0IDM1Mi4xTDI4OCAzNTIuMUwyODggNDMyLjFDMjg4IDQ0NSAyODAuMiA0NTYuNyAyNjguMiA0NjEuN0MyNTYuMiA0NjYuNyAyNDIuNSA0NjMuOSAyMzMuMyA0NTQuOEw3My4zIDI5NC44QzYwLjggMjgyLjMgNjAuOCAyNjIgNzMuMyAyNDkuNUwyMzMuMyA4OS41QzI0Mi41IDgwLjMgMjU2LjIgNzcuNiAyNjguMiA4Mi42eiIvPjwvc3ZnPg==");
-  mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48cGF0aCBkPSJNMjY4LjIgODIuNEMyODAuMiA4Ny40IDI4OCA5OSAyODggMTEyTDI4OCAxOTJMNDAwIDE5MkM0OTcuMiAxOTIgNTc2IDI3MC44IDU3NiAzNjhDNTc2IDQ4MS4zIDQ5NC41IDUzMS45IDQ3NS44IDU0Mi4xQzQ3My4zIDU0My41IDQ3MC41IDU0NCA0NjcuNyA1NDRDNDU2LjggNTQ0IDQ0OCA1MzUuMSA0NDggNTI0LjNDNDQ4IDUxNi44IDQ1Mi4zIDUwOS45IDQ1Ny44IDUwNC44QzQ2Ny4yIDQ5NiA0ODAgNDc4LjQgNDgwIDQ0OC4xQzQ4MCAzOTUuMSA0MzcgMzUyLjEgMzg0IDM1Mi4xTDI4OCAzNTIuMUwyODggNDMyLjFDMjg4IDQ0NSAyODAuMiA0NTYuNyAyNjguMiA0NjEuN0MyNTYuMiA0NjYuNyAyNDIuNSA0NjMuOSAyMzMuMyA0NTQuOEw3My4zIDI5NC44QzYwLjggMjgyLjMgNjAuOCAyNjIgNzMuMyAyNDkuNUwyMzMuMyA4OS41QzI0Mi41IDgwLjMgMjU2LjIgNzcuNiAyNjguMiA4Mi42eiIvPjwvc3ZnPg==");
-}
-</style>
-
+<p><link rel="stylesheet" href="resources/guestbook.css"></p>
 <script type="module" src="https://guestbook.mxgns.uk/guestbook.js"
   data-privacy-contact-email="hello@mxgns.uk"
-  data-privacy-policy-url="privacy.html"></script></div>
+  data-privacy-policy-url="privacy.html"
+  data-turnstile-sitekey="0x4AAAAAAFzA7p72BR6AuyiH"
+  data-protected-name="Magnus"
+  data-protected-substring="mxgns"></script></div>
 </article>
 </main>
 <nav><a href="index.html">Blog home</a></nav>
@@ -236,7 +81,7 @@
         <img id="_b" alt="" width="1" height="1"
              style="position:absolute;left:-9999px"
              data-src="/api/track/guestbook.svg">
-        <script src="resources/blog.js?v=1793967878"></script>
+        <script src="resources/blog.js?v=1794028806"></script>
         
     </body>
 </html>
