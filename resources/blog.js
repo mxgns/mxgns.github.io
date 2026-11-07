@@ -128,6 +128,14 @@
   var signOut = document.getElementById('_so');
   if (!signIn && !analyticsLink && !signOut) return;
 
+  // ptrt ("page to return to") so sign-in lands back here instead of the bare confirmation
+  // page -- location.pathname/search/hash is always same-origin by construction, and
+  // author-login independently re-validates it's a safe internal path regardless.
+  if (signIn) {
+    var returnTo = encodeURIComponent(location.pathname + location.search + location.hash);
+    signIn.href = '/api/guestbook/author-login?ptrt=' + returnTo;
+  }
+
   function applyAuthorState(isAuthor) {
     if (signIn) signIn.hidden = isAuthor;
     if (analyticsLink) analyticsLink.hidden = !isAuthor;
