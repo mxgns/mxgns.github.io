@@ -4,8 +4,15 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-11-07T00:02:19Z</updated>
+  <updated>2026-11-07T00:02:20Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Love-love-love my new hood</title>
+    <link href="https://mxgns.uk/140.html" />
+    <id>https://mxgns.uk/140.html</id>
+    <updated>2026-11-07T00:02:20Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/140-image-01-resized.jpeg" alt="Autumnal estate"></figure><p>Love-love-love my new hood 😊</p>]]></content>
+  </entry>
   <entry>
     <title>New: Sign my guestbook!</title>
     <link href="https://mxgns.uk/139.html" />
@@ -250,12 +257,5 @@
 <p>This medieval town is just an hour from London and turned out to be well worth a visit. Very picturesque and not too crowded, with lots of cute old houses lining small, cobbled streets. It’s fascinating, too, that it used to be a seaside town, but the sea is now 2 miles away!</p>
 <p>I particularly enjoyed the view from the tower of the 900-year-old church, a beer in the garden of the Ypres Castle Inn and a nice lunch at The Union Rye.</p>
 <p>A very nice day out!</p>]]></content>
-  </entry>
-  <entry>
-    <title>Dungarees are cool and all, until you…</title>
-    <link href="https://mxgns.uk/110.html" />
-    <id>https://mxgns.uk/110.html</id>
-    <updated>2026-10-03T00:01:50Z</updated>
-    <content type="html"><![CDATA[<p>Dungarees are cool and all, until you get hot and have to undress in the street to take off your hoodie 😬</p>]]></content>
   </entry>
 </feed>
