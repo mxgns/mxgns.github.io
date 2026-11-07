@@ -23,11 +23,11 @@
         <link rel="icon" href="resources/icon.png">
         <link
             rel="stylesheet"
-            href="resources/style.css?v=1794045351"
+            href="resources/style.css?v=1794076777"
         >
         <link
             rel="stylesheet"
-            href="resources/assorted.css?v=1794045351"
+            href="resources/assorted.css?v=1794076777"
         >
         <link
             rel="alternate"
@@ -51,10 +51,14 @@
                     </button>
                 </div>
                 <div class="masthead-more">
-                    <button type="button" id="masthead-more-toggle" class="masthead-more-toggle" aria-expanded="false" aria-controls="masthead-more-menu">More</button>
+                    <button type="button" id="masthead-more-toggle" class="masthead-more-toggle" aria-expanded="false" aria-controls="masthead-more-menu">
+                        More
+                        <span class="nav-icon icon-chevron-down"></span>
+                        <span class="nav-icon icon-chevron-up"></span>
+                    </button>
                     <ul id="masthead-more-menu" class="masthead-more-menu" hidden>
-                        <li><a href="guestbook.html" class="masthead-more-link">Guestbook</a></li>
-                        <li><a href="search.html" class="masthead-more-link masthead-search">Search</a></li>
+                        <li><a href="guestbook.html" class="masthead-more-link"><span class="nav-icon icon-guestbook"></span>Guestbook</a></li>
+                        <li><a href="search.html" class="masthead-more-link"><span class="nav-icon icon-search"></span>Search</a></li>
                         <li>
                             <button type="button" class="masthead-more-link theme-toggle" aria-label="Toggle theme">
                                 <span class="theme-toggle-icon icon-sun"></span>
@@ -86,12 +90,17 @@
                 <a href="privacy.html">Privacy</a>
                 <a href="terms-and-conditions.html">Terms</a>
             </div>
-            <span id="_nt" class="footer-notrack" hidden>Tracking is disabled<a href="https://analytics.mxgns.uk" class="footer-notrack-link" target="_blank" rel="noopener" aria-label="View analytics dashboard"></a></span>
+            <div class="footer-auth">
+                <span id="_nt" class="footer-notrack" hidden>Tracking disabled</span>
+                <a id="_si" href="/api/guestbook/author-login" class="footer-signin-link" hidden>Sign in</a>
+                <a id="_an" href="analytics/" class="footer-analytics-link" hidden>Analytics</a>
+                <button type="button" id="_so" class="footer-signout-link" hidden>Sign out</button>
+            </div>
         </footer>
         <img id="_b" alt="" width="1" height="1"
              style="position:absolute;left:-9999px"
              data-src="/api/track/76.svg">
-        <script src="resources/blog.js?v=1794045351"></script>
+        <script src="resources/blog.js?v=1794076777"></script>
         
     </body>
 </html>
