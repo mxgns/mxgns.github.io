@@ -24,11 +24,11 @@
         <link rel="icon" href="resources/icon.png">
         <link
             rel="stylesheet"
-            href="resources/style.css?v=1794592626"
+            href="resources/style.css?v=1794598485"
         >
         <link
             rel="stylesheet"
-            href="resources/assorted.css?v=1794592626"
+            href="resources/assorted.css?v=1794598485"
         >
         <link
             rel="alternate"
@@ -157,8 +157,8 @@
 <p>Once published, anyone can read your name, message and, if approved, your website URL. Your entry’s submission date is also shown. Published information may be indexed by search engines or copied or archived by others, which I can’t control.</p>
 <p>Please don’t include anything you wouldn’t want to be public, and don’t include other people’s personal information.</p>
 <h3>Spam prevention (Cloudflare Turnstile)</h3>
-<p>To keep out bots, the guest book form uses Cloudflare Turnstile. It loads only on the guest book page, not elsewhere on the site.</p>
-<p>When the form loads, your browser connects to Cloudflare, so Cloudflare receives signals such as your IP address, TLS fingerprint and browser (user-agent) details, which it uses to tell humans from bots. Turnstile then gives your browser a token, which my server sends to Cloudflare to check. I only receive the pass/fail result, not the signals Cloudflare assessed.</p>
+<p>To keep out bots, the guest book form uses Cloudflare Turnstile. It is used only on the guest book page, not elsewhere on the site, and only loads once you start using the form (by clicking into or typing in one of its fields). Just reading the guest book does not load it.</p>
+<p>Once Turnstile loads, your browser connects to Cloudflare, so Cloudflare receives signals such as your IP address, TLS fingerprint and browser (user-agent) details, which it uses to tell humans from bots. Turnstile then gives your browser a token, which my server sends to Cloudflare to check. I only receive the pass/fail result, not the signals Cloudflare assessed.</p>
 <p>Cloudflare processes these signals on my behalf to protect the form. It also acts as an independent controller of the signals to improve Turnstile&rsquo;s bot detection, under its own terms; see the <a href="https://www.cloudflare.com/privacypolicy/" class="external-link" target="_blank" rel="noopener">Cloudflare privacy policy</a> and its <a href="https://www.cloudflare.com/turnstile-privacy-policy/" class="external-link" target="_blank" rel="noopener">Turnstile privacy addendum</a>. You can&rsquo;t opt out of Turnstile and still submit an entry. The only way to avoid it is not to use the guest book.</p>
 <h3>Purpose and lawful basis</h3>
 <ul>
@@ -174,7 +174,7 @@
 <p><strong>Analytics</strong> does not use cookies, local storage or session storage.
 If you opt out, this website sets a cookie named <code>_notrack</code> solely to remember your choice and prevent future analytics events from being sent. The cookie expires after 2 years.</p>
 <p>This cookie is not used for analytics, advertising or tracking. If you delete the cookie, use another browser or use another device, you need to opt out again.</p>
-<p><strong>Guest book:</strong> the guest book itself sets no cookies. However, Cloudflare Turnstile may use cookies or browser storage (such as local storage) on the guest book page to work out whether you are human; Cloudflare&rsquo;s <a href="https://www.cloudflare.com/cookie-policy/" class="external-link" target="_blank" rel="noopener">cookie policy</a> has details. This is used only for spam prevention and security and is strictly necessary for that purpose, which is why I don&rsquo;t ask for consent for it. It is not used for advertising.</p>
+<p><strong>Guest book:</strong> the guest book itself sets no cookies. However, once you start using the form, Cloudflare Turnstile may use cookies or browser storage (such as local storage) to work out whether you are human; Cloudflare&rsquo;s <a href="https://www.cloudflare.com/cookie-policy/" class="external-link" target="_blank" rel="noopener">cookie policy</a> has details. This is used only for spam prevention and security and is strictly necessary for that purpose, which is why I don&rsquo;t ask for consent for it. It is not used for advertising.</p>
 <h2>4. Sharing and service providers</h2>
 <p>I use Cloudflare to host this website and to store guest book entries (in Cloudflare D1) on my behalf. For hosting and storage, Cloudflare may process the information only to provide the service to me and may not use it for its own advertising or profiling purposes.</p>
 <p>Cloudflare also provides Turnstile, described above. For that service, Cloudflare processes the spam-check data on my behalf to protect the form, and separately as its own controller to improve Turnstile&rsquo;s bot detection, as described above.</p>
@@ -207,7 +207,7 @@ If you opt out, this website sets a cookie named <code>_notrack</code> solely to
         <img id="_b" alt="" width="1" height="1"
              style="position:absolute;left:-9999px"
              data-src="/api/track/privacy.svg">
-        <script src="resources/blog.js?v=1794592626"></script>
+        <script src="resources/blog.js?v=1794598485"></script>
         
     </body>
 </html>
