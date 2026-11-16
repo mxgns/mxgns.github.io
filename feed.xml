@@ -4,8 +4,15 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-11-13T00:02:21Z</updated>
+  <updated>2026-11-16T00:02:22Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>First Black Friday purchase this year:…</title>
+    <link href="https://mxgns.uk/142.html" />
+    <id>https://mxgns.uk/142.html</id>
+    <updated>2026-11-16T00:02:22Z</updated>
+    <content type="html"><![CDATA[<p>First Black Friday purchase this year: a pair of JNCO Low Down 🎉</p>]]></content>
+  </entry>
   <entry>
     <title>I was in Lisbon Monday to Thursday for…</title>
     <link href="https://mxgns.uk/141.html" />
@@ -255,12 +262,5 @@
     <updated>2026-10-05T00:01:53Z</updated>
     <content type="html"><![CDATA[<p>After a sizable vibe-coded refactor, I can now publish blog posts straight from my iPad 😊</p>
 <p>Edit: Q.E.D. 🎉</p>]]></content>
-  </entry>
-  <entry>
-    <title>Sunday reflections</title>
-    <link href="https://mxgns.uk/112.html" />
-    <id>https://mxgns.uk/112.html</id>
-    <updated>2026-10-04T00:01:52Z</updated>
-    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/112-image-01-resized.jpeg" alt="Me in the mirror on a DLR platform"></figure><figure><img src="https://mxgns.uk/112-image-02-resized.jpeg" alt="Me reflected in a window"></figure><figure><img src="https://mxgns.uk/112-image-03-resized.jpeg" alt="Me in a convex mirror in a tube station"></figure><p>After this post, I might have exhausted the mirror selfie blog post concept for a while 🤣</p>]]></content>
   </entry>
 </feed>
