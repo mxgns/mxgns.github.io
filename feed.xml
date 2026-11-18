@@ -4,8 +4,28 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-11-16T00:02:22Z</updated>
+  <updated>2026-11-18T00:02:23Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Get ready for the enshitification of AI (and everything else with it)</title>
+    <link href="https://mxgns.uk/143.html" />
+    <id>https://mxgns.uk/143.html</id>
+    <updated>2026-11-18T00:02:23Z</updated>
+    <content type="html"><![CDATA[<p>Last week, I attended the Web Summit conference in Lisbon. I might share more thoughts and impressions later, but my biggest takeaway is not from anything anyone said, but from extrapolating from what they said.</p>
+<p>My conclusion is this:</p>
+<p><mark>Using AI chats to find information will never be better than it is right now. In fact, it will go downhill from here.</mark></p>
+<p>This is based on how many talks focused on the theme “How do you make your brand visible when people use AI instead of web browsing to find products?”</p>
+<p>And the approach goes like this:</p>
+<ol>
+<li>Figure out what people are asking the AI about where you want your brand to appear.</li>
+<li>Optimise the sources the AI feeds on to surface your brand in a positive way.</li>
+<li>Measure and iterate.</li>
+</ol>
+<p>So, just as SEO made web search rubbish by rewarding optimised slop over genuine content, AI optimisation will do the same for AI. But this time, they have AI to help them take the “optimisation” to the next level.</p>
+<p>And what’s worse, while SEO more or less only required you to repeat the same phrase over and over on a page to rank highly, AI uses multiple sources to give the best response. That means that people’s (or bots’, more likely) optimisation efforts will, by necessity, include things like social media, news sites, Wikipedia, Reddit, academic papers, reviews, blogs &ndash; basically everything.</p>
+<p>So where SEO mainly ruined the search engines themselves, and made some pages a bit more annoying to read, the blast radius of AI optimisation is so much worse.</p>
+<p>That doesn’t make me super-optimistic about where the web will go over the next five years.</p>]]></content>
+  </entry>
   <entry>
     <title>First Black Friday purchase this year:…</title>
     <link href="https://mxgns.uk/142.html" />
@@ -254,13 +274,5 @@
     <updated>2026-10-07T00:01:54Z</updated>
     <content type="html"><![CDATA[<p>Today is feeling like autumn proper and I honestly couldn&rsquo;t be happier 🍂🌧️☂️🥰</p>
 <p>(but give me a week of this and I will probably change my mind! 😛)</p>]]></content>
-  </entry>
-  <entry>
-    <title>After a sizable vibe-coded refactor, I…</title>
-    <link href="https://mxgns.uk/113.html" />
-    <id>https://mxgns.uk/113.html</id>
-    <updated>2026-10-05T00:01:53Z</updated>
-    <content type="html"><![CDATA[<p>After a sizable vibe-coded refactor, I can now publish blog posts straight from my iPad 😊</p>
-<p>Edit: Q.E.D. 🎉</p>]]></content>
   </entry>
 </feed>
