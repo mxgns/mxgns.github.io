@@ -4,8 +4,17 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-11-18T00:02:23Z</updated>
+  <updated>2026-11-19T00:02:24Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>Here’s a proper Throwback Thursday for…</title>
+    <link href="https://mxgns.uk/144.html" />
+    <id>https://mxgns.uk/144.html</id>
+    <updated>2026-11-19T00:02:24Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/144-image-01-resized.jpeg" alt="A much younger me, hacking away"></figure><p>Here’s a proper Throwback Thursday for you: me writing one of my first-ever computer programmes on the ZX81 👨🏻‍💻</p>
+<p>Notice the black-and-white telly as the screen, the 16 KB external memory module, and the printer using aluminium-coated paper.</p>
+<p>Too bad my development skills never evolved much from there 😂</p>]]></content>
+  </entry>
   <entry>
     <title>Get ready for the enshitification of AI (and everything else with it)</title>
     <link href="https://mxgns.uk/143.html" />
@@ -266,13 +275,5 @@
     <id>https://mxgns.uk/115.html</id>
     <updated>2026-10-08T00:01:55Z</updated>
     <content type="html"><![CDATA[<p>It seems things are finally starting to move on the new flat. I&rsquo;m so looking forward to betting out of the limbo of the last several months! 😊</p>]]></content>
-  </entry>
-  <entry>
-    <title>Today is feeling like autumn proper and…</title>
-    <link href="https://mxgns.uk/114.html" />
-    <id>https://mxgns.uk/114.html</id>
-    <updated>2026-10-07T00:01:54Z</updated>
-    <content type="html"><![CDATA[<p>Today is feeling like autumn proper and I honestly couldn&rsquo;t be happier 🍂🌧️☂️🥰</p>
-<p>(but give me a week of this and I will probably change my mind! 😛)</p>]]></content>
   </entry>
 </feed>
