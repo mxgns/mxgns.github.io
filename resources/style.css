@@ -1210,9 +1210,10 @@ article.note .post-body {
     font-weight: 400;
 }
 
-/* === Post heading without a visible title (Image posts, Notes) ===
+/* === Post heading without a visible title (any post with no `title`) ===
    Magnetizer always renders an <h1>/<h2> for every post, even ones with no
-   title, falling back to text like "Photo posted 22 July 2026". That heading
+   title, falling back to text like "Photo posted 22 July 2026", and marks
+   such posts with the `untitled` class. That heading
    still needs to exist for the document outline and screen readers — the mix
    of titled and untitled posts on index/category pages is exactly why — it
    just shouldn't be seen. Standard visually-hidden technique: taken out of
@@ -1220,10 +1221,8 @@ article.note .post-body {
    which would also remove it from the accessibility tree. */
 
 .visually-hidden,
-article.image-post > h1,
-article.image-post > h2,
-article.note > h1,
-article.note > h2 {
+article.untitled > h1,
+article.untitled > h2 {
     position: absolute;
     width: 1px;
     height: 1px;
