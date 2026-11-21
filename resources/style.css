@@ -1459,7 +1459,8 @@ section.comments {
     margin-top: 2rem;
 }
 
-section.comments h2 {
+section.comments h2,
+section.related h2 {
     font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
     text-transform: none;
     letter-spacing: normal;
@@ -1467,6 +1468,30 @@ section.comments h2 {
     font-weight: 500;
     margin: 0 0 1rem;
     color: var(--black);
+}
+
+/* === Related posts === */
+/* Rendered by Magnetizer as <section class="related"> (h2 + ul of links) at
+   the bottom of an <article>, after comments. Overrides the archive-style
+   `main section ul/li` rules so it reads like a list in a post body. */
+
+section.related {
+    margin-top: 2rem;
+}
+
+section.related h2 {
+    margin-bottom: 0.5rem;
+}
+
+section.related ul {
+    list-style: disc;
+    padding-left: 40px;
+    margin: 0;
+}
+
+section.related li {
+    display: list-item;
+    line-height: 1.65;
 }
 
 .comment {
