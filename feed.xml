@@ -4,8 +4,15 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-11-23T00:02:31Z</updated>
+  <updated>2026-11-25T00:02:32Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>It’s going quickly now. I’ve only got…</title>
+    <link href="https://mxgns.uk/152.html" />
+    <id>https://mxgns.uk/152.html</id>
+    <updated>2026-11-25T00:02:32Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/152-image-01-resized.jpeg" alt="London city skyline with the DLR in the foreground"></figure><p>It&rsquo;s going quickly now. I&rsquo;ve only got eight more mornings with this particular commute left.</p>]]></content>
+  </entry>
   <entry>
     <title>Autumn recap</title>
     <link href="https://mxgns.uk/151.html" />
@@ -270,12 +277,5 @@
     <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/123-image-01-resized.jpeg" alt="Bridge"></figure><figure><img src="https://mxgns.uk/123-image-02-resized.jpeg" alt="Victoria Embankment"></figure><figure><img src="https://mxgns.uk/123-image-03-resized.jpeg" alt="Tree"></figure><p>Today was a beautiful day, and I went for a walk in town to try to get used to my new camera.</p>
 <p>I’m still using it in auto mode, and I have always felt a bit awkward actively going around looking for things to photograph. After years of using the big, bright screen on my phone, it takes a bit of getting used to not quite seeing how the picture comes out.</p>
 <p>But I have a good feeling. I think we will become friends, Lumix and I.</p>]]></content>
-  </entry>
-  <entry>
-    <title>I’m soo excited! It’s been a long time…</title>
-    <link href="https://mxgns.uk/122.html" />
-    <id>https://mxgns.uk/122.html</id>
-    <updated>2026-10-16T00:02:02Z</updated>
-    <content type="html"><![CDATA[<p>I&rsquo;m soo excited! It&rsquo;s been a long time in the making, but we bought our new home today! 🎉🎉🎉</p>]]></content>
   </entry>
 </feed>
