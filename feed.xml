@@ -4,8 +4,15 @@
   <link href="https://mxgns.uk" />
   <link rel="self" href="https://mxgns.uk/feed.xml" />
   <id>https://mxgns.uk/</id>
-  <updated>2026-11-25T00:02:32Z</updated>
+  <updated>2026-11-26T00:02:33Z</updated>
   <author><name>MXGNS</name></author>
+  <entry>
+    <title>With everyone talking about the release…</title>
+    <link href="https://mxgns.uk/153.html" />
+    <id>https://mxgns.uk/153.html</id>
+    <updated>2026-11-26T00:02:33Z</updated>
+    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/153-image-01-resized.jpg" alt="Image 1"></figure><p>With everyone talking about the release of the new GTA, here&rsquo;s me playing GTA 3 on my PlayStation 2.</p>]]></content>
+  </entry>
   <entry>
     <title>It’s going quickly now. I’ve only got…</title>
     <link href="https://mxgns.uk/152.html" />
@@ -268,14 +275,5 @@
     <id>https://mxgns.uk/124.html</id>
     <updated>2026-10-17T00:02:04Z</updated>
     <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/124-image-01-resized.jpeg" alt="Mirror selfie in Tottenham Hourt Road tube station"></figure><p>Me and my camera 😅</p>]]></content>
-  </entry>
-  <entry>
-    <title>Photos from a nice autumn day</title>
-    <link href="https://mxgns.uk/123.html" />
-    <id>https://mxgns.uk/123.html</id>
-    <updated>2026-10-17T00:02:03Z</updated>
-    <content type="html"><![CDATA[<figure><img src="https://mxgns.uk/123-image-01-resized.jpeg" alt="Bridge"></figure><figure><img src="https://mxgns.uk/123-image-02-resized.jpeg" alt="Victoria Embankment"></figure><figure><img src="https://mxgns.uk/123-image-03-resized.jpeg" alt="Tree"></figure><p>Today was a beautiful day, and I went for a walk in town to try to get used to my new camera.</p>
-<p>I’m still using it in auto mode, and I have always felt a bit awkward actively going around looking for things to photograph. After years of using the big, bright screen on my phone, it takes a bit of getting used to not quite seeing how the picture comes out.</p>
-<p>But I have a good feeling. I think we will become friends, Lumix and I.</p>]]></content>
   </entry>
 </feed>
